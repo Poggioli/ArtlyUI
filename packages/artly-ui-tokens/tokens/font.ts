@@ -95,17 +95,16 @@ const caption = {
 };
 
 export {
-    heading1,
-    heading2,
-    heading3,
-    heading4,
-    heading5,
-    heading6,
-    lead1,
-    lead2,
-    body1,
-    body2,
-    auxiliary,
-    caption,
+  heading1,
+  heading2,
+  heading3,
+  heading4,
+  heading5,
+  heading6,
+  lead1,
+  lead2,
+  body1,
+  body2,
+  auxiliary,
+  caption,
 };
-

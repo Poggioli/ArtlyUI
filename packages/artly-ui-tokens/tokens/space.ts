@@ -1,7 +1,7 @@
-import { baseValueSize } from "./base-value";
+import { baseValueSpace } from "./base-values";
 
-const sizeTokens = (): { [key: string]: string } => {
-  const baseValue: number = baseValueSize;
+const spaceTokens = (): { [key: string]: string } => {
+  const baseValue: number = baseValueSpace;
   const unity: string = "px";
   const sizes: number[] = [0.5, 1, 2, 4, 5, 6, 8, 10, 12, 16, 18, 24, 32];
 
@@ -16,7 +16,7 @@ const sizeTokens = (): { [key: string]: string } => {
   );
 };
 
-export default sizeTokens;
+export default spaceTokens;
 
 /**
  * 1 - 2px

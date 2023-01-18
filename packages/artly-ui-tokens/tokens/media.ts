@@ -1,4 +1,4 @@
-const breakPointTokens = (): { [key: string]: string } => {
+const mediaTokens = (): { [key: string]: string } => {
   return {
     initial: "(min-width: 0px)",
     small: "(min-width: 576px)",
@@ -8,4 +8,4 @@ const breakPointTokens = (): { [key: string]: string } => {
   };
 };
 
-export default breakPointTokens;
+export default mediaTokens;

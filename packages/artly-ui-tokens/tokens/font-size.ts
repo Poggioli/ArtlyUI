@@ -1,4 +1,4 @@
-import { baseValueFontSize } from "./base-value";
+import { baseValueFontSize } from "./base-values";
 
 const fontSizeTokens = (): { [key: string]: string } => {
   const baseValue: number = baseValueFontSize;

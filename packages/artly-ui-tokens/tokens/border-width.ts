@@ -1,4 +1,4 @@
-import { baseValueBorderWidth } from "./base-value";
+import { baseValueBorderWidth } from "./base-values";
 
 const borderWidthTokens = (): { [key: string]: string } => {
   const baseValue: number = baseValueBorderWidth;

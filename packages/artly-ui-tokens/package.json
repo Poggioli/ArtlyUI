@@ -1,0 +1,20 @@
+{
+    "name": "@artly-ui/tokens",
+    "version": "0.0.0",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "sideEffects": false,
+    "license": "MIT",
+    "scripts": {
+      "lint": "TIMING=1 eslint \"**/*.ts*\"",
+      "build": "tsup index.ts --format esm,cjs --dts --external react"
+    },
+    "devDependencies": {
+      "eslint": "^7.32.0",
+      "eslint-config-custom": "*",
+      "tsconfig": "*",
+      "typescript": "^4.5.2"
+    }
+  }
+  

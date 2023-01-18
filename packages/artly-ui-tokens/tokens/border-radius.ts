@@ -1,4 +1,4 @@
-import { baseValueBorderRadius } from "./base-value";
+import { baseValueBorderRadius } from "./base-values";
 
 const borderRadiusTokens = (): { [key: string]: string } => {
   const baseValue: number = baseValueBorderRadius;

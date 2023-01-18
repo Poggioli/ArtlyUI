@@ -5,10 +5,9 @@ const baseValueSize: number = 4;
 const baseValueSpace: number = 4;
 
 export {
-    baseValueBorderRadius,
-    baseValueBorderWidth,
-    baseValueFontSize,
-    baseValueSize,
-    baseValueSpace,
+  baseValueBorderRadius,
+  baseValueBorderWidth,
+  baseValueFontSize,
+  baseValueSize,
+  baseValueSpace,
 };
-

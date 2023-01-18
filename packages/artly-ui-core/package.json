@@ -1,0 +1,27 @@
+{
+  "name": "@artly-ui/core",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "lint": "TIMING=1 eslint \"**/*.ts*\"",
+    "build": "tsup index.ts --format esm,cjs --dts --external react"
+  },
+  "dependencies": {
+    "@artly-ui/tokens": "*",
+    "@stitches/react": "^1.2.8",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/webfontloader": "^1.6.35",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "react": "^18.2.0",
+    "tsconfig": "*",
+    "typescript": "^4.5.2"
+  }
+}
