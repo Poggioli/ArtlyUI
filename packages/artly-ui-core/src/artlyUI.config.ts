@@ -3,6 +3,7 @@ import type * as Stitches from "@stitches/react";
 import { createStitches } from "@stitches/react";
 import { ElementType } from "react";
 import WebFont from "webfontloader";
+import * as themes from "./themes";
 
 WebFont.load({
   google: {
@@ -22,7 +23,9 @@ type PropertyValue<T extends keyof Stitches.CSSProperties> =
 
 export const artlyUI = createStitches({
   prefix: "artly-UI",
-  theme: {},
+  theme: {
+    ...themes.deepPurpleAndAmberTheme,
+  },
   media,
   utils: {
     p: (value: PropertyValue<"padding">) => ({
@@ -144,3 +147,11 @@ export interface ComponentCSSProp {
   as?: ElementType;
 }
 export type Theme = ReturnType<typeof createTheme>;
+export const deepPurpleAndAmberTheme = createTheme(
+  "deep-purple-and-amber-theme",
+  themes.deepPurpleAndAmberTheme
+);
+export const indigoPinkTheme = createTheme(
+  "indigo-pink-theme",
+  themes.indigoPinkTheme
+);

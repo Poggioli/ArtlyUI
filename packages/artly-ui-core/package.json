@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@artly-ui/tokens": "*",
+    "@artly-ui/themes": "*",
     "@stitches/react": "^1.2.8",
     "webfontloader": "^1.6.28"
   },
