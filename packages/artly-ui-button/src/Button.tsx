@@ -8,7 +8,7 @@ const NONE_POSITION = "none";
 const ICON_SHAPE = "icon";
 
 const Button = forwardRef<"button", ButtonProps>(
-  ({ children, icon, shape, iconPosition, ...props }, forwardRef) => {
+  ({ children, icon, shape, iconPosition, ...props }, forwardedRef) => {
     if (shape === ICON_SHAPE && !props["aria-label"]) {
       throw new Error("Provide an arial-label when using icon shape.");
     }
@@ -16,7 +16,7 @@ const Button = forwardRef<"button", ButtonProps>(
     return (
       <StyledButton
         {...props}
-        ref={forwardRef}
+        ref={forwardedRef}
         data-disabled={props.disabled}
         shape={shape}
         iconPosition={shape === ICON_SHAPE ? NONE_POSITION : iconPosition}
