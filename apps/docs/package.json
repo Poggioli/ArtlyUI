@@ -6,7 +6,8 @@
   "scripts": {
     "start": "vite",
     "dev": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider build-storybook"
+    "build": "NODE_OPTIONS=--openssl-legacy-provider build-storybook",
+    "clear": "rimraf .turbo coverage node_modules dist"
   },
   "dependencies": {
     "@artly-ui/button": "*",

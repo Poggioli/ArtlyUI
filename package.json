@@ -11,13 +11,17 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "clear": "rimraf .turbo coverage node_modules dist",
+    "bootstrap": "turbo run clear && yarn && turbo run build",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "generate": "plop"
   },
   "devDependencies": {
     "@types/jest": "^29.2.6",
     "eslint-config-custom": "*",
     "plop": "^3.1.1",
     "prettier": "latest",
+    "rimraf": "^4.1.1",
     "tsup": "^6.5.0",
     "turbo": "latest"
   },

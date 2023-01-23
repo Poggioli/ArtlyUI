@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "TIMING=1 eslint \"**/*.ts*\"",
-    "build": "tsup index.ts --format esm,cjs --dts --external react"
+    "build": "tsup index.ts --format esm,cjs --dts --external react",
+    "clear": "rimraf .turbo coverage node_modules dist"
   },
   "dependencies": {
     "@radix-ui/colors": "^0.1.7"

@@ -9,7 +9,8 @@
   "scripts": {
     "lint": "TIMING=1 eslint \"**/*.ts*\"",
     "build": "tsup index.ts --format esm,cjs --dts --external react",
-    "test": "jest"
+    "test": "jest",
+    "clear": "rimraf .turbo coverage node_modules dist"
   },
   "dependencies": {
     "@artly-ui/core": "*"
