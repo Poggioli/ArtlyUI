@@ -1,0 +1,11 @@
+import { forwardRef } from "@artly-ui/core";
+import { Styled{{pascalCase name}} } from "./styles";
+import { {{pascalCase name}}Props } from "./types";
+
+const {{pascalCase name}} = forwardRef<typeof Styled{{pascalCase name}}, {{pascalCase name}}Props>(
+  ({ ...props }, forwardedRef) => {
+    return <Styled{{pascalCase name}} {...props} ref={forwardedRef} />
+  }
+);
+
+export { {{pascalCase name}} };
