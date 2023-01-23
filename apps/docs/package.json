@@ -9,9 +9,11 @@
     "build": "NODE_OPTIONS=--openssl-legacy-provider build-storybook"
   },
   "dependencies": {
+    "@artly-ui/button": "*",
+    "@artly-ui/core": "*",
+    "@radix-ui/react-icons": "^1.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@artly-ui/core": "*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
