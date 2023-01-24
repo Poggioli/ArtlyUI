@@ -12,52 +12,52 @@ module.exports = function (plop) {
       actions: [
         {
           type: 'add',
-          path: 'packages/artly-ui-{{snakeCase name}}/.babelrc',
+          path: 'packages/artly-ui-{{kebabCase name}}/.babelrc',
           templateFile: '.plop/package/babelrc.hbs'
         },
         {
             type: 'add',
-            path: 'packages/artly-ui-{{snakeCase name}}/index.ts',
+            path: 'packages/artly-ui-{{kebabCase name}}/index.ts',
             templateFile: '.plop/package/index.hbs'
         },
         {
             type: 'add',
-            path: 'packages/artly-ui-{{snakeCase name}}/jest-setup.ts',
+            path: 'packages/artly-ui-{{kebabCase name}}/jest-setup.ts',
             templateFile: '.plop/package/jest-setup.hbs'
         },
         {
             type: 'add',
-            path: 'packages/artly-ui-{{snakeCase name}}/jest.config.js',
+            path: 'packages/artly-ui-{{kebabCase name}}/jest.config.js',
             templateFile: '.plop/package/jest.hbs'
         },
         {
             type: 'add',
-            path: 'packages/artly-ui-{{snakeCase name}}/package.json',
+            path: 'packages/artly-ui-{{kebabCase name}}/package.json',
             templateFile: '.plop/package/package.hbs'
         },
         {
             type: 'add',
-            path: 'packages/artly-ui-{{snakeCase name}}/tsconfig.json',
+            path: 'packages/artly-ui-{{kebabCase name}}/tsconfig.json',
             templateFile: '.plop/package/tsconfig.hbs'
         },
         {
             type: 'add',
-            path: 'packages/artly-ui-{{snakeCase name}}/src/{{pascalCase name}}.spec.tsx',
+            path: 'packages/artly-ui-{{kebabCase name}}/src/{{pascalCase name}}.spec.tsx',
             templateFile: '.plop/package/test.hbs'
         },
         {
             type: 'add',
-            path: 'packages/artly-ui-{{snakeCase name}}/src/{{pascalCase name}}.tsx',
+            path: 'packages/artly-ui-{{kebabCase name}}/src/{{pascalCase name}}.tsx',
             templateFile: '.plop/package/component.hbs'
         },
         {
             type: 'add',
-            path: 'packages/artly-ui-{{snakeCase name}}/src/styles.tsx',
+            path: 'packages/artly-ui-{{kebabCase name}}/src/styles.tsx',
             templateFile: '.plop/package/styles.hbs'
         },
         {
             type: 'add',
-            path: 'packages/artly-ui-{{snakeCase name}}/src/types.tsx',
+            path: 'packages/artly-ui-{{kebabCase name}}/src/types.tsx',
             templateFile: '.plop/package/types.hbs'
         },
       ]
