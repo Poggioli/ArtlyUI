@@ -1,10 +1,11 @@
-import { HeartFilledIcon } from "@radix-ui/react-icons";
 import { render } from "@testing-library/react";
 import { {{pascalCase name}} } from "./{{pascalCase name}}";
 
 describe("Core component / {{pascalCase name}}", () => {
-  
+    it(`GIVEN a {{pascalCase name}} component
+    WHEN render component
+    SHOULD occurs render normaly`, () => {
+    const rendered = render(<{{camelCase name}} />);
+    expect(rendered.container).toBeTruthy();
+  });
 });
-
-export { };
-

@@ -9,6 +9,7 @@
   "scripts": {
     "lint": "TIMING=1 eslint \"**/*.ts*\"",
     "build": "tsup index.ts --format esm,cjs --dts --external react",
+    "clear": "rimraf .turbo coverage node_modules dist",
     "test": "jest"
   },
   "dependencies": {
