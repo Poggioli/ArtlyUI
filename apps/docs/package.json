@@ -10,6 +10,7 @@
     "clear": "rimraf .turbo coverage node_modules dist"
   },
   "dependencies": {
+    "@artly-ui/flex": "*",
     "@artly-ui/button": "*",
     "@artly-ui/core": "*",
     "@radix-ui/react-icons": "^1.1.1",
