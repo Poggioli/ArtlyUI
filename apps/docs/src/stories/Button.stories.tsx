@@ -8,19 +8,19 @@ const story: ComponentMeta<typeof Button> = {
   argTypes: {
     color: {
       control: {
-        type: "select",
+        type: "radio",
       },
       options: ["unstyled", "primary", "secondary", "accent", "error"],
     },
     shape: {
       control: {
-        type: "select",
+        type: "radio",
       },
       options: ["basic", "stroked", "flat", "icon"],
     },
     iconPosition: {
       control: {
-        type: "select",
+        type: "radio",
       },
       options: ["left", "right", "none"],
     },
