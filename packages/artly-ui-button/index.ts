@@ -1,3 +1,2 @@
-export * from './src/Button';
-export * from './src/types';
-
+export * from "./src/Button";
+export * from "./src/types";

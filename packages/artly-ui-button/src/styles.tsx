@@ -365,7 +365,7 @@ const StyledButton: any = styled("button", {
     iconPosition: {
       none: {
         svg: {
-          margin: 0
+          margin: 0,
         },
       },
       right: {

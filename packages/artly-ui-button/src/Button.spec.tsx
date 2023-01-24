@@ -94,6 +94,3 @@ describe("Core component / Button", () => {
     });
   });
 });
-
-export { };
-

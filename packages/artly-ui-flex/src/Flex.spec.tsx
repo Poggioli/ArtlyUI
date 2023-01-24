@@ -22,6 +22,3 @@ describe("Layout component / Flex", () => {
     expect(flexElement).toBeVisible();
   });
 });
-
-export { };
-

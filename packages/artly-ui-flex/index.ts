@@ -1,3 +1,2 @@
-export * from './src/Flex';
-export * from './src/types';
-
+export * from "./src/Flex";
+export * from "./src/types";
