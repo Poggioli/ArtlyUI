@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@artly-ui/flex": "*",
+    "@artly-ui/box": "*",
     "@artly-ui/button": "*",
     "@artly-ui/core": "*",
     "@radix-ui/react-icons": "^1.1.1",

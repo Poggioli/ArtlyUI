@@ -55,7 +55,7 @@ const story: ComponentMeta<typeof Flex> = {
 };
 
 const Template: ComponentStory<typeof Flex> = ({ ...args }) => (
-  <Flex {...args} css={{ backgroundColor: "$primary-90", height: '500px' }}>
+  <Flex {...args} css={{ backgroundColor: "$primary-90", height: "500px" }}>
     <h1>Hello, I&apos;m Flex</h1>
     <h1>Hello, I&apos;m Flex</h1>
   </Flex>
