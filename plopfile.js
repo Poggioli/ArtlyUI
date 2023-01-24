@@ -60,6 +60,11 @@ module.exports = function (plop) {
             path: 'packages/artly-ui-{{kebabCase name}}/src/types.tsx',
             templateFile: '.plop/package/types.hbs'
         },
+        {
+          type: 'add',
+          path: 'packages/artly-ui-{{kebabCase name}}/tsup.config.ts',
+          templateFile: '.plop/package/tsup.hbs'
+      },
       ]
     });
   };
