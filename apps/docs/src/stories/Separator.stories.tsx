@@ -9,26 +9,31 @@ const story: ComponentMeta<typeof Separator> = {
   component: Separator,
   argTypes: {
     colored: {
-      type: 'boolean',
-      defaultValue: false
-    }
-  }
+      type: "boolean",
+      defaultValue: false,
+    },
+  },
 };
 
 const Template: ComponentStory<typeof Separator> = ({ ...args }) => (
   <Box
     css={{
-      width: '100%',
-      margin: '0 $4',
-      padding: '$4'
+      width: "100%",
+      margin: "0 $4",
+      padding: "$4",
     }}
   >
-    <Text color='$grey-200'>Horizontal separator.</Text>
-    <Separator css={{ margin: '15px 0' }} {...args} />
-    <Flex css={{ height: 20, alignItems: 'center' }}>
-      <Text color='$grey-200'>Vertical separator</Text>
-      <Separator decorative orientation='vertical' css={{ margin: '0 $4' }} {...args} />
-      <Text color='$grey-200'>Vertical separator</Text>
+    <Text color="$grey-200">Horizontal separator.</Text>
+    <Separator css={{ margin: "15px 0" }} {...args} />
+    <Flex css={{ height: 20, alignItems: "center" }}>
+      <Text color="$grey-200">Vertical separator</Text>
+      <Separator
+        decorative
+        orientation="vertical"
+        css={{ margin: "0 $4" }}
+        {...args}
+      />
+      <Text color="$grey-200">Vertical separator</Text>
     </Flex>
   </Box>
 );

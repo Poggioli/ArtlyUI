@@ -7,28 +7,26 @@ const story: ComponentMeta<typeof Text> = {
   argTypes: {
     variant: {
       control: {
-        type: 'radio'
+        type: "radio",
       },
-      options: ['lead1', 'lead2', 'body1', 'body2', 'auxiliary', 'caption']
+      options: ["lead1", "lead2", "body1", "body2", "auxiliary", "caption"],
     },
     align: {
       control: {
-        type: 'radio'
+        type: "radio",
       },
-      options: ['left', 'center', 'right']
+      options: ["left", "center", "right"],
     },
     color: {
       control: {
-        type: 'text'
-      }
-    }
-  }
+        type: "text",
+      },
+    },
+  },
 };
 
 const Template: ComponentStory<typeof Text> = ({ ...args }) => (
-  <Text {...args}>
-    Hello, I&apos;m Text
-  </Text>
+  <Text {...args}>Hello, I&apos;m Text</Text>
 );
 
 export const Default = Template.bind({});

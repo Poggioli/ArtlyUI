@@ -1,3 +1,2 @@
-export * from './src/Heading';
-export * from './src/types';
-
+export * from "./src/Heading";
+export * from "./src/types";
