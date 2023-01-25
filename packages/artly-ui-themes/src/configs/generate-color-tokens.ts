@@ -6,9 +6,9 @@ import {
   mauve,
   purple,
   red,
-  whiteA,
+  whiteA
 } from "@radix-ui/colors";
-import { GenericScale, generateGenericColors } from "./generate-generic-colors";
+import { generateGenericColors, GenericScale } from "./generate-generic-colors";
 
 type GenerateColors = {
   primary?: GenericScale;
@@ -169,5 +169,8 @@ export const generateColorTokens = (
     "button--icon--error--background-focus": "$error-30",
     "button--icon--error--background-disabled": "transparent",
     "button--icon--error--text-normal": "$error-90",
+
+    "separator--background-gray": "$gray-60",
+    "separator--background-colored": "$primary-60",
   };
 };
