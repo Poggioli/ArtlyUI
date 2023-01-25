@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import { Separator } from "./Separator";
 
-describe("Core component / Separator", () => {
+describe("Layout component / Separator", () => {
   it(`GIVEN a Separator component
       WHEN render component
       SHOULD occurs render normaly`, () => {

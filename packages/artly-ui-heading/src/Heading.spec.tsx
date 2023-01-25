@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import { Heading } from "./Heading";
 
-describe("Core component / Heading", () => {
+describe("Typograph component / Heading", () => {
   it(`GIVEN a Heading component
       WHEN dont pass a props level
       SHOULD render an h1 element`, () => {
