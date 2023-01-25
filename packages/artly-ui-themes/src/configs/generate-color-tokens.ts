@@ -172,5 +172,8 @@ export const generateColorTokens = (
 
     "separator--background-gray": "$gray-60",
     "separator--background-colored": "$primary-60",
+
+    "scroll-area--thumb--background": "$gray-90",
+    "scroll-area--scroll-bar--background": "$gray-40",
   };
 };

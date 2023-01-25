@@ -17,7 +17,9 @@
     "@artly-ui/flex": "*",
     "@artly-ui/heading": "*",
     "@artly-ui/separator": "*",
+    "@artly-ui/scroll-area": "*",
     "@artly-ui/text": "*",
+    "@artly-ui/tokens": "*",
     "@radix-ui/react-icons": "^1.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
