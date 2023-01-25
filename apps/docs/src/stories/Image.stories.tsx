@@ -8,21 +8,21 @@ const story: ComponentMeta<typeof Image> = {
   argTypes: {
     ratio: {
       control: {
-        type: 'number'
+        type: "number",
       },
-      defaultValue: 16/9
+      defaultValue: 16 / 9,
     },
     src: {
       control: {
-        type: 'text'
+        type: "text",
       },
-      defaultValue: 'https://images.unsplash.com/photo-1561037404-61cd46aa615b'
-    }
+      defaultValue: "https://images.unsplash.com/photo-1561037404-61cd46aa615b",
+    },
   },
 };
 
 const Template: ComponentStory<typeof Image> = ({ ...args }) => (
-  <Container center size='medium'>
+  <Container center size="medium">
     <Image {...args} />
   </Container>
 );

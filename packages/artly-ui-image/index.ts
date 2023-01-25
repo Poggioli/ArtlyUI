@@ -1,3 +1,2 @@
-export * from './src/Image';
-export * from './src/types';
-
+export * from "./src/Image";
+export * from "./src/types";
