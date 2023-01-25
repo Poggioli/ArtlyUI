@@ -175,5 +175,11 @@ export const generateColorTokens = (
 
     "scroll-area--thumb--background": "$gray-90",
     "scroll-area--scroll-bar--background": "$gray-40",
+
+    "progress-bar--background": "$gray-60",
+    "progress-bar--indicator--primary--background": "$primary-90",
+    "progress-bar--indicator--secondary--background": "$secondary-90",
+    "progress-bar--indicator--accent--background": "$accent-90",
+    "progress-bar--indicator--error--background": "$error-90",
   };
 };
