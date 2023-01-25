@@ -16,6 +16,7 @@
     "@artly-ui/core": "*",
     "@artly-ui/flex": "*",
     "@artly-ui/heading": "*",
+    "@artly-ui/image": "*",
     "@artly-ui/progress-bar": "*",
     "@artly-ui/separator": "*",
     "@artly-ui/scroll-area": "*",
