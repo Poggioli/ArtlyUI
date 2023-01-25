@@ -10,6 +10,7 @@
     "clear": "rimraf .turbo coverage node_modules dist"
   },
   "dependencies": {
+    "@artly-ui/avatar": "*",
     "@artly-ui/box": "*",
     "@artly-ui/button": "*",
     "@artly-ui/container": "*",

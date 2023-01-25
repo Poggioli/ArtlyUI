@@ -181,5 +181,14 @@ export const generateColorTokens = (
     "progress-bar--indicator--secondary--background": "$secondary-90",
     "progress-bar--indicator--accent--background": "$accent-90",
     "progress-bar--indicator--error--background": "$error-90",
+
+    "avatar--primary--background": "$primary-30",
+    "avatar--primary--text": "$primary-90",
+    "avatar--secondary--background": "$secondary-30",
+    "avatar--secondary--text": "$secondary-90",
+    "avatar--accent--background": "$accent-30",
+    "avatar--accent--text": "$accent-90",
+    "avatar--standard--background": "$gray-30",
+    "avatar--standard--text": "$gray-90",
   };
 };
