@@ -1,4 +1,4 @@
-import { Text } from "@artly-ui/Text";
+import { Text } from "@artly-ui/text";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 const story: ComponentMeta<typeof Text> = {
