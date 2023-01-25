@@ -35,6 +35,7 @@ const Template: ComponentStory<typeof ScrollArea> = ({ ...args }) => (
     <ScrollArea {...args} css={{ height: "80vh" }}>
       <Flex
         direction={args.orientation === "horizontal" ? "row" : "column"}
+        wrap="nowrap"
         gap="$4"
       >
         {Array.from({ length: 10 }).map((_, i) => (
