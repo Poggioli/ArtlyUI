@@ -10,12 +10,14 @@ const story: ComponentMeta<typeof Text> = {
         type: "radio",
       },
       options: ["lead1", "lead2", "body1", "body2", "auxiliary", "caption"],
+      defaultValue: "body1",
     },
     align: {
       control: {
         type: "radio",
       },
       options: ["left", "center", "right"],
+      defaultValue: "left",
     },
     color: {
       control: {

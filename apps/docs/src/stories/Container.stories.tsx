@@ -11,6 +11,7 @@ const story: ComponentMeta<typeof Container> = {
         type: "radio",
       },
       options: ["small", "medium", "large", "extraLarge"],
+      defaultValue: "large",
     },
     center: {
       type: "boolean",

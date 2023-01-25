@@ -8,10 +8,7 @@ const story: ComponentMeta<typeof Box> = {
 };
 
 const Template: ComponentStory<typeof Box> = ({ ...args }) => (
-  <Box
-    {...args}
-    css={{ backgroundColor: "$primary-90", height: "500px", width: "500px" }}
-  >
+  <Box {...args} css={{ backgroundColor: "$primary-90", height: "$13" }}>
     <Heading color="$gray-10">Hello, I&apos;m Box</Heading>
   </Box>
 );

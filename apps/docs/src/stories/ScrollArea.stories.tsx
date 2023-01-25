@@ -20,12 +20,14 @@ const story: ComponentMeta<typeof ScrollArea> = {
         type: "radio",
       },
       options: ["ltr", "rtl"],
+      defaultValue: "ltr",
     },
     type: {
       control: {
         type: "radio",
       },
       options: ["hover", "auto", "always", "scroll"],
+      defaultValue: "hover",
     },
   },
 };

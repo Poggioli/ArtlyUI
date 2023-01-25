@@ -11,18 +11,21 @@ const story: ComponentMeta<typeof Button> = {
         type: "radio",
       },
       options: ["unstyled", "primary", "secondary", "accent", "error"],
+      defaultValue: "unstyled",
     },
     shape: {
       control: {
         type: "radio",
       },
       options: ["basic", "stroked", "flat", "icon"],
+      defaultValue: "basic",
     },
     iconPosition: {
       control: {
         type: "radio",
       },
       options: ["left", "right", "none"],
+      defaultValue: "none",
     },
     disabled: {
       type: "boolean",
