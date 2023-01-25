@@ -1,4 +1,5 @@
 import { Flex } from "@artly-ui/flex";
+import { Heading } from "@artly-ui/heading";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 const story: ComponentMeta<typeof Flex> = {
@@ -56,8 +57,8 @@ const story: ComponentMeta<typeof Flex> = {
 
 const Template: ComponentStory<typeof Flex> = ({ ...args }) => (
   <Flex {...args} css={{ backgroundColor: "$primary-90", height: "500px" }}>
-    <h1>Hello, I&apos;m Flex</h1>
-    <h1>Hello, I&apos;m Flex</h1>
+    <Heading color="$gray-10" level={3}>Hello, I&apos;m Flex</Heading>
+    <Heading color="$gray-10" level={3}>Hello, I&apos;m Flex</Heading>
   </Flex>
 );
 

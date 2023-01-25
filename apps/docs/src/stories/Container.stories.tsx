@@ -1,4 +1,5 @@
 import { Container } from "@artly-ui/Container";
+import { Heading } from "@artly-ui/heading";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 const story: ComponentMeta<typeof Container> = {
@@ -20,7 +21,9 @@ const story: ComponentMeta<typeof Container> = {
 
 const Template: ComponentStory<typeof Container> = ({ ...args }) => (
   <Container {...args} css={{ backgroundColor: "$primary-90" }}>
-    <h1>Hello, I&apos;m Container</h1>
+    <Heading color="$gray-10" level={3}>
+      Hello, I&apos;m Container
+    </Heading>
   </Container>
 );
 

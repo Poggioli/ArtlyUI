@@ -1,4 +1,5 @@
 import { Box } from "@artly-ui/box";
+import { Heading } from "@artly-ui/heading";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 const story: ComponentMeta<typeof Box> = {
@@ -11,7 +12,7 @@ const Template: ComponentStory<typeof Box> = ({ ...args }) => (
     {...args}
     css={{ backgroundColor: "$primary-90", height: "500px", width: "500px" }}
   >
-    <h1>Hello, I&apos;m Box</h1>
+    <Heading color="$gray-10">Hello, I&apos;m Box</Heading>
   </Box>
 );
 
