@@ -1,4 +1,5 @@
 import { styled } from "@artly-ui/core";
+import { body1 } from "@artly-ui/tokens";
 
 const StyledButton: any = styled("button", {
   alignItems: "center",
@@ -10,13 +11,8 @@ const StyledButton: any = styled("button", {
   boxShadow: "none",
   color: "$$colorNormal",
   display: "inline-flex",
-  fontFamily: "$2",
-  fontSize: "$4",
-  fontWeight: "$3",
   gap: "$3",
   justifyContent: "center",
-  lineHeight: "$2",
-  letterSpacing: "$6",
   margin: 0,
   minWidth: "$9",
   outline: "none",
@@ -26,6 +22,8 @@ const StyledButton: any = styled("button", {
     "background-color 200ms cubic-bezier(.5, 1, 1, 1), color 200ms cubic-bezier(.5, 1, 1, 1)",
   userSelect: "none",
   verticalAlign: "middle",
+  ...body1,
+  letterSpacing: '$6',
 
   "&:hover": {
     backgroundColor: "$$backgroundColorHover",
