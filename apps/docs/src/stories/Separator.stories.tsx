@@ -23,17 +23,17 @@ const Template: ComponentStory<typeof Separator> = ({ ...args }) => (
       padding: "$4",
     }}
   >
-    <Text color="$grey-200">Horizontal separator.</Text>
+    <Text>Horizontal separator.</Text>
     <Separator css={{ margin: "15px 0" }} {...args} />
     <Flex css={{ height: 20, alignItems: "center" }}>
-      <Text color="$grey-200">Vertical separator</Text>
+      <Text>Vertical separator</Text>
       <Separator
         decorative
         orientation="vertical"
         css={{ margin: "0 $4" }}
         {...args}
       />
-      <Text color="$grey-200">Vertical separator</Text>
+      <Text>Vertical separator</Text>
     </Flex>
   </Box>
 );

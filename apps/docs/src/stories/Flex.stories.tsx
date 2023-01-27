@@ -1,6 +1,5 @@
 import { Box } from "@artly-ui/box";
 import { Flex } from "@artly-ui/flex";
-import { Heading } from "@artly-ui/heading";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 const story: ComponentMeta<typeof Flex> = {
@@ -66,23 +65,16 @@ const story: ComponentMeta<typeof Flex> = {
 const Template: ComponentStory<typeof Flex> = ({ ...args }) => (
   <Flex
     {...args}
-    css={{ backgroundColor: "$primary-90", height: "500px", padding: "$5" }}
+    css={{
+      backgroundColor: "$primary-90",
+      height: "calc(4 * $13)",
+      width: "100%",
+      padding: "$5",
+    }}
   >
-    <Box css={{ backgroundColor: "$white-90", padding: "$4" }}>
-      <Heading color="$gray-10" level={5}>
-        Hello, I&apos;m Box 1
-      </Heading>
-    </Box>
-    <Box css={{ backgroundColor: "$white-100", padding: "$4" }}>
-      <Heading color="$gray-10" level={5}>
-        Hello, I&apos;m Box 2
-      </Heading>
-    </Box>
-    <Box css={{ backgroundColor: "$white-200", padding: "$4" }}>
-      <Heading color="$gray-10" level={5}>
-        Hello, I&apos;m Box 3
-      </Heading>
-    </Box>
+    <Box css={{ backgroundColor: "$secondary-90", height: "$13", width: "$13" }} />
+    <Box css={{ backgroundColor: "$secondary-100", height: "$13", width: "$13" }} />
+    <Box css={{ backgroundColor: "$secondary-200", height: "$13", width: "$13" }} />
   </Flex>
 );
 

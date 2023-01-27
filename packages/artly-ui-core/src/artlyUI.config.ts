@@ -155,3 +155,8 @@ export const indigoPinkTheme = createTheme(
   "indigo-pink-theme",
   themes.indigoPinkTheme
 );
+
+export const pinkAndBlueGreyTheme = createTheme(
+  "pink-and-blue-grey-theme",
+  themes.pinkAndBlueGreyTheme
+);

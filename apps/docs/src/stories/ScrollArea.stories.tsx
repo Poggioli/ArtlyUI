@@ -1,7 +1,7 @@
+import { Box } from "@artly-ui/box";
 import { Container } from "@artly-ui/container";
 import { Flex } from "@artly-ui/flex";
 import { ScrollArea } from "@artly-ui/scroll-area";
-import { heading3 } from "@artly-ui/tokens";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 const story: ComponentMeta<typeof ScrollArea> = {
@@ -41,20 +41,14 @@ const Template: ComponentStory<typeof ScrollArea> = ({ ...args }) => (
         gap="$4"
       >
         {Array.from({ length: 10 }).map((_, i) => (
-          <Flex
-            justify="center"
-            align="center"
+          <Box
             css={{
               backgroundColor: "$primary-90",
               height: "$13",
               width: "$13",
-              ...heading3,
-              color: "$gray-10",
             }}
             key={i + 1}
-          >
-            {i + 1}
-          </Flex>
+          />
         ))}
       </Flex>
     </ScrollArea>
