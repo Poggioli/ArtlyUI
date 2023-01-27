@@ -81,7 +81,7 @@ const story: ComponentMeta<typeof Tooltip> = {
 };
 
 const Template: ComponentStory<typeof Tooltip> = ({ ...args }) => (
-  <Tooltip defaultOpen>
+  <Tooltip>
     <TooltipTrigger>
       <Button shape="icon" aria-label="Mark as unread">
         <EnvelopeClosedIcon />
