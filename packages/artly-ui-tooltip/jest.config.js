@@ -6,7 +6,7 @@ module.exports = {
     testEnvironment: 'jest-environment-jsdom',
     clearMocks: true,
     collectCoverage: true,
-    // silent: true,
+    silent: true,
     collectCoverageFrom: [
       './src/**',
       '!./src/**/styles.ts',
