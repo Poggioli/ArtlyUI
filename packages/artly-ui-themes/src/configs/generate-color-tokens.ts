@@ -6,7 +6,7 @@ import {
   mauve,
   purple,
   red,
-  whiteA,
+  whiteA
 } from "@radix-ui/colors";
 import { generateGenericColors, GenericScale } from "./generate-generic-colors";
 
@@ -144,27 +144,27 @@ export const generateColorTokens = (
     "button--stroked--error--border-hover": "$error-80",
 
     "button--icon--text-disabled": "$gray-80",
-    "button--icon--unstyled--background-normal": "transparent",
+    "button--icon--unstyled--background-normal": "$colored-gray-10",
     "button--icon--unstyled--background-hover": "$colored-gray-20",
     "button--icon--unstyled--background-focus": "$colored-gray-30",
     "button--icon--unstyled--background-disabled": "transparent",
     "button--icon--unstyled--text-normal": "$text-high-contrast",
-    "button--icon--primary--background-normal": "transparent",
+    "button--icon--primary--background-normal": "$primary-10",
     "button--icon--primary--background-hover": "$primary-20",
     "button--icon--primary--background-focus": "$primary-30",
     "button--icon--primary--background-disabled": "transparent",
     "button--icon--primary--text-normal": "$primary-90",
-    "button--icon--secondary--background-normal": "transparent",
+    "button--icon--secondary--background-normal": "$secondary-10",
     "button--icon--secondary--background-hover": "$secondary-20",
     "button--icon--secondary--background-focus": "$secondary-30",
     "button--icon--secondary--background-disabled": "transparent",
     "button--icon--secondary--text-normal": "$secondary-90",
-    "button--icon--accent--background-normal": "transparent",
+    "button--icon--accent--background-normal": "$accent-10",
     "button--icon--accent--background-hover": "$accent-20",
     "button--icon--accent--background-focus": "$accent-30",
     "button--icon--accent--background-disabled": "transparent",
     "button--icon--accent--text-normal": "$accent-90",
-    "button--icon--error--background-normal": "transparent",
+    "button--icon--error--background-normal": "$error-10",
     "button--icon--error--background-hover": "$error-20",
     "button--icon--error--background-focus": "$error-30",
     "button--icon--error--background-disabled": "transparent",
@@ -190,5 +190,9 @@ export const generateColorTokens = (
     "avatar--accent--text": "$accent-90",
     "avatar--standard--background": "$gray-30",
     "avatar--standard--text": "$gray-90",
+
+    "tooltip--content--background": "$gray-300",
+    "tooltip--content--text": "$gray-10",
+    "tooltip--arrow-background": "$tooltip--content--background",
   };
 };
