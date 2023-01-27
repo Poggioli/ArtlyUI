@@ -48,6 +48,9 @@ export const generateColorTokens = (
     ...genericColorTokens.white,
     ...genericColorTokens.black,
 
+    "background-app": "$gray-10",
+    "background-subtle": "$gray-20",
+
     "text-high-contrast": "$gray-300",
     "text-low-contrast": "$gray-200",
 
