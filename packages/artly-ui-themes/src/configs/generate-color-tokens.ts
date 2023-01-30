@@ -59,8 +59,12 @@ export const generateColorTokens = (
 
     "button--basic--text-disabled": "$gray-80",
     "button--basic--unstyled--background-normal": "transparent",
-    "button--basic--unstyled--background-hover": "$colored-gray-20",
-    "button--basic--unstyled--background-focus": "$colored-gray-30",
+    "button--basic--unstyled--background-hover": genericColorTokens.isDarkTheme
+      ? "$white-20"
+      : "$black-20",
+    "button--basic--unstyled--background-focus": genericColorTokens.isDarkTheme
+      ? "$white-30"
+      : "$black-30",
     "button--basic--unstyled--background-disabled": "transparent",
     "button--basic--unstyled--text-normal": "$text-high-contrast",
     "button--basic--primary--background-normal": "transparent",
@@ -85,9 +89,15 @@ export const generateColorTokens = (
     "button--basic--error--text-normal": "$error-90",
 
     "button--flat--text-disabled": "$gray-90",
-    "button--flat--unstyled--background-normal": "$colored-gray-10",
-    "button--flat--unstyled--background-hover": "$colored-gray-20",
-    "button--flat--unstyled--background-focus": "$colored-gray-30",
+    "button--flat--unstyled--background-normal": genericColorTokens.isDarkTheme
+      ? "$white-10"
+      : "$black-10",
+    "button--flat--unstyled--background-hover": genericColorTokens.isDarkTheme
+      ? "$white-20"
+      : "$black-20",
+    "button--flat--unstyled--background-focus": genericColorTokens.isDarkTheme
+      ? "$white-30"
+      : "$black-30",
     "button--flat--unstyled--background-disabled": "$gray-30",
     "button--flat--unstyled--text-normal": "$text-high-contrast",
     "button--flat--primary--background-normal": "$primary-90",
@@ -114,8 +124,10 @@ export const generateColorTokens = (
     "button--stroked--text-disabled": "$gray-80",
     "button--stroked--border-disabled": "$gray-80",
     "button--stroked--unstyled--background-normal": "transparent",
-    "button--stroked--unstyled--background-hover": "$colored-gray-20",
-    "button--stroked--unstyled--background-focus": "$colored-gray-30",
+    "button--stroked--unstyled--background-focus":
+      genericColorTokens.isDarkTheme ? "$white-20" : "$black-20",
+    "button--stroked--unstyled--background-hover":
+      genericColorTokens.isDarkTheme ? "$white-30" : "$black-30",
     "button--stroked--unstyled--background-disabled": "transparent",
     "button--stroked--unstyled--text-normal": "$text-high-contrast",
     "button--stroked--unstyled--border-normal": "$gray-70",
@@ -150,27 +162,31 @@ export const generateColorTokens = (
     "button--stroked--error--border-hover": "$error-80",
 
     "button--icon--text-disabled": "$gray-80",
-    "button--icon--unstyled--background-normal": "$colored-gray-10",
-    "button--icon--unstyled--background-hover": "$colored-gray-20",
-    "button--icon--unstyled--background-focus": "$colored-gray-30",
+    "button--icon--unstyled--background-normal": "transparent",
+    "button--icon--unstyled--background-hover": genericColorTokens.isDarkTheme
+      ? "$white-20"
+      : "$black-20",
+    "button--icon--unstyled--background-focus": genericColorTokens.isDarkTheme
+      ? "$white-30"
+      : "$black-30",
     "button--icon--unstyled--background-disabled": "transparent",
     "button--icon--unstyled--text-normal": "$text-high-contrast",
-    "button--icon--primary--background-normal": "$primary-10",
+    "button--icon--primary--background-normal": "transparent",
     "button--icon--primary--background-hover": "$primary-20",
     "button--icon--primary--background-focus": "$primary-30",
     "button--icon--primary--background-disabled": "transparent",
     "button--icon--primary--text-normal": "$primary-90",
-    "button--icon--secondary--background-normal": "$secondary-10",
+    "button--icon--secondary--background-normal": "transparent",
     "button--icon--secondary--background-hover": "$secondary-20",
     "button--icon--secondary--background-focus": "$secondary-30",
     "button--icon--secondary--background-disabled": "transparent",
     "button--icon--secondary--text-normal": "$secondary-90",
-    "button--icon--accent--background-normal": "$accent-10",
+    "button--icon--accent--background-normal": "transparent",
     "button--icon--accent--background-hover": "$accent-20",
     "button--icon--accent--background-focus": "$accent-30",
     "button--icon--accent--background-disabled": "transparent",
     "button--icon--accent--text-normal": "$accent-90",
-    "button--icon--error--background-normal": "$error-10",
+    "button--icon--error--background-normal": "transparent",
     "button--icon--error--background-hover": "$error-20",
     "button--icon--error--background-focus": "$error-30",
     "button--icon--error--background-disabled": "transparent",
@@ -202,5 +218,8 @@ export const generateColorTokens = (
     "tooltip--arrow-background": "$tooltip--content--background",
 
     "toast--background": genericColorTokens.isDarkTheme ? "$gray-30" : "$white",
+    "dialog--background": genericColorTokens.isDarkTheme
+      ? "$gray-30"
+      : "$white",
   };
 };

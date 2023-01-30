@@ -39,7 +39,7 @@ describe("Core component / Button", () => {
       );
 
       const button = rendered.getByLabelText(label);
-      expect(button).toHaveClass("artly-UI-c-gkMlDn-ftyOP-iconPosition-none");
+      expect(button).toHaveClass("artly-UI-c-kzIhkE-ftyOP-iconPosition-none");
     });
   });
 

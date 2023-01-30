@@ -15,6 +15,7 @@
     "@artly-ui/button": "*",
     "@artly-ui/container": "*",
     "@artly-ui/core": "*",
+    "@artly-ui/dialog": "*",
     "@artly-ui/flex": "*",
     "@artly-ui/heading": "*",
     "@artly-ui/image": "*",
