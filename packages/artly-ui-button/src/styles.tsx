@@ -23,7 +23,7 @@ const StyledButton: any = styled("button", {
   userSelect: "none",
   verticalAlign: "middle",
   ...body1,
-  letterSpacing: '$6',
+  letterSpacing: "$6",
 
   "&:hover": {
     backgroundColor: "$$backgroundColorHover",
@@ -304,8 +304,6 @@ const StyledButton: any = styled("button", {
         $$backgroundColorDisabled: "$$backgroundColorBasicDisabled",
         $$colorNormal: "$$colorBasicNormal",
         $$colorDisabled: "$$colorBasicDisabled",
-
-        padding: "$3 $3",
       },
       stroked: {
         $$boxShadow: "0 0 0 1px $$borderColorStrokedNormal",
@@ -315,9 +313,7 @@ const StyledButton: any = styled("button", {
         $$backgroundColorDisabled: "$$backgroundColorStrokedDisabled",
         $$colorNormal: "$$colorStrokedNormal",
         $$colorDisabled: "$$colorStrokedDisabled",
-
         boxShadow: "$$boxShadow",
-        padding: "$3 $6",
 
         "&:hover": {
           $$boxShadow: "0 0 0 1px $$borderColorStrokedHover",
@@ -334,8 +330,6 @@ const StyledButton: any = styled("button", {
         $$backgroundColorDisabled: "$$backgroundColorFlatDisabled",
         $$colorNormal: "$$colorFlatNormal",
         $$colorDisabled: "$$colorFlatDisabled",
-
-        padding: "$3 $6",
       },
       icon: {
         $$backgroundColorNormal: "$$backgroundColorIconNormal",
@@ -346,7 +340,6 @@ const StyledButton: any = styled("button", {
         $$colorDisabled: "$$colorIconDisabled",
 
         borderRadius: "$4",
-        padding: "calc($2 + $3)",
         height: "$9",
         width: "$9",
 
@@ -381,11 +374,17 @@ const StyledButton: any = styled("button", {
         },
       },
     },
+    size: {
+      small: {},
+      standard: {},
+      large: {},
+    },
   },
 
   defaultVariants: {
     color: "unstyled",
     shape: "basic",
+    size: "standard",
     iconPosition: "none",
   },
 
@@ -406,6 +405,95 @@ const StyledButton: any = styled("button", {
         svg: {
           margin: 0,
         },
+      },
+    },
+    {
+      size: "small",
+      shape: "basic",
+      css: {
+        padding: "$2 $3",
+      },
+    },
+    {
+      size: "small",
+      shape: "stroked",
+      css: {
+        padding: "0 $4",
+      },
+    },
+    {
+      size: "small",
+      shape: "flat",
+      css: {
+        padding: "0 $4",
+      },
+    },
+    {
+      size: "small",
+      shape: "icon",
+      css: {
+        padding: "$3",
+        minWidth: "inherit",
+        height: "$7",
+        width: "$7",
+      },
+    },
+    {
+      size: "standard",
+      shape: "basic",
+      css: {
+        padding: "$3",
+      },
+    },
+    {
+      size: "standard",
+      shape: "stroked",
+      css: {
+        padding: "$3 $6",
+      },
+    },
+    {
+      size: "standard",
+      shape: "flat",
+      css: {
+        padding: "$3 $6",
+      },
+    },
+    {
+      size: "standard",
+      shape: "icon",
+      css: {
+        padding: "calc($2 + $3)",
+      },
+    },
+    {
+      size: "large",
+      shape: "basic",
+      css: {
+        padding: "$4",
+      },
+    },
+    {
+      size: "large",
+      shape: "stroked",
+      css: {
+        padding: "$4 $6",
+      },
+    },
+    {
+      size: "large",
+      shape: "flat",
+      css: {
+        padding: "$4 $6",
+      },
+    },
+    {
+      size: "large",
+      shape: "icon",
+      css: {
+        padding: "$4",
+        height: "calc($3 + $9)",
+        width: "calc($3 + $9)",
       },
     },
   ],

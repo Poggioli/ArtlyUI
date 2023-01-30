@@ -20,6 +20,13 @@ const story: ComponentMeta<typeof Button> = {
       options: ["basic", "stroked", "flat", "icon"],
       defaultValue: "basic",
     },
+    size: {
+      control: {
+        type: "radio",
+      },
+      options: ["small", "standard", "large"],
+      defaultValue: "standard",
+    },
     iconPosition: {
       control: {
         type: "radio",
