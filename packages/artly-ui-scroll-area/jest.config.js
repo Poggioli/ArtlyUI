@@ -9,9 +9,9 @@ module.exports = {
     silent: true,
     collectCoverageFrom: [
       './src/**',
-      '!./src/**/styles.ts',
+      '!./src/**/styles.ts(x)',
       '!./src/**/*stories.tsx',
-      '!./src/**/types.ts',
+      '!./src/**/types.ts(x)',
     ],
     coverageThreshold: {
       global: {
