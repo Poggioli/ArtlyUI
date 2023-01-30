@@ -13,7 +13,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@radix-ui/react-popover": "^1.0.3"
+    "@artly-ui/button": "*",
+    "@radix-ui/react-popover": "^1.0.3",
+    "@radix-ui/react-icons": "^1.1.1"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.18.6",

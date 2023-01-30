@@ -6,7 +6,7 @@ import {
   mauve,
   purple,
   red,
-  whiteA,
+  whiteA
 } from "@radix-ui/colors";
 import { generateGenericColors, GenericScale } from "./generate-generic-colors";
 
@@ -219,6 +219,9 @@ export const generateColorTokens = (
 
     "toast--background": genericColorTokens.isDarkTheme ? "$gray-30" : "$white",
     "dialog--background": genericColorTokens.isDarkTheme
+      ? "$gray-30"
+      : "$white",
+    "popover--background": genericColorTokens.isDarkTheme
       ? "$gray-30"
       : "$white",
   };

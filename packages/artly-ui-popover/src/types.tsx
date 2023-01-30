@@ -1,5 +1,18 @@
-import { ArtlyVariants, HTMLArtlyProps } from "@artly-ui/core";
-import { StyledPopover } from "./styles";
+import * as PopoverPrimitives from "@radix-ui/react-popover";
 
-export type PopoverProps = HTMLArtlyProps<typeof StyledPopover> &
-  ArtlyVariants<typeof StyledPopover>;
+export type PopoverContentProps = PopoverPrimitives.PopoverContentProps &
+  PopoverPrimitives.PopoverPortalProps &
+  PopoverPrimitives.PopoverArrowProps & {
+    hasArrow?: boolean;
+    hasCloseIcon?: boolean;
+    ariaLabelClose?: string;
+  };
+
+export type PopoverCloseProps = PopoverPrimitives.PopoverCloseProps;
+
+export type PopoverTriggerProps = PopoverPrimitives.PopoverTriggerProps;
+
+export type PopoverProps = PopoverPrimitives.PopoverProps;
+
+export type PopoverAnchorProps = PopoverPrimitives.PopoverAnchorProps;
+
