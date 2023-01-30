@@ -16,7 +16,7 @@ Checkbox
 Collapsible
 Context Menu
 Container ✅
-Dialog ⚒️
+Dialog ✅
 Dropdown Menu
 Flex ✅
 Heading ✅
