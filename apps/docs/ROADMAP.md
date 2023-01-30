@@ -34,7 +34,7 @@ Switch
 Table
 Tabs
 Text ✅
-Toast
+Toast ✅
 Toggle
 Toggle Group
 Toolbar
