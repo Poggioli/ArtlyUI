@@ -10,5 +10,6 @@ export const PinkAndBlueGreyTheme = {
     error: generateGenericColors(redDark, "error"),
     gray: generateGenericColors(grayDark, "gray"),
     coloredGray: generateGenericColors(mauveDark, "colored-gray"),
+    isDarkTheme: true
   }),
 };

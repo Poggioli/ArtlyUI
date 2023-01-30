@@ -35,7 +35,7 @@ export const generateColorTokens = (
       colors.coloredGray ?? generateGenericColors(mauve, "colored-gray"),
     white: colors.white ?? generateGenericColors(whiteA, "white"),
     black: colors.black ?? generateGenericColors(blackA, "black"),
-    isDarkTheme: false,
+    isDarkTheme: colors.isDarkTheme,
   };
 
   return {
@@ -47,6 +47,9 @@ export const generateColorTokens = (
     ...genericColorTokens.coloredGray,
     ...genericColorTokens.white,
     ...genericColorTokens.black,
+
+    "white": "#FFF",
+    "black": "#000",
 
     "background-app": "$gray-10",
     "background-subtle": "$gray-20",
@@ -197,5 +200,7 @@ export const generateColorTokens = (
     "tooltip--content--background": "$gray-300",
     "tooltip--content--text": "$gray-10",
     "tooltip--arrow-background": "$tooltip--content--background",
+
+    "toast--background": genericColorTokens.isDarkTheme ? "$gray-30" : "$white",
   };
 };
