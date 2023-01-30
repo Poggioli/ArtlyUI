@@ -6,7 +6,7 @@ import {
   mauve,
   purple,
   red,
-  whiteA
+  whiteA,
 } from "@radix-ui/colors";
 import { generateGenericColors, GenericScale } from "./generate-generic-colors";
 
@@ -48,8 +48,8 @@ export const generateColorTokens = (
     ...genericColorTokens.white,
     ...genericColorTokens.black,
 
-    "white": "#FFF",
-    "black": "#000",
+    white: "#FFF",
+    black: "#000",
 
     "background-app": "$gray-10",
     "background-subtle": "$gray-20",

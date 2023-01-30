@@ -21,8 +21,10 @@ const story: ComponentMeta<typeof Container> = {
 };
 
 const Template: ComponentStory<typeof Container> = ({ ...args }) => (
-  <Container {...args} css={{ backgroundColor: "$primary-30", padding:"$4" }}>
-     <Box css={{ backgroundColor: "$primary-90", height: "$13", width: "$13" }} />
+  <Container {...args} css={{ backgroundColor: "$primary-30", padding: "$4" }}>
+    <Box
+      css={{ backgroundColor: "$primary-90", height: "$13", width: "$13" }}
+    />
   </Container>
 );
 

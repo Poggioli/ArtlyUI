@@ -72,9 +72,15 @@ const Template: ComponentStory<typeof Flex> = ({ ...args }) => (
       padding: "$5",
     }}
   >
-    <Box css={{ backgroundColor: "$secondary-90", height: "$13", width: "$13" }} />
-    <Box css={{ backgroundColor: "$secondary-100", height: "$13", width: "$13" }} />
-    <Box css={{ backgroundColor: "$secondary-200", height: "$13", width: "$13" }} />
+    <Box
+      css={{ backgroundColor: "$secondary-90", height: "$13", width: "$13" }}
+    />
+    <Box
+      css={{ backgroundColor: "$secondary-100", height: "$13", width: "$13" }}
+    />
+    <Box
+      css={{ backgroundColor: "$secondary-200", height: "$13", width: "$13" }}
+    />
   </Flex>
 );
 

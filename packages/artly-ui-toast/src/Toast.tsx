@@ -6,7 +6,7 @@ import {
   StyledToastDescription,
   StyledToastRoot,
   StyledToastTitle,
-  StyledToastViewport
+  StyledToastViewport,
 } from "./styles";
 import { ToastDescriptionProps, ToastProps, ToastTitleProps } from "./types";
 

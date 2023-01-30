@@ -7,12 +7,12 @@ import {
   StyledTooltipPortal,
   StyledTooltipProvider,
   StyledTooltipRoot,
-  StyledTooltipTrigger
+  StyledTooltipTrigger,
 } from "./styles";
 import {
   TooltipContentProps,
   TooltipProps,
-  TooltipTriggerProps
+  TooltipTriggerProps,
 } from "./types";
 
 // ------------------------------------------- Tooltip Root ------------------------------------------- //

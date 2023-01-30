@@ -74,8 +74,8 @@ const story: ComponentMeta<typeof Tooltip> = {
         type: "object",
       },
       defaultValue: {
-        maxWidth: '350px'
-      }
+        maxWidth: "350px",
+      },
     },
   },
 };
@@ -88,7 +88,7 @@ const Template: ComponentStory<typeof Tooltip> = ({ ...args }) => (
       </Button>
     </TooltipTrigger>
     <TooltipContent
-      { ...args }
+      {...args}
       direction={args.direction}
       align={args.align}
       justify={args.justify}

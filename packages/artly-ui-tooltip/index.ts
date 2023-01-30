@@ -1,3 +1,2 @@
-export * from './src/Tooltip';
-export * from './src/types';
-
+export * from "./src/Tooltip";
+export * from "./src/types";
