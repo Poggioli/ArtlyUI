@@ -68,7 +68,7 @@ const StyledDialogTitle = styled(DialogPrimitives.Title, {
 
 const StyledActionContainer = styled(Flex, {
   marginBottom: "-$3",
-})
+});
 
 const StyledDialogDescription = DialogPrimitives.Description;
 
@@ -83,5 +83,5 @@ export {
   StyledDialogTitle,
   StyledDialogDescription,
   StyledDialogClose,
-  StyledActionContainer
+  StyledActionContainer,
 };

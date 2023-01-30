@@ -1,7 +1,12 @@
 import { Button } from "@artly-ui/button";
 import {
-  Dialog, DialogActionContainer, DialogClose, DialogContent,
-  DialogDescription, DialogTitle, DialogTrigger
+  Dialog,
+  DialogActionContainer,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
 } from "@artly-ui/dialog";
 import { Flex } from "@artly-ui/flex";
 import { ComponentMeta, ComponentStory } from "@storybook/react";

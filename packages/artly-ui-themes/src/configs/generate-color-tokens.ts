@@ -6,7 +6,7 @@ import {
   mauve,
   purple,
   red,
-  whiteA
+  whiteA,
 } from "@radix-ui/colors";
 import { generateGenericColors, GenericScale } from "./generate-generic-colors";
 
@@ -59,8 +59,12 @@ export const generateColorTokens = (
 
     "button--basic--text-disabled": "$gray-80",
     "button--basic--unstyled--background-normal": "transparent",
-    "button--basic--unstyled--background-hover": genericColorTokens.isDarkTheme ? "$white-20" : "$black-20",
-    "button--basic--unstyled--background-focus": genericColorTokens.isDarkTheme ? "$white-30" : "$black-30",
+    "button--basic--unstyled--background-hover": genericColorTokens.isDarkTheme
+      ? "$white-20"
+      : "$black-20",
+    "button--basic--unstyled--background-focus": genericColorTokens.isDarkTheme
+      ? "$white-30"
+      : "$black-30",
     "button--basic--unstyled--background-disabled": "transparent",
     "button--basic--unstyled--text-normal": "$text-high-contrast",
     "button--basic--primary--background-normal": "transparent",
@@ -85,9 +89,15 @@ export const generateColorTokens = (
     "button--basic--error--text-normal": "$error-90",
 
     "button--flat--text-disabled": "$gray-90",
-    "button--flat--unstyled--background-normal": genericColorTokens.isDarkTheme ? "$white-10" : "$black-10",
-    "button--flat--unstyled--background-hover": genericColorTokens.isDarkTheme ? "$white-20" : "$black-20",
-    "button--flat--unstyled--background-focus": genericColorTokens.isDarkTheme ? "$white-30" : "$black-30",
+    "button--flat--unstyled--background-normal": genericColorTokens.isDarkTheme
+      ? "$white-10"
+      : "$black-10",
+    "button--flat--unstyled--background-hover": genericColorTokens.isDarkTheme
+      ? "$white-20"
+      : "$black-20",
+    "button--flat--unstyled--background-focus": genericColorTokens.isDarkTheme
+      ? "$white-30"
+      : "$black-30",
     "button--flat--unstyled--background-disabled": "$gray-30",
     "button--flat--unstyled--text-normal": "$text-high-contrast",
     "button--flat--primary--background-normal": "$primary-90",
@@ -114,8 +124,10 @@ export const generateColorTokens = (
     "button--stroked--text-disabled": "$gray-80",
     "button--stroked--border-disabled": "$gray-80",
     "button--stroked--unstyled--background-normal": "transparent",
-    "button--stroked--unstyled--background-focus": genericColorTokens.isDarkTheme ? "$white-20" : "$black-20",
-    "button--stroked--unstyled--background-hover": genericColorTokens.isDarkTheme ? "$white-30" : "$black-30",
+    "button--stroked--unstyled--background-focus":
+      genericColorTokens.isDarkTheme ? "$white-20" : "$black-20",
+    "button--stroked--unstyled--background-hover":
+      genericColorTokens.isDarkTheme ? "$white-30" : "$black-30",
     "button--stroked--unstyled--background-disabled": "transparent",
     "button--stroked--unstyled--text-normal": "$text-high-contrast",
     "button--stroked--unstyled--border-normal": "$gray-70",
@@ -151,8 +163,12 @@ export const generateColorTokens = (
 
     "button--icon--text-disabled": "$gray-80",
     "button--icon--unstyled--background-normal": "transparent",
-    "button--icon--unstyled--background-hover": genericColorTokens.isDarkTheme ? "$white-20" : "$black-20",
-    "button--icon--unstyled--background-focus": genericColorTokens.isDarkTheme ? "$white-30" : "$black-30",
+    "button--icon--unstyled--background-hover": genericColorTokens.isDarkTheme
+      ? "$white-20"
+      : "$black-20",
+    "button--icon--unstyled--background-focus": genericColorTokens.isDarkTheme
+      ? "$white-30"
+      : "$black-30",
     "button--icon--unstyled--background-disabled": "transparent",
     "button--icon--unstyled--text-normal": "$text-high-contrast",
     "button--icon--primary--background-normal": "transparent",
@@ -202,6 +218,8 @@ export const generateColorTokens = (
     "tooltip--arrow-background": "$tooltip--content--background",
 
     "toast--background": genericColorTokens.isDarkTheme ? "$gray-30" : "$white",
-    "dialog--background": genericColorTokens.isDarkTheme ? "$gray-30" : "$white",
+    "dialog--background": genericColorTokens.isDarkTheme
+      ? "$gray-30"
+      : "$white",
   };
 };
