@@ -22,6 +22,7 @@
     "@artly-ui/scroll-area": "*",
     "@artly-ui/separator": "*",
     "@artly-ui/text": "*",
+    "@artly-ui/toast": "*",
     "@artly-ui/tokens": "*",
     "@artly-ui/tooltip": "*",
     "@radix-ui/react-icons": "^1.1.1",
