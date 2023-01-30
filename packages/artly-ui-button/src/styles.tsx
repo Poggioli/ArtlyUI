@@ -22,6 +22,7 @@ const StyledButton: any = styled("button", {
     "background-color 200ms cubic-bezier(.5, 1, 1, 1), color 200ms cubic-bezier(.5, 1, 1, 1)",
   userSelect: "none",
   verticalAlign: "middle",
+  whiteSpace: 'nowwrap',
   ...body1,
   letterSpacing: "$6",
 
