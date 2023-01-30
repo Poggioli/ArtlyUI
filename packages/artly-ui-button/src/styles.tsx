@@ -492,7 +492,7 @@ const StyledButton: any = styled("button", {
       size: "large",
       shape: "icon",
       css: {
-        padding: "$4",
+        padding: "calc($4 - $2)",
         height: "calc($3 + $9)",
         width: "calc($3 + $9)",
       },
