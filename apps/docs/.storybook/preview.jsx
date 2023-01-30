@@ -46,7 +46,6 @@ export const decorators = [
       justify="center"
       css={{
         padding: '$6',
-        width: '100%',
         height: '100vh',
         backgroundColor: '$background-app'
       }}
