@@ -6,7 +6,7 @@ import {
   mauve,
   purple,
   red,
-  whiteA
+  whiteA,
 } from "@radix-ui/colors";
 import { generateGenericColors, GenericScale } from "./generate-generic-colors";
 

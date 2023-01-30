@@ -15,4 +15,3 @@ export type PopoverTriggerProps = PopoverPrimitives.PopoverTriggerProps;
 export type PopoverProps = PopoverPrimitives.PopoverProps;
 
 export type PopoverAnchorProps = PopoverPrimitives.PopoverAnchorProps;
-
