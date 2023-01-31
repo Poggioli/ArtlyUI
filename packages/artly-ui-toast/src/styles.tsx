@@ -93,8 +93,8 @@ const StyledToastRoot = styled(ToastPrimitives.Root, {
   variants: {
     custom: {
       true: {
-        alignItems: "inherit",
-        backgroundColor: "inherit",
+        alignItems: "initial",
+        backgroundColor: "initial",
         borderRadius: "$2",
         boxShadow: "none",
         padding: 0,

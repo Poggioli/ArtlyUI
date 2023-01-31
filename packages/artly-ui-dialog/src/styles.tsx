@@ -39,6 +39,7 @@ const StyledDialogOverlay = styled(DialogPrimitives.Overlay, {
 });
 
 const StyledDialogContent = styled(DialogPrimitives.Content, {
+  animation: `${contentShow} 200ms cubic-bezier(0.16, 1, 0.3, 1)`,
   backgroundColor: "$dialog--background",
   boxSizing: "border-box",
   borderRadius: "$2",
@@ -49,7 +50,6 @@ const StyledDialogContent = styled(DialogPrimitives.Content, {
   padding: "$6",
   position: "relative",
   width: "85vw",
-  animation: `${contentShow} 200ms cubic-bezier(0.16, 1, 0.3, 1)`,
 
   "@small": {
     minWidth: "calc($13 * 3)",

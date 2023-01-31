@@ -9,7 +9,7 @@ import {
   DialogTrigger,
 } from "./Dialog";
 
-describe("Core component / Dialog", () => {
+describe("Data display component / Dialog", () => {
   describe("Dialog Close", () => {
     describe("Error Aria Label", () => {
       it(`GIVEN a Dialog component

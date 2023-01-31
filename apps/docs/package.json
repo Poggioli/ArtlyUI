@@ -20,6 +20,7 @@
     "@artly-ui/heading": "*",
     "@artly-ui/image": "*",
     "@artly-ui/progress-bar": "*",
+    "@artly-ui/popover": "*",
     "@artly-ui/scroll-area": "*",
     "@artly-ui/separator": "*",
     "@artly-ui/text": "*",
