@@ -4,19 +4,23 @@ import {
   DialogActionContainer,
   DialogClose,
   DialogContent,
+  DialogContentProps,
   DialogDescription,
   DialogTitle,
-  DialogTrigger,
+  DialogTrigger
 } from "@artly-ui/dialog";
 import { Flex } from "@artly-ui/flex";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { FC, PropsWithChildren } from "react";
 
-const TextDialog: FC<PropsWithChildren> = ({ children }) => {
+const TextDialog: FC<PropsWithChildren<DialogContentProps>> = ({
+  hasCloseIcon,
+  children,
+}) => {
   return (
     <Dialog>
       <DialogTrigger>{children}</DialogTrigger>
-      <DialogContent>
+      <DialogContent hasCloseIcon={hasCloseIcon}>
         <DialogTitle>Tall Dialog</DialogTitle>
         <DialogDescription>
           {Array(10)
@@ -34,11 +38,14 @@ const TextDialog: FC<PropsWithChildren> = ({ children }) => {
   );
 };
 
-const SimpleDialog: FC<PropsWithChildren> = ({ children }) => {
+const SimpleDialog: FC<PropsWithChildren<DialogContentProps>> = ({
+  hasCloseIcon,
+  children,
+}) => {
   return (
     <Dialog>
       <DialogTrigger>{children}</DialogTrigger>
-      <DialogContent>
+      <DialogContent hasCloseIcon={hasCloseIcon}>
         <DialogTitle>Simple Dialog</DialogTitle>
         <DialogDescription>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec
@@ -59,20 +66,25 @@ const SimpleDialog: FC<PropsWithChildren> = ({ children }) => {
   );
 };
 
-const story: ComponentMeta<typeof Dialog> = {
+const story: ComponentMeta<typeof DialogContent> = {
   title: "Data display components/Dialog",
   component: Dialog,
-  argTypes: {},
+  argTypes: {
+    hasCloseIcon: {
+      type: "boolean",
+      defaultValue: true,
+    },
+  },
 };
 
-const Template: ComponentStory<any> = () => (
+const Template: ComponentStory<any> = ({ hasCloseIcon }) => (
   <Flex justify="space-evenly" css={{ flex: 1 }}>
-    <SimpleDialog>
+    <SimpleDialog hasCloseIcon={hasCloseIcon}>
       <Button shape="stroked" color="primary">
         Simple
       </Button>
     </SimpleDialog>
-    <TextDialog>
+    <TextDialog hasCloseIcon={hasCloseIcon}>
       <Button shape="stroked" color="primary">
         Tall Dialog
       </Button>
