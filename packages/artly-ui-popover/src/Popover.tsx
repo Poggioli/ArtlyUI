@@ -8,13 +8,13 @@ import {
   StyledPopoverClose,
   StyledPopoverContent,
   StyledPopoverPortal,
-  StyledPopoverTrigger,
+  StyledPopoverTrigger
 } from "./styles";
 import {
   PopoverAnchorProps,
   PopoverCloseProps,
   PopoverContentProps,
-  PopoverTriggerProps,
+  PopoverTriggerProps
 } from "./types";
 
 // ------------------------------------------- Popover Close ------------------------------------------- //
@@ -35,7 +35,6 @@ const PopoverClose = forwardRef<typeof StyledPopoverClose, PopoverCloseProps>(
             position: "absolute",
             top: 0,
             right: 0,
-            transform: "translate(-25%, 25%)",
           }}
         >
           <Button shape="icon" size="small">
@@ -83,8 +82,8 @@ const PopoverContent = forwardRef<
           collisionPadding={collisionPadding}
           sideOffset={sideOffset}
         >
-          {children}
           {hasCloseIcon ? <PopoverClose aria-label={ariaLabelClose} /> : null}
+          {children}
           {hasArrow ? (
             <StyledPopoverArrow
               width={width}
