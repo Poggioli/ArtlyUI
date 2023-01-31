@@ -1,9 +1,7 @@
 import { Button } from "@artly-ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@artly-ui/popover";
 import { Text } from "@artly-ui/text";
-import {
-  Share1Icon
-} from "@radix-ui/react-icons";
+import { Share1Icon } from "@radix-ui/react-icons";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 const story: ComponentMeta<typeof PopoverContent> = {
@@ -28,10 +26,13 @@ const Template: ComponentStory<typeof Popover> = ({ ...args }) => (
       </Button>
     </PopoverTrigger>
     <PopoverContent {...args}>
-      <Text variant="body2" css={{
-        maxWidth: 'calc($13 * 2)',
-        display: 'inline-block'
-      }}>
+      <Text
+        variant="body2"
+        css={{
+          maxWidth: "calc($13 * 2)",
+          display: "inline-block",
+        }}
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet
         fermentum augue. Proin tincidunt sem vel orci pellentesque ultricies.
         Praesent sagittis nisl vitae dictum pretium. Etiam malesuada leo ut.

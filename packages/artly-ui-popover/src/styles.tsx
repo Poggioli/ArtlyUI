@@ -45,7 +45,7 @@ const slideLeftAndFade = keyframes({
   },
 });
 
-const StyledPopoverContent = styled(PopoverPrimitives.Content, {  
+const StyledPopoverContent = styled(PopoverPrimitives.Content, {
   animationDuration: "400ms",
   animationTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
   backgroundColor: "$popover--background",
