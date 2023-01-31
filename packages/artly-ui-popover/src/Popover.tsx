@@ -8,13 +8,13 @@ import {
   StyledPopoverClose,
   StyledPopoverContent,
   StyledPopoverPortal,
-  StyledPopoverTrigger,
+  StyledPopoverTrigger
 } from "./styles";
 import {
   PopoverAnchorProps,
   PopoverCloseProps,
   PopoverContentProps,
-  PopoverTriggerProps,
+  PopoverTriggerProps
 } from "./types";
 
 // ------------------------------------------- Popover Close ------------------------------------------- //
@@ -139,7 +139,7 @@ const PopoverTrigger = forwardRef<
   );
 });
 
-// ------------------------------------------- Popover Trigger ------------------------------------------- //
+// ------------------------------------------- Popover Root ------------------------------------------- //
 
 const Popover = StyledPopover;
 
