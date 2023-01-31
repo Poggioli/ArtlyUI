@@ -6,7 +6,7 @@ import {
   DialogContent,
   DialogDescription,
   DialogTitle,
-  DialogTrigger
+  DialogTrigger,
 } from "./Dialog";
 
 describe("Data display component / Dialog", () => {

@@ -5,7 +5,7 @@ import {
   PopoverAnchor,
   PopoverClose,
   PopoverContent,
-  PopoverTrigger
+  PopoverTrigger,
 } from "./Popover";
 
 describe("Data display component / Popover", () => {
