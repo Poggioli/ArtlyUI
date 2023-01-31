@@ -45,15 +45,18 @@ const slideLeftAndFade = keyframes({
   },
 });
 
-const StyledPopoverContent = styled(PopoverPrimitives.Content, {
+const StyledPopoverContent = styled(PopoverPrimitives.Content, {  
   animationDuration: "400ms",
   animationTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
   backgroundColor: "$popover--background",
-  borderRadius: "$1",
+  borderRadius: "$2",
+  boxSizing: "border-box",
   $$boxShadow: "$colors-black-70 0 $sizes-2 $sizes-3 0",
   boxShadow: "$$boxShadow",
-  maxWidth: "calc($13 * 3)",
-  padding: "$4",
+  maxWidth: "calc($13 * 4)",
+  minWidth: "$13",
+  padding: "$6 $6 $4 $4",
+  position: "relative",
   userSelect: "none",
   willChange: "transform, opacity",
 
