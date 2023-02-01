@@ -4,8 +4,8 @@ import { Heading } from "@artly-ui/heading";
 import { Text } from "@artly-ui/text";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import {
-  StyledActionContainer,
   StyledDialog,
+  StyledDialogActionContainer,
   StyledDialogClose,
   StyledDialogContent,
   StyledDialogDescription,
@@ -15,6 +15,7 @@ import {
   StyledDialogTrigger,
 } from "./styles";
 import {
+  DialogActionContainerProps,
   DialogCloseProps,
   DialogContentProps,
   DialogDescriptionProps,
@@ -158,7 +159,21 @@ const Dialog = StyledDialog;
 
 // ------------------------------------------- Dialog Action Container ------------------------------------------- //
 
-const DialogActionContainer = StyledActionContainer;
+const DialogActionContainer = forwardRef<
+  typeof StyledDialogActionContainer,
+  DialogActionContainerProps
+>(({ children, justify = "flex-end", gap = "$4", ...props }, forwardedRef) => {
+  return (
+    <StyledDialogActionContainer
+      {...props}
+      justify={justify}
+      gap={gap}
+      ref={forwardedRef}
+    >
+      {children}
+    </StyledDialogActionContainer>
+  );
+});
 
 export {
   DialogClose,

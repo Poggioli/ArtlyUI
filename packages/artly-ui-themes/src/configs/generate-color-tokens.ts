@@ -224,5 +224,8 @@ export const generateColorTokens = (
     "popover--background": genericColorTokens.isDarkTheme
       ? "$gray-30"
       : "$white",
+    "alert-dialog--background": genericColorTokens.isDarkTheme
+      ? "$gray-30"
+      : "$white",
   };
 };

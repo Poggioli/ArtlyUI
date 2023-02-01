@@ -66,8 +66,8 @@ const StyledDialogTitle = styled(DialogPrimitives.Title, {
   maxWidth: "95%",
 });
 
-const StyledActionContainer = styled(Flex, {
-  marginBottom: "-$3",
+const StyledDialogActionContainer = styled(Flex, {
+  margin: "$4 -$3 -$3 0",
 });
 
 const StyledDialogDescription = DialogPrimitives.Description;
@@ -83,5 +83,5 @@ export {
   StyledDialogTitle,
   StyledDialogDescription,
   StyledDialogClose,
-  StyledActionContainer,
+  StyledDialogActionContainer,
 };

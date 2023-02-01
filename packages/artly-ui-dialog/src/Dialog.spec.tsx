@@ -2,6 +2,7 @@ import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import {
   Dialog,
+  DialogActionContainer,
   DialogClose,
   DialogContent,
   DialogDescription,
@@ -24,9 +25,11 @@ describe("Data display component / Dialog", () => {
             <DialogContent>
               <DialogTitle>Any Title</DialogTitle>
               <DialogDescription>Any Description</DialogDescription>
-              <DialogClose>
-                <button>OK</button>
-              </DialogClose>
+              <DialogActionContainer>
+                <DialogClose>
+                  <button>OK</button>
+                </DialogClose>
+              </DialogActionContainer>
             </DialogContent>
           </Dialog>
         );
@@ -49,7 +52,9 @@ describe("Data display component / Dialog", () => {
             <DialogContent>
               <DialogTitle>Any Title</DialogTitle>
               <DialogDescription>Any Description</DialogDescription>
-              <DialogClose aria-label="Close" />
+              <DialogActionContainer>
+                <DialogClose aria-label="Close" />
+              </DialogActionContainer>
             </DialogContent>
           </Dialog>
         );
@@ -73,9 +78,11 @@ describe("Data display component / Dialog", () => {
             <DialogContent>
               <DialogTitle>Any Title</DialogTitle>
               <DialogDescription>Any Description</DialogDescription>
-              <DialogClose asChild>
-                <span>Close</span>
-              </DialogClose>
+              <DialogActionContainer>
+                <DialogClose asChild>
+                  <span>Close</span>
+                </DialogClose>
+              </DialogActionContainer>
             </DialogContent>
           </Dialog>
         );
@@ -103,7 +110,9 @@ describe("Data display component / Dialog", () => {
           <DialogContent>
             <DialogTitle>Any Title</DialogTitle>
             <DialogDescription>Any Description</DialogDescription>
-            <DialogClose aria-label="close" />
+            <DialogActionContainer>
+              <DialogClose aria-label="close" />
+            </DialogActionContainer>
           </DialogContent>
         </Dialog>
       );
@@ -126,9 +135,11 @@ describe("Data display component / Dialog", () => {
           <DialogContent>
             <DialogTitle>Any Title</DialogTitle>
             <DialogDescription>Any Description</DialogDescription>
-            <DialogClose asChild={false}>
-              <button>Close</button>
-            </DialogClose>
+            <DialogActionContainer>
+              <DialogClose asChild={false}>
+                <button>Close</button>
+              </DialogClose>
+            </DialogActionContainer>
           </DialogContent>
         </Dialog>
       );
@@ -153,9 +164,11 @@ describe("Data display component / Dialog", () => {
           <DialogContent>
             <DialogTitle>Any Title</DialogTitle>
             <DialogDescription>Any Description</DialogDescription>
-            <DialogClose asChild>
-              <button>Close</button>
-            </DialogClose>
+            <DialogActionContainer>
+              <DialogClose asChild>
+                <button>Close</button>
+              </DialogClose>
+            </DialogActionContainer>
           </DialogContent>
         </Dialog>
       );

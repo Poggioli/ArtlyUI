@@ -56,7 +56,7 @@ const SimpleDialog: FC<PropsWithChildren<DialogContentProps>> = ({
           facilisis vulputate. Fusce consequat turpis ante, non tincidunt lacus
           feugiat ornare.
         </DialogDescription>
-        <DialogActionContainer justify="flex-end">
+        <DialogActionContainer>
           <DialogClose asChild>
             <Button color="accent">OK</Button>
           </DialogClose>
