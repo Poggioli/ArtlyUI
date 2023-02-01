@@ -3,6 +3,7 @@ import { Heading } from "@artly-ui/heading";
 import { Text } from "@artly-ui/text";
 import {
   StyledAlertDialogAction,
+  StyledAlertDialogActionContainer,
   StyledAlertDialogCancel,
   StyledAlertDialogContent,
   StyledAlertDialogDescription,
@@ -13,6 +14,7 @@ import {
   StyledAlertDialogTrigger,
 } from "./styles";
 import {
+  AlertDialogActionContainerProps,
   AlertDialogActionProps,
   AlertDialogCancelProps,
   AlertDialogContentProps,
@@ -151,9 +153,27 @@ const AlertDialogContent = forwardRef<
   );
 });
 
-// ------------------------------------------- Dialog Root ------------------------------------------- //
+// ------------------------------------------- Alert Dialog Root ------------------------------------------- //
 
 const AlertDialog = StyledAlertDialogRoot;
+
+// ------------------------------------------- Alert Dialog Action Container ------------------------------------------- //
+
+const AlertDialogActionContainer = forwardRef<
+  typeof StyledAlertDialogActionContainer,
+  AlertDialogActionContainerProps
+>(({ children, justify = "flex-end", gap = "$4", ...props }, forwardedRef) => {
+  return (
+    <StyledAlertDialogActionContainer
+      {...props}
+      justify={justify}
+      gap={gap}
+      ref={forwardedRef}
+    >
+      {children}
+    </StyledAlertDialogActionContainer>
+  );
+});
 
 export {
   AlertDialogTitle,
@@ -163,4 +183,5 @@ export {
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialog,
+  AlertDialogActionContainer,
 };

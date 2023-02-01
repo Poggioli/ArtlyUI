@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import {
   AlertDialog,
   AlertDialogAction,
+  AlertDialogActionContainer,
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
@@ -23,8 +24,10 @@ describe("Data display component / AlertDialog", () => {
           <AlertDialogContent>
             <AlertDialogTitle>Any Title</AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Action</AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction>Action</AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -51,8 +54,10 @@ describe("Data display component / AlertDialog", () => {
               <h1>Any Title</h1>
             </AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Action</AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction>Action</AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -79,8 +84,10 @@ describe("Data display component / AlertDialog", () => {
               <h1>Any Title</h1>
             </AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Action</AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction>Action</AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -107,8 +114,10 @@ describe("Data display component / AlertDialog", () => {
           <AlertDialogContent>
             <AlertDialogTitle>Any Title</AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Action</AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction>Action</AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -135,8 +144,10 @@ describe("Data display component / AlertDialog", () => {
             <AlertDialogDescription asChild={false}>
               <span>Any Description</span>
             </AlertDialogDescription>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Action</AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction>Action</AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -163,8 +174,10 @@ describe("Data display component / AlertDialog", () => {
             <AlertDialogDescription asChild>
               <span>Any Description</span>
             </AlertDialogDescription>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Action</AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction>Action</AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -191,8 +204,10 @@ describe("Data display component / AlertDialog", () => {
           <AlertDialogContent>
             <AlertDialogTitle>Any Title</AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Action</AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction>Action</AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -214,8 +229,10 @@ describe("Data display component / AlertDialog", () => {
           <AlertDialogContent>
             <AlertDialogTitle>Any Title</AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Action</AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction>Action</AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -237,8 +254,10 @@ describe("Data display component / AlertDialog", () => {
           <AlertDialogContent>
             <AlertDialogTitle>Any Title</AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Action</AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction>Action</AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -262,10 +281,12 @@ describe("Data display component / AlertDialog", () => {
           <AlertDialogContent>
             <AlertDialogTitle>Any Title</AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>
-              <button>Action</button>
-            </AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction>
+                <button>Action</button>
+              </AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -292,10 +313,12 @@ describe("Data display component / AlertDialog", () => {
           <AlertDialogContent>
             <AlertDialogTitle>Any Title</AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction asChild={false}>
-              <button>Action</button>
-            </AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction asChild={false}>
+                <button>Action</button>
+              </AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -320,10 +343,12 @@ describe("Data display component / AlertDialog", () => {
           <AlertDialogContent>
             <AlertDialogTitle>Any Title</AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction asChild>
-              <button>Action</button>
-            </AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction asChild>
+                <button>Action</button>
+              </AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -350,10 +375,12 @@ describe("Data display component / AlertDialog", () => {
           <AlertDialogContent>
             <AlertDialogTitle>Any Title</AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel>
-              <button>Cancel</button>
-            </AlertDialogCancel>
-            <AlertDialogAction>Action</AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel>
+                <button>Cancel</button>
+              </AlertDialogCancel>
+              <AlertDialogAction>Action</AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -380,10 +407,12 @@ describe("Data display component / AlertDialog", () => {
           <AlertDialogContent>
             <AlertDialogTitle>Any Title</AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel asChild={false}>
-              <button>Cancel</button>
-            </AlertDialogCancel>
-            <AlertDialogAction>Action</AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel asChild={false}>
+                <button>Cancel</button>
+              </AlertDialogCancel>
+              <AlertDialogAction>Action</AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );
@@ -408,10 +437,12 @@ describe("Data display component / AlertDialog", () => {
           <AlertDialogContent>
             <AlertDialogTitle>Any Title</AlertDialogTitle>
             <AlertDialogDescription>Any Description</AlertDialogDescription>
-            <AlertDialogCancel asChild>
-              <button>Cancel</button>
-            </AlertDialogCancel>
-            <AlertDialogAction asChild>Action</AlertDialogAction>
+            <AlertDialogActionContainer>
+              <AlertDialogCancel asChild>
+                <button>Cancel</button>
+              </AlertDialogCancel>
+              <AlertDialogAction asChild>Action</AlertDialogAction>
+            </AlertDialogActionContainer>
           </AlertDialogContent>
         </AlertDialog>
       );

@@ -83,5 +83,5 @@ export {
   StyledAlertDialogTitle,
   StyledAlertDialogOverlay,
   StyledAlertDialogContent,
-  StyledAlertDialogActionContainer
+  StyledAlertDialogActionContainer,
 };
