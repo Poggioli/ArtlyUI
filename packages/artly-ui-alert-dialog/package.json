@@ -13,6 +13,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "@artly-ui/button": "*",
+    "@artly-ui/heading": "*",
+    "@artly-ui/text": "*",
     "@radix-ui/react-alert-dialog": "^1.0.2"
   },
   "devDependencies": {

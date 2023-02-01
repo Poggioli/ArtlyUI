@@ -1,11 +1,166 @@
 import { forwardRef } from "@artly-ui/core";
-import { StyledAlertDialog } from "./styles";
-import { AlertDialogProps } from "./types";
+import { Heading } from "@artly-ui/heading";
+import { Text } from "@artly-ui/text";
+import {
+  StyledAlertDialogAction,
+  StyledAlertDialogCancel,
+  StyledAlertDialogContent,
+  StyledAlertDialogDescription,
+  StyledAlertDialogOverlay,
+  StyledAlertDialogPortal,
+  StyledAlertDialogRoot,
+  StyledAlertDialogTitle,
+  StyledAlertDialogTrigger,
+} from "./styles";
+import {
+  AlertDialogActionProps,
+  AlertDialogCancelProps,
+  AlertDialogContentProps,
+  AlertDialogDescriptionProps,
+  AlertDialogTitleProps,
+  AlertDialogTriggerProps,
+} from "./types";
 
-const AlertDialog = forwardRef<typeof StyledAlertDialog, AlertDialogProps>(
-  ({ ...props }, forwardedRef) => {
-    return <StyledAlertDialog {...props} ref={forwardedRef} />;
+// ------------------------------------------- Alert Dialog Title ------------------------------------------- //
+
+const AlertDialogTitle = forwardRef<
+  typeof StyledAlertDialogTitle,
+  AlertDialogTitleProps
+>(({ asChild, children, ...props }, forwardedRef) => {
+  if (asChild === undefined) {
+    return (
+      <StyledAlertDialogTitle {...props} ref={forwardedRef} asChild>
+        <Heading level={5} color="$text-high-contrast" as="h2">
+          {children}
+        </Heading>
+      </StyledAlertDialogTitle>
+    );
   }
-);
 
-export { AlertDialog };
+  return (
+    <StyledAlertDialogTitle {...props} ref={forwardedRef} asChild={asChild}>
+      {children}
+    </StyledAlertDialogTitle>
+  );
+});
+
+// ------------------------------------------- Alert Dialog Description ------------------------------------------- //
+
+const AlertDialogDescription = forwardRef<
+  typeof StyledAlertDialogDescription,
+  AlertDialogDescriptionProps
+>(({ asChild, children, ...props }, forwardedRef) => {
+  if (asChild === undefined) {
+    return (
+      <StyledAlertDialogTitle {...props} ref={forwardedRef} asChild>
+        <Text variant="body1" color="$text-low-contrast" as="p">
+          {children}
+        </Text>
+      </StyledAlertDialogTitle>
+    );
+  }
+
+  return (
+    <StyledAlertDialogTitle {...props} ref={forwardedRef} asChild={asChild}>
+      {children}
+    </StyledAlertDialogTitle>
+  );
+});
+
+// ------------------------------------------- Alert Dialog Trigger ------------------------------------------- //
+
+const AlertDialogTrigger = forwardRef<
+  typeof StyledAlertDialogTrigger,
+  AlertDialogTriggerProps
+>(({ asChild, children, ...props }, forwardedRef) => {
+  if (asChild === undefined) {
+    return (
+      <StyledAlertDialogTrigger {...props} ref={forwardedRef} asChild>
+        {children}
+      </StyledAlertDialogTrigger>
+    );
+  }
+
+  return (
+    <StyledAlertDialogTrigger {...props} ref={forwardedRef} asChild={asChild}>
+      {children}
+    </StyledAlertDialogTrigger>
+  );
+});
+
+// ------------------------------------------- Alert Dialog Action ------------------------------------------- //
+
+const AlertDialogAction = forwardRef<
+  typeof StyledAlertDialogAction,
+  AlertDialogActionProps
+>(({ asChild, children, ...props }, forwardedRef) => {
+  if (asChild === undefined) {
+    return (
+      <StyledAlertDialogAction {...props} ref={forwardedRef} asChild>
+        {children}
+      </StyledAlertDialogAction>
+    );
+  }
+
+  return (
+    <StyledAlertDialogAction {...props} ref={forwardedRef} asChild={asChild}>
+      {children}
+    </StyledAlertDialogAction>
+  );
+});
+
+// ------------------------------------------- Alert Dialog Cancel ------------------------------------------- //
+
+const AlertDialogCancel = forwardRef<
+  typeof StyledAlertDialogCancel,
+  AlertDialogCancelProps
+>(({ asChild, children, ...props }, forwardedRef) => {
+  if (asChild === undefined) {
+    return (
+      <StyledAlertDialogCancel {...props} ref={forwardedRef} asChild>
+        {children}
+      </StyledAlertDialogCancel>
+    );
+  }
+
+  return (
+    <StyledAlertDialogCancel {...props} ref={forwardedRef} asChild={asChild}>
+      {children}
+    </StyledAlertDialogCancel>
+  );
+});
+
+// ------------------------------------------- Alert Dialog Content ------------------------------------------- //
+
+const AlertDialogContent = forwardRef<
+  typeof StyledAlertDialogContent,
+  AlertDialogContentProps
+>(({ children, forceMount, container, ...props }, forwardedRef) => {
+  return (
+    <StyledAlertDialogPortal forceMount={forceMount} container={container}>
+      <StyledAlertDialogOverlay forceMount={forceMount}>
+        <StyledAlertDialogContent
+          {...props}
+          ref={forwardedRef}
+          forceMount={forceMount}
+        >
+          {children}
+        </StyledAlertDialogContent>
+      </StyledAlertDialogOverlay>
+    </StyledAlertDialogPortal>
+  );
+});
+
+// ------------------------------------------- Dialog Root ------------------------------------------- //
+
+const AlertDialog = StyledAlertDialogRoot;
+
+export {
+  AlertDialogTitle,
+  AlertDialogDescription,
+  AlertDialogTrigger,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialog,
+};
