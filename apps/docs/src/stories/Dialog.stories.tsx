@@ -7,7 +7,7 @@ import {
   DialogContentProps,
   DialogDescription,
   DialogTitle,
-  DialogTrigger
+  DialogTrigger,
 } from "@artly-ui/dialog";
 import { Flex } from "@artly-ui/flex";
 import { ComponentMeta, ComponentStory } from "@storybook/react";

@@ -12,7 +12,7 @@ import {
   StyledDialogOverlay,
   StyledDialogPortal,
   StyledDialogTitle,
-  StyledDialogTrigger
+  StyledDialogTrigger,
 } from "./styles";
 import {
   DialogActionContainerProps,
@@ -20,7 +20,7 @@ import {
   DialogContentProps,
   DialogDescriptionProps,
   DialogTitleProps,
-  DialogTriggerProps
+  DialogTriggerProps,
 } from "./types";
 
 // ------------------------------------------- Dialog Close ------------------------------------------- //
