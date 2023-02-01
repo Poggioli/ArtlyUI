@@ -1,3 +1,4 @@
+import { FlexProps } from "@artly-ui/flex";
 import * as AlertDialogPrimitives from "@radix-ui/react-alert-dialog";
 
 export type AlertDialogProps = AlertDialogPrimitives.AlertDialogProps;
@@ -17,3 +18,5 @@ export type AlertDialogContentProps =
   AlertDialogPrimitives.AlertDialogPortalProps &
     AlertDialogPrimitives.AlertDialogContentProps &
     AlertDialogPrimitives.AlertDialogOverlayProps;
+
+export type AlertDialogActionContainerProps = FlexProps;

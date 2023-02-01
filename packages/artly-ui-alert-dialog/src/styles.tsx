@@ -1,4 +1,5 @@
 import { keyframes, styled } from "@artly-ui/core";
+import { Flex } from "@artly-ui/flex";
 import * as AlertDialogPrimitives from "@radix-ui/react-alert-dialog";
 
 const overlayShow = keyframes({
@@ -68,6 +69,10 @@ const StyledAlertDialogContent = styled(AlertDialogPrimitives.Content, {
   },
 });
 
+const StyledAlertDialogActionContainer = styled(Flex, {
+  margin: "$4 -$3 -$3 0",
+});
+
 export {
   StyledAlertDialogRoot,
   StyledAlertDialogTrigger,
@@ -78,4 +83,5 @@ export {
   StyledAlertDialogTitle,
   StyledAlertDialogOverlay,
   StyledAlertDialogContent,
+  StyledAlertDialogActionContainer
 };
