@@ -46,7 +46,7 @@ const StyledAlertDialogOverlay = styled(AlertDialogPrimitives.Overlay, {
 });
 
 const StyledAlertDialogContent = styled(AlertDialogPrimitives.Content, {
-  backgroundColor: '$alert-dialog--background',
+  backgroundColor: "$alert-dialog--background",
   borderRadius: "$2",
   boxSizing: "border-box",
   $$boxShadow: "$colors-black-70 0 $sizes-2 $sizes-3 0",
