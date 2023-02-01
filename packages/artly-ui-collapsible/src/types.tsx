@@ -1,5 +1,7 @@
-import { ArtlyVariants, HTMLArtlyProps } from "@artly-ui/core";
-import { StyledCollapsible } from "./styles";
+import * as CollapsiblePrimitives from "@radix-ui/react-collapsible";
 
-export type CollapsibleProps = HTMLArtlyProps<typeof StyledCollapsible> &
-  ArtlyVariants<typeof StyledCollapsible>;
+export type CollapsibleProps = CollapsiblePrimitives.CollapsibleProps;
+
+export type CollapsibleTriggerProps = CollapsiblePrimitives.CollapsibleTriggerProps;
+
+export type CollapsibleContentProps = CollapsiblePrimitives.CollapsibleContentProps;
