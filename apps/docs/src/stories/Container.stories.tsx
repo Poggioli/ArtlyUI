@@ -1,5 +1,5 @@
 import { Box } from "@artly-ui/box";
-import { Container } from "@artly-ui/Container";
+import { Container } from "@artly-ui/container";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 const story: ComponentMeta<typeof Container> = {

@@ -1,4 +1,4 @@
-import { Container } from "@artly-ui/Container";
+import { Container } from "@artly-ui/container";
 import { Image } from "@artly-ui/image";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
