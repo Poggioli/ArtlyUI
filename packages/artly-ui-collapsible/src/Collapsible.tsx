@@ -4,7 +4,11 @@ import {
   StyledCollapsibleRoot,
   StyledCollapsibleTrigger
 } from "./styles";
-import { CollapsibleTriggerProps } from "./types";
+import {
+  CollapsibleContentProps,
+  CollapsibleProps,
+  CollapsibleTriggerProps
+} from "./types";
 
 // ------------------------------------------- Collapsible Trigger ------------------------------------------- //
 
@@ -29,10 +33,27 @@ const CollapsibleTrigger = forwardRef<
 
 // ------------------------------------------- Collapsible Root ------------------------------------------- //
 
-const Collapsible = StyledCollapsibleRoot;
+const Collapsible = forwardRef<typeof StyledCollapsibleRoot, CollapsibleProps>(
+  ({ children, ...props }, forwardedRef) => {
+    return (
+      <StyledCollapsibleRoot {...props} ref={forwardedRef}>
+        {children}
+      </StyledCollapsibleRoot>
+    );
+  }
+);
 
 // ------------------------------------------- Collapsible Content ------------------------------------------- //
 
-const CollapsibleContent = StyledCollapsibleContent;
+const CollapsibleContent = forwardRef<
+  typeof StyledCollapsibleContent,
+  CollapsibleContentProps
+>(({ children, ...props }, forwardedRef) => {
+  return (
+    <StyledCollapsibleContent {...props} ref={forwardedRef}>
+      {children}
+    </StyledCollapsibleContent>
+  );
+});
 
 export { CollapsibleTrigger, Collapsible, CollapsibleContent };
