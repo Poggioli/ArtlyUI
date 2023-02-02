@@ -13,7 +13,7 @@ Avatar ✅
 Box ✅
 Button ✅
 Checkbox
-Collapsible
+Collapsible ✅
 Context Menu
 Container ✅
 Dialog ✅

@@ -14,6 +14,7 @@
     "@artly-ui/avatar": "*",
     "@artly-ui/box": "*",
     "@artly-ui/button": "*",
+    "@artly-ui/collapsible": "*",
     "@artly-ui/container": "*",
     "@artly-ui/core": "*",
     "@artly-ui/dialog": "*",
