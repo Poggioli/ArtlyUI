@@ -190,11 +190,12 @@ const StyledToastViewport = styled(ToastPrimitives.Viewport, {
   flexDirection: "column",
   gap: "$4",
   listStyle: "none",
-  maxWidth: "100vw",
+  maxWidth: "90vw",
   outline: "none",
   padding: VIEWPORT_PADDING,
   position: "fixed",
   zIndex: "$12",
+  width: 'max-content',
 
   variants: {
     horizontal: {
