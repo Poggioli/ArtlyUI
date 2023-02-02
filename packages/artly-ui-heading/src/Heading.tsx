@@ -14,7 +14,7 @@ const Heading = forwardRef<"h1", HeadingProps>(
 
     const css: CSS = {
       ...props.css,
-      color: color ?? "$text--high-contrast",
+      color: color ?? "$text-high-contrast",
     };
 
     return <StyledHeading ref={forwardedRef} as={as} {...props} css={css} />;
