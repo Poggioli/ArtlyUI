@@ -36,8 +36,7 @@ const StyledCollapsibleContent = styled(CollapsiblePrimitives.Content, {
 const StyledCollapsibleTrigger = CollapsiblePrimitives.Trigger;
 
 export {
-    StyledCollapsibleRoot,
-    StyledCollapsibleContent,
-    StyledCollapsibleTrigger,
+  StyledCollapsibleRoot,
+  StyledCollapsibleContent,
+  StyledCollapsibleTrigger,
 };
-

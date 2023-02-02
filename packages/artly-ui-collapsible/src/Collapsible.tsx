@@ -2,12 +2,12 @@ import { forwardRef } from "@artly-ui/core";
 import {
   StyledCollapsibleContent,
   StyledCollapsibleRoot,
-  StyledCollapsibleTrigger
+  StyledCollapsibleTrigger,
 } from "./styles";
 import {
   CollapsibleContentProps,
   CollapsibleProps,
-  CollapsibleTriggerProps
+  CollapsibleTriggerProps,
 } from "./types";
 
 // ------------------------------------------- Collapsible Trigger ------------------------------------------- //

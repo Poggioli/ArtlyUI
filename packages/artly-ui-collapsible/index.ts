@@ -1,3 +1,2 @@
-export * from './src/Collapsible';
-export * from './src/types';
-
+export * from "./src/Collapsible";
+export * from "./src/types";
