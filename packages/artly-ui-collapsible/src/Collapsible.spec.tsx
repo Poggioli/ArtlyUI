@@ -2,7 +2,7 @@ import { render } from "@testing-library/react";
 import {
   Collapsible,
   CollapsibleContent,
-  CollapsibleTrigger
+  CollapsibleTrigger,
 } from "./Collapsible";
 
 describe("Data display component / Collapsible", () => {

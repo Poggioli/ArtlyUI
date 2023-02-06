@@ -195,7 +195,7 @@ const StyledToastViewport = styled(ToastPrimitives.Viewport, {
   padding: VIEWPORT_PADDING,
   position: "fixed",
   zIndex: "$12",
-  width: 'max-content',
+  width: "max-content",
 
   variants: {
     horizontal: {
