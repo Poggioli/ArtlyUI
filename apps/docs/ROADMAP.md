@@ -20,7 +20,7 @@ Dialog ✅
 Dropdown Menu
 Flex ✅
 Heading ✅
-Hover Card ⚒️
+Hover Card ✅
 Input
 Navigation Menu
 Popover ✅
