@@ -61,15 +61,6 @@ const Accordion = forwardRef<typeof StyledAccordionRoot, AccordionProps>(
   }
 );
 
-// ------------------------------------------- Accordion Header ------------------------------------------- //
-
-const AccordionHeader = forwardRef<
-  typeof StyledAccordionHeader,
-  AccordionHeaderProps
->(({ ...props }, forwardedRef) => {
-  return <StyledAccordionHeader {...props} ref={forwardedRef} />;
-});
-
 // ------------------------------------------- Accordion Trigger ------------------------------------------- //
 
 const AccordionTrigger = forwardRef<
@@ -77,6 +68,19 @@ const AccordionTrigger = forwardRef<
   AccordionTriggerProps
 >(({ ...props }, forwardedRef) => {
   return <StyledAccordionTrigger {...props} ref={forwardedRef} />;
+});
+
+// ------------------------------------------- Accordion Header ------------------------------------------- //
+
+const AccordionHeader = forwardRef<
+  typeof StyledAccordionHeader,
+  AccordionHeaderProps
+>(({ children, ...props }, forwardedRef) => {
+  return (
+    <StyledAccordionHeader {...props} ref={forwardedRef}>
+      <AccordionTrigger>{children}</AccordionTrigger>
+    </StyledAccordionHeader>
+  );
 });
 
 // ------------------------------------------- Accordion Chevron ------------------------------------------- //
@@ -193,7 +197,6 @@ const AccordionItem = forwardRef<
 export {
   Accordion,
   AccordionHeader,
-  AccordionTrigger,
   AccordionHeaderTitle,
   AccordionContent,
   AccordionItem,

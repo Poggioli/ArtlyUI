@@ -36,12 +36,12 @@ export type AccordionItemContextState = {
   disabled: boolean;
 };
 
-export type AccordionContext = {
+export type AccordionContextType = {
   state: AccordionContextState;
   setState: Dispatch<SetStateAction<AccordionContextState>>;
 };
 
-export type AccordionItemContext = {
+export type AccordionItemContextType = {
   state: AccordionItemContextState;
   setState: Dispatch<SetStateAction<AccordionItemContextState>>;
 };

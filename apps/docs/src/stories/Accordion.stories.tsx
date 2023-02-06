@@ -62,10 +62,8 @@ const Template: ComponentStory<typeof Accordion> = ({
     >
       <AccordionItem value="item-1">
         <AccordionHeader>
-          <AccordionTrigger>
-            <AccordionHeaderTitle>Is it accessible?</AccordionHeaderTitle>
-            <AccordionChevron />
-          </AccordionTrigger>
+          <AccordionHeaderTitle>Is it accessible?</AccordionHeaderTitle>
+          <AccordionChevron />
         </AccordionHeader>
         <AccordionContent padded={padded}>
           <Text as="p" variant="body2">
@@ -76,10 +74,8 @@ const Template: ComponentStory<typeof Accordion> = ({
 
       <AccordionItem value="item-2">
         <AccordionHeader>
-          <AccordionTrigger>
-            <AccordionHeaderTitle>Is it unstyled?</AccordionHeaderTitle>
-            <AccordionChevron />
-          </AccordionTrigger>
+          <AccordionHeaderTitle>Is it unstyled?</AccordionHeaderTitle>
+          <AccordionChevron />
         </AccordionHeader>
         <AccordionContent padded={padded}>
           <Text as="p" variant="body2">
@@ -91,10 +87,8 @@ const Template: ComponentStory<typeof Accordion> = ({
 
       <AccordionItem value="item-3">
         <AccordionHeader>
-          <AccordionTrigger>
-            <AccordionHeaderTitle>Can it be animated?</AccordionHeaderTitle>
-            <AccordionChevron />
-          </AccordionTrigger>
+          <AccordionHeaderTitle>Can it be animated?</AccordionHeaderTitle>
+          <AccordionChevron />
         </AccordionHeader>
         <AccordionContent padded={padded}>
           <Text as="p" variant="body2">
@@ -105,12 +99,10 @@ const Template: ComponentStory<typeof Accordion> = ({
 
       <AccordionItem value="item-4" disabled>
         <AccordionHeader>
-          <AccordionTrigger>
-            <AccordionHeaderTitle>
-              Can I disable only one accordion Item? Yes, Im disabled
-            </AccordionHeaderTitle>
-            <AccordionChevron />
-          </AccordionTrigger>
+          <AccordionHeaderTitle>
+            Can I disable only one accordion Item? Yes, Im disabled
+          </AccordionHeaderTitle>
+          <AccordionChevron />
         </AccordionHeader>
         <AccordionContent padded={padded}>
           <Text as="p" variant="body2">
