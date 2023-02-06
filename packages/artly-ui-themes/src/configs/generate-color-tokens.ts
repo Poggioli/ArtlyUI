@@ -6,7 +6,7 @@ import {
   mauve,
   purple,
   red,
-  whiteA,
+  whiteA
 } from "@radix-ui/colors";
 import { generateGenericColors, GenericScale } from "./generate-generic-colors";
 
@@ -235,5 +235,9 @@ export const generateColorTokens = (
     "accordion--trigger--background-color--focus": "$gray-30",
     "accordion--item-trigger--border-color": "$gray-50",
     "accordion--content--background-color": "$gray-10",
+
+    "hover-card--background": genericColorTokens.isDarkTheme ? "$gray-30" : "$white",
+    "hover-card--arrow--background": "$hover-card--background",
+
   };
 };
