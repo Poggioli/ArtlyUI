@@ -1,5 +1,9 @@
-import { ArtlyVariants, HTMLArtlyProps } from "@artly-ui/core";
-import { StyledHoverCard } from "./styles";
+import * as HoverCardPrimitives from "@radix-ui/react-hover-card";
 
-export type HoverCardProps = HTMLArtlyProps<typeof StyledHoverCard> &
-  ArtlyVariants<typeof StyledHoverCard>;
+export type HoverCardProps = HoverCardPrimitives.HoverCardProps;
+
+export type HoverCardContentProps = HoverCardPrimitives.HoverCardContentProps &
+  HoverCardPrimitives.HoverCardPortalProps &
+  HoverCardPrimitives.HoverCardArrowProps;
+
+export type HoverCardTriggerProps = HoverCardPrimitives.HoverCardTriggerProps;
