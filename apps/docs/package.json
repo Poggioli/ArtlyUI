@@ -10,6 +10,7 @@
     "clear": "rimraf .turbo coverage node_modules dist"
   },
   "dependencies": {
+    "@artly-ui/accordion": "*",
     "@artly-ui/alert-dialog": "*",
     "@artly-ui/avatar": "*",
     "@artly-ui/box": "*",
