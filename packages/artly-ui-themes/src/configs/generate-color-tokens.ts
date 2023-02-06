@@ -6,7 +6,7 @@ import {
   mauve,
   purple,
   red,
-  whiteA,
+  whiteA
 } from "@radix-ui/colors";
 import { generateGenericColors, GenericScale } from "./generate-generic-colors";
 
@@ -240,5 +240,16 @@ export const generateColorTokens = (
       ? "$gray-30"
       : "$white",
     "hover-card--arrow--background": "$hover-card--background",
+
+    "slider--track--primary--background-color--normal": "",
+    "slider--track--primary--background-color--disabled": "",
+    "slider--range--primary--background-color--normal": "",
+    "slider--range--primary--background-color--hover": "",
+    "slider--range--primary--background-color--focus": "",
+    "slider--range--primary--background-color--disabled": "",
+    "slider--thumb--primary--background-color--normal": "",
+    "slider--thumb--primary--background-color--hover": "",
+    "slider--thumb--primary--background-color--focus": "",
+    "slider--thumb--primary--background-color--disabled": "",
   };
 };
