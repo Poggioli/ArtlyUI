@@ -6,7 +6,7 @@
 
 ⚒️ WIP
 
-Accordion ⚒️
+Accordion ✅
 Alert Dialog ✅
 Aspect Ratio (Image) ✅
 Avatar ✅
