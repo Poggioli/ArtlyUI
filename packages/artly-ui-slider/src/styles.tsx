@@ -27,9 +27,8 @@ StyledSliderTrack.toString = () => `.${StyledSliderTrack.className}`;
 
 const StyledSliderThumb = styled(SliderPrimivites.Thumb, {
   borderRadius: "$4",
-  //   $$boxShadow:
-  //     "$colors-black-70 0px 0px 38px 5px, $colors-black-70 0px 5px 20px -15px",
-  //   boxShadow: "$$boxShadow",
+  $$boxShadow: "$colors-black-70 0 $sizes-2 $sizes-3 0",
+  boxShadow: "$$boxShadow",
   display: "block",
   height: "$4",
   transition: "background-color 200ms linear, transform 200ms linear",
@@ -40,7 +39,7 @@ const StyledSliderThumb = styled(SliderPrimivites.Thumb, {
   },
 
   "&:focus": {
-    // outline: "none",
+    outline: "none",
   },
 });
 StyledSliderThumb.toString = () => `.${StyledSliderThumb.className}`;
@@ -64,34 +63,34 @@ const StyledSliderRoot = styled(SliderPrimivites.Root, {
   },
 
   [`${StyledSliderTrack.toString()}`]: {
-    // backgroundColor: "$$backgroundColorTrackNormal",
+    backgroundColor: "$$backgroundColorTrackNormal",
   },
 
   [`${StyledSliderRange.toString()}`]: {
-    // backgroundColor: "$$backgroundColorRangeNormal",
+    backgroundColor: "$$backgroundColorRangeNormal",
   },
 
   [`${StyledSliderThumb.toString()}`]: {
-    // backgroundColor: "$$backgroundColorThumbNormal",
+    backgroundColor: "$$backgroundColorThumbNormal",
   },
 
   "&:hover": {
     [`${StyledSliderRange.toString()}`]: {
-      //   backgroundColor: "$$backgroundColorRangeHover",
+      backgroundColor: "$$backgroundColorRangeHover",
     },
 
     [`${StyledSliderThumb.toString()}`]: {
-      //   backgroundColor: "$$backgroundColorThumbHover",
+      backgroundColor: "$$backgroundColorThumbHover",
     },
   },
 
   [`&:has(${StyledSliderThumb.toString()}:focus)`]: {
     [`${StyledSliderRange.toString()}`]: {
-      //   backgroundColor: "$$backgroundColorRangeFocus",
+      backgroundColor: "$$backgroundColorRangeFocus",
     },
 
     [`${StyledSliderThumb.toString()}`]: {
-      //   backgroundColor: "$$backgroundColorThumbFocus",
+      backgroundColor: "$$backgroundColorThumbFocus",
       "&:focus": {
         // transform: "scale(1.125)",
       },
@@ -100,23 +99,48 @@ const StyledSliderRoot = styled(SliderPrimivites.Root, {
 
   "&:disabled, &[data-disabled=true], &[aria-disabled=true]": {
     [`${StyledSliderTrack.toString()}`]: {
-      //   backgroundColor: "$$backgroundColorTrackDisabled",
+      backgroundColor: "$$backgroundColorTrackDisabled",
     },
 
     [`${StyledSliderRange.toString()}`]: {
-      //   backgroundColor: "$$backgroundColorRangeDisabled",
+      backgroundColor: "$$backgroundColorRangeDisabled",
     },
 
     [`${StyledSliderThumb.toString()}`]: {
-      //   backgroundColor: "$$backgroundColorThumbDisabled",
+      backgroundColor: "$$backgroundColorThumbDisabled",
     },
   },
 
   variants: {
-    color: {},
+    color: {
+      primary: {
+        $$backgroundColorTrackNormal:
+          "$colors-slider--track--primary--background-color--normal",
+        $$backgroundColorTrackDisabled:
+          "$colors-slider--track--primary--background-color--disabled",
+        $$backgroundColorRangeNormal:
+          "$colors-slider--range--primary--background-color--normal",
+        $$backgroundColorRangeHover:
+          "$colors-slider--range--primary--background-color--hover",
+        $$backgroundColorRangeFocus:
+          "$colors-slider--range--primary--background-color--focus",
+        $$backgroundColorRangeDisabled:
+          "$colors-slider--range--primary--background-color--disabled",
+        $$backgroundColorThumbNormal:
+          "$colors-slider--thumb--primary--background-color--normal",
+        $$backgroundColorThumbHover:
+          "$colors-slider--thumb--primary--background-color--hover",
+        $$backgroundColorThumbFocus:
+          "$colors-slider--thumb--primary--background-color--focus",
+        $$backgroundColorThumbDisabled:
+          "$colors-slider--thumb--primary--background-color--disabled",
+      },
+    },
   },
 
-  defaultVariants: {},
+  defaultVariants: {
+    color: "primary",
+  },
 });
 
 export {
