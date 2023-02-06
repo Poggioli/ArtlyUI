@@ -83,10 +83,9 @@ const StyledHoverCardArrow = styled(HoverCardPrimitives.Arrow, {
 });
 
 export {
-    StyledHoverCardRoot,
-    StyledHoverCardTrigger,
-    StyledHoverCardPortal,
-    StyledHoverCardContent,
-    StyledHoverCardArrow,
+  StyledHoverCardRoot,
+  StyledHoverCardTrigger,
+  StyledHoverCardPortal,
+  StyledHoverCardContent,
+  StyledHoverCardArrow,
 };
-

@@ -4,12 +4,12 @@ import {
   StyledHoverCardContent,
   StyledHoverCardPortal,
   StyledHoverCardRoot,
-  StyledHoverCardTrigger
+  StyledHoverCardTrigger,
 } from "./styles";
 import {
   HoverCardContentProps,
   HoverCardProps,
-  HoverCardTriggerProps
+  HoverCardTriggerProps,
 } from "./types";
 
 // ------------------------------------------- Hover card root ------------------------------------------- //
@@ -27,7 +27,7 @@ const HoverCardContent = forwardRef<
   HoverCardContentProps
 >(
   (
-    { children, forceMount, width, height, hasArrow, ...props },
+    { children, forceMount, width, height, hasArrow = true, ...props },
     forwardedRef
   ) => {
     return (
