@@ -29,7 +29,7 @@ Radio Group
 Scroll Area ✅
 Select
 Separator ✅
-Slider
+Slider ⚒️
 Switch
 Table
 Tabs
