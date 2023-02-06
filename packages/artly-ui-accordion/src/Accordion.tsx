@@ -4,8 +4,10 @@ import { Heading } from "@artly-ui/heading";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import { useContext, useEffect } from "react";
 import {
-  AccordionContext, AccordionContextProvider, AccordionItemContext,
-  AccordionItemContextProvider
+  AccordionContext,
+  AccordionContextProvider,
+  AccordionItemContext,
+  AccordionItemContextProvider,
 } from "./context";
 import {
   StyledAccordionContent,
@@ -13,7 +15,7 @@ import {
   StyledAccordionHeader,
   StyledAccordionItem,
   StyledAccordionRoot,
-  StyledAccordionTrigger
+  StyledAccordionTrigger,
 } from "./styles";
 import {
   AccordionChevronProps,
@@ -22,7 +24,7 @@ import {
   AccordionHeaderTitleProps,
   AccordionItemProps,
   AccordionProps,
-  AccordionTriggerProps
+  AccordionTriggerProps,
 } from "./types";
 
 // ------------------------------------------- Accordion Root ------------------------------------------- //
@@ -39,11 +41,7 @@ const AccordionRoot = forwardRef<typeof StyledAccordionRoot, AccordionProps>(
     }, [disabled, setState]);
 
     return (
-      <StyledAccordionRoot
-        {...props}
-        ref={forwardedRef}
-        disabled={disabled}
-      >
+      <StyledAccordionRoot {...props} ref={forwardedRef} disabled={disabled}>
         {children}
       </StyledAccordionRoot>
     );
@@ -51,18 +49,17 @@ const AccordionRoot = forwardRef<typeof StyledAccordionRoot, AccordionProps>(
 );
 
 // ------------------------------------------- Accordion Root Wrapper ------------------------------------------- //
-const Accordion = forwardRef<
-  typeof StyledAccordionRoot,
-  AccordionProps
->(({ children, ...props }, forwardedRef) => {
-  return (
-    <AccordionContextProvider>
-      <AccordionRoot {...props} ref={forwardedRef}>
-        {children}
-      </AccordionRoot>
-    </AccordionContextProvider>
-  );
-});
+const Accordion = forwardRef<typeof StyledAccordionRoot, AccordionProps>(
+  ({ children, ...props }, forwardedRef) => {
+    return (
+      <AccordionContextProvider>
+        <AccordionRoot {...props} ref={forwardedRef}>
+          {children}
+        </AccordionRoot>
+      </AccordionContextProvider>
+    );
+  }
+);
 
 // ------------------------------------------- Accordion Header ------------------------------------------- //
 
@@ -90,10 +87,10 @@ const AccordionChevron = forwardRef<typeof Button, AccordionChevronProps>(
     forwardedRef
   ) => {
     const {
-      state: { disabled: accordionDisabled }
+      state: { disabled: accordionDisabled },
     } = useContext(AccordionContext);
     const {
-      state: { disabled: accordionItemDisabled }
+      state: { disabled: accordionItemDisabled },
     } = useContext(AccordionItemContext);
 
     return (
@@ -172,11 +169,7 @@ const AccordionItemRoot = forwardRef<
   }, [disabled, setState]);
 
   return (
-    <StyledAccordionItem
-      {...props}
-      ref={forwardedRef}
-      disabled={disabled}
-    >
+    <StyledAccordionItem {...props} ref={forwardedRef} disabled={disabled}>
       {children}
     </StyledAccordionItem>
   );
