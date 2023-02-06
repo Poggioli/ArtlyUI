@@ -227,5 +227,13 @@ export const generateColorTokens = (
     "alert-dialog--background": genericColorTokens.isDarkTheme
       ? "$gray-30"
       : "$white",
+
+    "accordion--border-color": "$gray-50",
+    "accordion--item--border-color": "$gray-50",
+    "accordion--trigger--background-color--normal": "$gray-10",
+    "accordion--trigger--background-color--hover": "$gray-20",
+    "accordion--trigger--background-color--focus": "$gray-30",
+    "accordion--item-trigger--border-color": "$gray-50",
+    "accordion--content--background-color": "$gray-10",
   };
 };
