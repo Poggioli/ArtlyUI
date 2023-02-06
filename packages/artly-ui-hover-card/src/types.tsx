@@ -4,6 +4,8 @@ export type HoverCardProps = HoverCardPrimitives.HoverCardProps;
 
 export type HoverCardContentProps = HoverCardPrimitives.HoverCardContentProps &
   HoverCardPrimitives.HoverCardPortalProps &
-  HoverCardPrimitives.HoverCardArrowProps;
+  HoverCardPrimitives.HoverCardArrowProps & {
+    hasArrow?: boolean
+  };
 
 export type HoverCardTriggerProps = HoverCardPrimitives.HoverCardTriggerProps;
