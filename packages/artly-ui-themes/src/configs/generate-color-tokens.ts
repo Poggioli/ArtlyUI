@@ -6,7 +6,7 @@ import {
   mauve,
   purple,
   red,
-  whiteA,
+  whiteA
 } from "@radix-ui/colors";
 import { generateGenericColors, GenericScale } from "./generate-generic-colors";
 
@@ -390,15 +390,31 @@ export const generateColorTokens = (
     "badge--accent--text": "$white-300",
     "badge--error--text": "$white-300",
 
-    "tag--primary--background-color": "$primary-90",
-    "tag--secondary--background-color": "$secondary-90",
-    "tag--unstyled--background-color": "$gray-70",
-    "tag--accent--background-color": "$accent-90",
-    "tag--error--background-color": "$error-90",
-    "tag--primary--text": "$white-300",
-    "tag--secondary--text": "$white-300",
-    "tag--unstyled--text": "$text-high-contrast",
-    "tag--accent--text": "$white-300",
-    "tag--error--text": "$white-300",
+    "tag--filled--primary--background-color": "$primary-90",
+    "tag--filled--secondary--background-color": "$secondary-90",
+    "tag--filled--unstyled--background-color": "$gray-70",
+    "tag--filled--accent--background-color": "$accent-90",
+    "tag--filled--error--background-color": "$error-90",
+    "tag--filled--primary--text": "$white-300",
+    "tag--filled--secondary--text": "$white-300",
+    "tag--filled--unstyled--text": "$text-high-contrast",
+    "tag--filled--accent--text": "$white-300",
+    "tag--filled--error--text": "$white-300",
+
+    "tag--outlined--primary--background-color": "transparent",
+    "tag--outlined--primary--border-color": "$primary-90",
+    "tag--outlined--primary--text": "$primary-90",
+    "tag--outlined--secondary--background-color": "transparent",
+    "tag--outlined--secondary--border-color": "$secondary-90",
+    "tag--outlined--secondary--text": "$secondary-90",
+    "tag--outlined--unstyled--background-color": "transparent",
+    "tag--outlined--unstyled--border-color": "$gray-90",
+    "tag--outlined--unstyled--text": "$text-high-contrast",
+    "tag--outlined--accent--background-color": "transparent",
+    "tag--outlined--accent--border-color": "$accent-90",
+    "tag--outlined--accent--text": "$accent-90",
+    "tag--outlined--error--background-color": "transparent",
+    "tag--outlined--error--border-color": "$error-90",
+    "tag--outlined--error--text": "$error-90",
   };
 };

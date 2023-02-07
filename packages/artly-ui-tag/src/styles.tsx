@@ -2,7 +2,6 @@ import { styled } from "@artly-ui/core";
 import { Flex } from "@artly-ui/flex";
 
 const StyledTag: any = styled(Flex, {
-  backgroundColor: "$$backgroundColor",
   borderRadius: "$4",
 
   "&, *": {
@@ -21,29 +20,57 @@ const StyledTag: any = styled(Flex, {
       },
     },
     variant: {
-      filled: {},
-      outlined: {},
+      filled: {
+        backgroundColor: "$$backgroundColorFilled",
+        $$textColor: "$$textColorFilled"
+      },
+      outlined: {
+        backgroundColor: "$$backgroundColorOutlined",
+        $$boxShadow: '0 0 0 1px $$borderColorOutlined',
+        boxShadow: '$$boxShadow',
+        $$textColor: "$$textColorOutlined",
+      },
     },
     color: {
       primary: {
-        $$backgroundColor: "$colors-tag--primary--background-color",
-        $$textColor: "$colors-tag--primary--text",
+        $$backgroundColorFilled: "$colors-tag--filled--primary--background-color",
+        $$textColorFilled: "$colors-tag--filled--primary--text",
+
+        $$backgroundColorOutlined: "$colors-tag--outlined--primary--background-color",
+        $$borderColorOutlined: "$colors-tag--outlined--primary--border-color",
+        $$textColorOutlined: "$colors-tag--outlined--primary--text",
       },
       unstyled: {
-        $$backgroundColor: "$colors-tag--unstyled--background-color",
-        $$textColor: "$colors-tag--unstyled--text",
+        $$backgroundColorFilled: "$colors-tag--filled--unstyled--background-color",
+        $$textColorFilled: "$colors-tag--filled--unstyled--text",
+
+        $$backgroundColorOutlined: "$colors-tag--outlined--unstyled--background-color",
+        $$borderColorOutlined: "$colors-tag--outlined--unstyled--border-color",
+        $$textColorOutlined: "$colors-tag--outlined--unstyled--text",
       },
       secondary: {
-        $$backgroundColor: "$colors-tag--secondary--background-color",
-        $$textColor: "$colors-tag--secondary--text",
+        $$backgroundColorFilled: "$colors-tag--filled--secondary--background-color",
+        $$textColorFilled: "$colors-tag--filled--secondary--text",
+
+        $$backgroundColorOutlined: "$colors-tag--outlined--secondary--background-color",
+        $$borderColorOutlined: "$colors-tag--outlined--secondary--border-color",
+        $$textColorOutlined: "$colors-tag--outlined--secondary--text",
       },
       accent: {
-        $$backgroundColor: "$colors-tag--accent--background-color",
-        $$textColor: "$colors-tag--accent--text",
+        $$backgroundColorFilled: "$colors-tag--filled--accent--background-color",
+        $$textColorFilled: "$colors-tag--filled--accent--text",
+
+        $$backgroundColorOutlined: "$colors-tag--outlined--accent--background-color",
+        $$borderColorOutlined: "$colors-tag--outlined--accent--border-color",
+        $$textColorOutlined: "$colors-tag--outlined--accent--text",
       },
       error: {
-        $$backgroundColor: "$colors-tag--error--background-color",
-        $$textColor: "$colors-tag--error--text",
+        $$backgroundColorFilled: "$colors-tag--filled--error--background-color",
+        $$textColorFilled: "$colors-tag--filled--error--text",
+
+        $$backgroundColorOutlined: "$colors-tag--outlined--error--background-color",
+        $$borderColorOutlined: "$colors-tag--outlined--error--border-color",
+        $$textColorOutlined: "$colors-tag--outlined--error--text",
       },
     },
   },

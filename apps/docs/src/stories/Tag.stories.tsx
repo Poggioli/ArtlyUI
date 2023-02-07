@@ -19,6 +19,13 @@ const story: ComponentMeta<typeof Tag> = {
       options: ["small", "standard"],
       defaultValue: "standard",
     },
+    variant: {
+      control: {
+        type: "radio",
+      },
+      options: ["filled", "outlined"],
+      defaultValue: "filled",
+    },
   },
 };
 
