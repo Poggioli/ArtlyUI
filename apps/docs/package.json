@@ -27,6 +27,7 @@
     "@artly-ui/popover": "*",
     "@artly-ui/scroll-area": "*",
     "@artly-ui/separator": "*",
+    "@artly-ui/slider": "*",
     "@artly-ui/text": "*",
     "@artly-ui/toast": "*",
     "@artly-ui/tokens": "*",
