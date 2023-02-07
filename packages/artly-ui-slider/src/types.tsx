@@ -1,5 +1,11 @@
 import { ArtlyVariants, HTMLArtlyProps } from "@artly-ui/core";
-import { StyledSlider } from "./styles";
+import * as SliderPrimivites from "@radix-ui/react-slider";
+import { StyledSliderRoot } from "./styles";
 
-export type SliderProps = HTMLArtlyProps<typeof StyledSlider> &
-  ArtlyVariants<typeof StyledSlider>;
+export type SliderProps = HTMLArtlyProps<typeof StyledSliderRoot> &
+  ArtlyVariants<typeof StyledSliderRoot> &
+  SliderPrimivites.SliderProps &
+  SliderPrimivites.SliderTrackProps &
+  SliderPrimivites.SliderRangeProps;
+
+export type SliderThumbProps = SliderPrimivites.SliderThumbProps;

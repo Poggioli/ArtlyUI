@@ -1,11 +1,33 @@
 import { forwardRef } from "@artly-ui/core";
-import { StyledSlider } from "./styles";
-import { SliderProps } from "./types";
+import {
+  StyledSliderRange,
+  StyledSliderRoot,
+  StyledSliderThumb,
+  StyledSliderTrack,
+} from "./styles";
+import { SliderProps, SliderThumbProps } from "./types";
 
-const Slider = forwardRef<typeof StyledSlider, SliderProps>(
-  ({ ...props }, forwardedRef) => {
-    return <StyledSlider {...props} ref={forwardedRef} />;
+// ------------------------------------------- Slider Thumb ------------------------------------------- //
+
+const SliderThumb = forwardRef<typeof StyledSliderThumb, SliderThumbProps>(
+  ({ ...props }, forwardedRef) => (
+    <StyledSliderThumb {...props} ref={forwardedRef} />
+  )
+);
+
+// ------------------------------------------- Slider Root ------------------------------------------- //
+
+const Slider = forwardRef<typeof StyledSliderRoot, SliderProps>(
+  ({ children, ...props }, forwardedRef) => {
+    return (
+      <StyledSliderRoot {...props} ref={forwardedRef}>
+        <StyledSliderTrack>
+          <StyledSliderRange />
+        </StyledSliderTrack>
+        {children}
+      </StyledSliderRoot>
+    );
   }
 );
 
-export { Slider };
+export { Slider, SliderThumb };
