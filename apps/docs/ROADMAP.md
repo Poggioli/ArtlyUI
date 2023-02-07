@@ -22,6 +22,7 @@ Flex ✅
 Heading ✅
 Hover Card ✅
 Input
+Label ✅
 Navigation Menu
 Popover ✅
 Progress Bar ✅
@@ -30,7 +31,7 @@ Scroll Area ✅
 Select
 Separator ✅
 Slider ✅
-Switch ⚒️
+Switch ✅
 Table
 Tabs
 Text ✅
