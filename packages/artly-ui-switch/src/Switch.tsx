@@ -1,11 +1,39 @@
 import { forwardRef } from "@artly-ui/core";
-import { StyledSwitch } from "./styles";
-import { SwitchProps } from "./types";
+import {
+  StyledSwitchContainer,
+  StyledSwitchLabel,
+  StyledSwitchRoot,
+  StyledSwitchThumb,
+} from "./styles";
+import { SwitchContainerProps, SwitchLabelProps, SwitchProps } from "./types";
 
-const Switch = forwardRef<typeof StyledSwitch, SwitchProps>(
+// ------------------------------------------- Slider Container ------------------------------------------- //
+
+const SwitchContainer = forwardRef<
+  typeof StyledSwitchContainer,
+  SwitchContainerProps
+>(({ ...props }, forwardedRef) => {
+  return <StyledSwitchContainer {...props} ref={forwardedRef} />;
+});
+
+// ------------------------------------------- Slider Label ------------------------------------------- //
+
+const SwitchLabel = forwardRef<typeof StyledSwitchLabel, SwitchLabelProps>(
   ({ ...props }, forwardedRef) => {
-    return <StyledSwitch {...props} ref={forwardedRef} />;
+    return <StyledSwitchLabel {...props} ref={forwardedRef} />;
   }
 );
 
-export { Switch };
+// ------------------------------------------- Slider Root ------------------------------------------- //
+
+const Switch = forwardRef<typeof StyledSwitchRoot, SwitchProps>(
+  ({ ...props }, forwardedRef) => {
+    return (
+      <StyledSwitchRoot {...props} ref={forwardedRef}>
+        <StyledSwitchThumb />
+      </StyledSwitchRoot>
+    );
+  }
+);
+
+export { Switch, SwitchContainer, SwitchLabel };
