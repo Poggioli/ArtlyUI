@@ -5,11 +5,11 @@ import {
   StyledSwitchContainer,
   StyledSwitchLabel,
   StyledSwitchRoot,
-  StyledSwitchThumb
+  StyledSwitchThumb,
 } from "./styles";
 import { SwitchContainerProps, SwitchLabelProps, SwitchProps } from "./types";
 
-// ------------------------------------------- Slider Container ------------------------------------------- //
+// ------------------------------------------- Switch Container ------------------------------------------- //
 
 const SwitchContainer = forwardRef<
   typeof StyledSwitchContainer,
@@ -17,14 +17,21 @@ const SwitchContainer = forwardRef<
 >(({ children, ...props }, forwardedRef) => {
   return (
     <SwitchContextProvider>
-      <StyledSwitchContainer {...props} ref={forwardedRef}>
+      <StyledSwitchContainer
+        {...props}
+        ref={forwardedRef}
+        align="center"
+        justify="space-between"
+        gap="$3"
+        wrap="nowrap"
+      >
         {children}
       </StyledSwitchContainer>
     </SwitchContextProvider>
   );
 });
 
-// ------------------------------------------- Slider Label ------------------------------------------- //
+// ------------------------------------------- Switch Label ------------------------------------------- //
 
 const SwitchLabel = forwardRef<typeof StyledSwitchLabel, SwitchLabelProps>(
   ({ ...props }, forwardedRef) => {
@@ -36,16 +43,17 @@ const SwitchLabel = forwardRef<typeof StyledSwitchLabel, SwitchLabelProps>(
       <StyledSwitchLabel
         {...props}
         ref={forwardedRef}
+        variant="body1"
         color={disabled ? "$gray-80" : props.color}
       />
     );
   }
 );
 
-// ------------------------------------------- Slider Root ------------------------------------------- //
+// ------------------------------------------- Switch Root ------------------------------------------- //
 
 const Switch = forwardRef<typeof StyledSwitchRoot, SwitchProps>(
-  ({ disabled, ...props }, forwardedRef) => {
+  ({ disabled, color, ...props }, forwardedRef) => {
     const { setState } = useContext(SwitchContext);
 
     useEffect(() => {
@@ -56,8 +64,13 @@ const Switch = forwardRef<typeof StyledSwitchRoot, SwitchProps>(
     }, [disabled, setState]);
 
     return (
-      <StyledSwitchRoot {...props} ref={forwardedRef} disabled={disabled}>
-        <StyledSwitchThumb />
+      <StyledSwitchRoot
+        {...props}
+        ref={forwardedRef}
+        disabled={disabled}
+        color={color}
+      >
+        <StyledSwitchThumb color={color} />
       </StyledSwitchRoot>
     );
   }

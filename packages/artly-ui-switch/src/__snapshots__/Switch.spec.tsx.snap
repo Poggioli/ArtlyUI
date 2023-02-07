@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Core component / Switch GIVEN a Switch component
+      WITH disabled state
+      WHEN render component
+      THEN should occurs render normaly 1`] = `
+<div>
+  <div
+    class="artly-UI-c-bXbWpx artly-UI-c-bXbWpx-ihRAJlq-css artly-UI-c-PJLV"
+  >
+    <label
+      class="artly-UI-c-chWhuJ artly-UI-c-chWhuJ-jprvTt-variant-body1 artly-UI-c-chWhuJ-cmVlgk-align-left artly-UI-c-chWhuJ-ijDMiJS-css artly-UI-c-jAGVtL"
+      for="switch-airplane"
+    >
+      Switch Label
+    </label>
+    <button
+      aria-checked="false"
+      class="artly-UI-c-ctpKDW artly-UI-c-ctpKDW-dRUqVD-color-primary"
+      data-disabled=""
+      data-state="unchecked"
+      disabled=""
+      id="switch-airplane"
+      role="switch"
+      type="button"
+      value="on"
+    >
+      <span
+        class="artly-UI-c-ihrdaH artly-UI-c-ihrdaH-enlfht-color-primary"
+        data-disabled=""
+        data-state="unchecked"
+      />
+    </button>
+  </div>
+</div>
+`;

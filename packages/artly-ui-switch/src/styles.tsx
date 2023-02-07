@@ -1,25 +1,25 @@
 import { styled } from "@artly-ui/core";
 import { Flex } from "@artly-ui/flex";
-import { Text } from "@artly-ui/text";
+import { Label } from "@artly-ui/label";
 import * as SwitchPrimitives from "@radix-ui/react-switch";
 
 const StyledSwitchThumb = styled(SwitchPrimitives.Thumb, {
-  display: "block",
-  width: "$6",
-  height: "$6",
   backgroundColor: "$$backgroundColorThumbNormal",
   borderRadius: "$4",
   $$boxShadow: "$colors-black-70 0 $sizes-2 $sizes-3 0",
   boxShadow: "$$boxShadow",
-  transition:
-    "transform 100ms cubic-bezier(0.87, 0, 0.13, 1), background-color 200ms linear",
+  display: "block",
+  height: "$6",
   transform: "translateX($sizes-1)",
+  transition:
+    "transform 200ms cubic-bezier(0.87, 0, 0.13, 1), background-color 200ms linear",
+  width: "$6",
   willChange: "transform",
 
   '&[data-state="checked"]': {
-    transform: "translateX(calc(100% - $sizes-1))",
     backgroundColor: "$$backgroundColorThumbChecked",
     $$boxShadow: "none",
+    transform: "translateX(calc(100% - $sizes-1))",
 
     "&:disabled, &[disabled], &[data-disabled]": {
       backgroundColor: "$$backgroundColorThumbDisabledChecked",
@@ -28,8 +28,8 @@ const StyledSwitchThumb = styled(SwitchPrimitives.Thumb, {
 
   '&[data-state="unchecked"]': {
     "&:disabled, &[disabled], &[data-disabled]": {
-      $$boxShadow: "none",
       backgroundColor: "$$backgroundColorThumbDisabledUnchecked",
+      $$boxShadow: "none",
     },
   },
 
@@ -45,6 +45,50 @@ const StyledSwitchThumb = styled(SwitchPrimitives.Thumb, {
         $$backgroundColorThumbDisabledUnchecked:
           "$colors-switch--thumb--primary--background-color--disabled-unchecked",
       },
+
+      secondary: {
+        $$backgroundColorThumbNormal:
+          "$colors-switch--thumb--secondary--background-color--normal",
+        $$backgroundColorThumbChecked:
+          "$colors-switch--thumb--secondary--background-color--checked",
+        $$backgroundColorThumbDisabledChecked:
+          "$colors-switch--thumb--secondary--background-color--disabled-checked",
+        $$backgroundColorThumbDisabledUnchecked:
+          "$colors-switch--thumb--secondary--background-color--disabled-unchecked",
+      },
+
+      unstyled: {
+        $$backgroundColorThumbNormal:
+          "$colors-switch--thumb--unstyled--background-color--normal",
+        $$backgroundColorThumbChecked:
+          "$colors-switch--thumb--unstyled--background-color--checked",
+        $$backgroundColorThumbDisabledChecked:
+          "$colors-switch--thumb--unstyled--background-color--disabled-checked",
+        $$backgroundColorThumbDisabledUnchecked:
+          "$colors-switch--thumb--unstyled--background-color--disabled-unchecked",
+      },
+
+      accent: {
+        $$backgroundColorThumbNormal:
+          "$colors-switch--thumb--accent--background-color--normal",
+        $$backgroundColorThumbChecked:
+          "$colors-switch--thumb--accent--background-color--checked",
+        $$backgroundColorThumbDisabledChecked:
+          "$colors-switch--thumb--accent--background-color--disabled-checked",
+        $$backgroundColorThumbDisabledUnchecked:
+          "$colors-switch--thumb--accent--background-color--disabled-unchecked",
+      },
+
+      error: {
+        $$backgroundColorThumbNormal:
+          "$colors-switch--thumb--error--background-color--normal",
+        $$backgroundColorThumbChecked:
+          "$colors-switch--thumb--error--background-color--checked",
+        $$backgroundColorThumbDisabledChecked:
+          "$colors-switch--thumb--error--background-color--disabled-checked",
+        $$backgroundColorThumbDisabledUnchecked:
+          "$colors-switch--thumb--error--background-color--disabled-unchecked",
+      },
     },
   },
 
@@ -56,12 +100,16 @@ StyledSwitchThumb.toString = () => `.${StyledSwitchThumb.className}`;
 
 const StyledSwitchRoot = styled(SwitchPrimitives.Root, {
   all: "unset",
+  alignItems: "center",
   backgroundColor: "$$backgroundColorUnchecked",
   borderRadius: "$4",
-  height: "calc($6 + $2)",
   display: "inline-flex",
-  alignItems: "center",
-  transition: "background-color 200ms linear",
+  height: "calc($6 + $2)",
+  outlineColor: "transparent",
+  outlineStyle: "solid",
+  outlineWidth: "$sizes-1",
+  transition:
+    "background-color 200ms linear, outline-color 300ms cubic-bezier(0.87, 0, 0.13, 1)",
   WebkitTapHighlightColor: "rgba(0, 0, 0, 0)",
   width: "$9",
 
@@ -93,9 +141,14 @@ const StyledSwitchRoot = styled(SwitchPrimitives.Root, {
     backgroundColor: "$$backgroundColorThumbFocusChecked",
   },
 
+  "&:focus": {
+    outlineColor: "$$outlinedColor",
+  },
+
   variants: {
     color: {
       primary: {
+        $$outlinedColor: "$colors-switch--primary--outline-color",
         $$backgroundColorUnchecked:
           "$colors-switch--root--primary--background-color--unchecked",
         $$backgroundColorChecked:
@@ -113,6 +166,86 @@ const StyledSwitchRoot = styled(SwitchPrimitives.Root, {
         $$backgroundColorThumbHoverChecked:
           "$colors-switch--thumb--primary--background-color--hover-checked",
       },
+
+      secondary: {
+        $$outlinedColor: "$colors-switch--secondary--outline-color",
+        $$backgroundColorUnchecked:
+          "$colors-switch--root--secondary--background-color--unchecked",
+        $$backgroundColorChecked:
+          "$colors-switch--root--secondary--background-color--checked",
+        $$backgroundColorDisabledUnchecked:
+          "$colors-switch--root--secondary--background-color--disabled-unchecked",
+        $$backgroundColorDisabledChecked:
+          "$colors-switch--root--secondary--background-color--disabled-checked",
+        $$backgroundColorThumbFocusUnchecked:
+          "$colors-switch--thumb--secondary--background-color--focus-unchecked",
+        $$backgroundColorThumbFocusChecked:
+          "$colors-switch--thumb--secondary--background-color--focus-checked",
+        $$backgroundColorThumbHoverUnchecked:
+          "$colors-switch--thumb--secondary--background-color--hover-unchecked",
+        $$backgroundColorThumbHoverChecked:
+          "$colors-switch--thumb--secondary--background-color--hover-checked",
+      },
+
+      unstyled: {
+        $$outlinedColor: "$colors-switch--unstyled--outline-color",
+        $$backgroundColorUnchecked:
+          "$colors-switch--root--unstyled--background-color--unchecked",
+        $$backgroundColorChecked:
+          "$colors-switch--root--unstyled--background-color--checked",
+        $$backgroundColorDisabledUnchecked:
+          "$colors-switch--root--unstyled--background-color--disabled-unchecked",
+        $$backgroundColorDisabledChecked:
+          "$colors-switch--root--unstyled--background-color--disabled-checked",
+        $$backgroundColorThumbFocusUnchecked:
+          "$colors-switch--thumb--unstyled--background-color--focus-unchecked",
+        $$backgroundColorThumbFocusChecked:
+          "$colors-switch--thumb--unstyled--background-color--focus-checked",
+        $$backgroundColorThumbHoverUnchecked:
+          "$colors-switch--thumb--unstyled--background-color--hover-unchecked",
+        $$backgroundColorThumbHoverChecked:
+          "$colors-switch--thumb--unstyled--background-color--hover-checked",
+      },
+
+      accent: {
+        $$outlinedColor: "$colors-switch--accent--outline-color",
+        $$backgroundColorUnchecked:
+          "$colors-switch--root--accent--background-color--unchecked",
+        $$backgroundColorChecked:
+          "$colors-switch--root--accent--background-color--checked",
+        $$backgroundColorDisabledUnchecked:
+          "$colors-switch--root--accent--background-color--disabled-unchecked",
+        $$backgroundColorDisabledChecked:
+          "$colors-switch--root--accent--background-color--disabled-checked",
+        $$backgroundColorThumbFocusUnchecked:
+          "$colors-switch--thumb--accent--background-color--focus-unchecked",
+        $$backgroundColorThumbFocusChecked:
+          "$colors-switch--thumb--accent--background-color--focus-checked",
+        $$backgroundColorThumbHoverUnchecked:
+          "$colors-switch--thumb--accent--background-color--hover-unchecked",
+        $$backgroundColorThumbHoverChecked:
+          "$colors-switch--thumb--accent--background-color--hover-checked",
+      },
+
+      error: {
+        $$outlinedColor: "$colors-switch--error--outline-color",
+        $$backgroundColorUnchecked:
+          "$colors-switch--root--error--background-color--unchecked",
+        $$backgroundColorChecked:
+          "$colors-switch--root--error--background-color--checked",
+        $$backgroundColorDisabledUnchecked:
+          "$colors-switch--root--error--background-color--disabled-unchecked",
+        $$backgroundColorDisabledChecked:
+          "$colors-switch--root--error--background-color--disabled-checked",
+        $$backgroundColorThumbFocusUnchecked:
+          "$colors-switch--thumb--error--background-color--focus-unchecked",
+        $$backgroundColorThumbFocusChecked:
+          "$colors-switch--thumb--error--background-color--focus-checked",
+        $$backgroundColorThumbHoverUnchecked:
+          "$colors-switch--thumb--error--background-color--hover-unchecked",
+        $$backgroundColorThumbHoverChecked:
+          "$colors-switch--thumb--error--background-color--hover-checked",
+      },
     },
   },
 
@@ -121,11 +254,13 @@ const StyledSwitchRoot = styled(SwitchPrimitives.Root, {
   },
 });
 
-const StyledSwitchContainer = styled(Flex, {
-  flexWrap: "nowrap",
-});
+const StyledSwitchContainer = styled(Flex, {});
 
-const StyledSwitchLabel = styled(Text, {});
+const StyledSwitchLabel = styled(Label, {
+  alignItems: "center",
+  cursor: "default",
+  display: "inline-flex",
+});
 
 export {
   StyledSwitchRoot,

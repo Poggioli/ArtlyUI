@@ -15,7 +15,7 @@
   "dependencies": {
     "@radix-ui/react-switch": "^1.0.1",
     "@artly-ui/flex": "*",
-    "@artly-ui/text": "*"
+    "@artly-ui/label": "*"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.18.6",
