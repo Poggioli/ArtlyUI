@@ -30,7 +30,7 @@ Scroll Area ✅
 Select
 Separator ✅
 Slider ✅
-Switch
+Switch ⚒️
 Table
 Tabs
 Text ✅

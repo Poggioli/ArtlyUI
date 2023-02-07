@@ -295,5 +295,88 @@ export const generateColorTokens = (
     "slider--thumb--error--background-color--hover": "$error-100",
     "slider--thumb--error--background-color--focus": "$error-200",
     "slider--thumb--error--background-color--disabled": "$gray-80",
+
+    "switch--primary--outline-color": "$primary-70",
+    "switch--root--primary--background-color--unchecked": "$gray-70",
+    "switch--root--primary--background-color--checked": "$primary-50",
+    "switch--root--primary--background-color--disabled-unchecked": "$gray-50",
+    "switch--root--primary--background-color--disabled-checked": "$primary-30",
+    "switch--thumb--primary--background-color--normal": "$white-300",
+    "switch--thumb--primary--background-color--hover-unchecked": "$white-200",
+    "switch--thumb--primary--background-color--hover-checked": "$primary-200",
+    "switch--thumb--primary--background-color--focus-unchecked": "$white-200",
+    "switch--thumb--primary--background-color--focus-checked": "$primary-200",
+    "switch--thumb--primary--background-color--checked": "$primary-90",
+    "switch--thumb--primary--background-color--disabled-checked": "$primary-50",
+    "switch--thumb--primary--background-color--disabled-unchecked":
+      "$white-200",
+
+    "switch--secondary--outline-color": "$secondary-70",
+    "switch--root--secondary--background-color--unchecked": "$gray-70",
+    "switch--root--secondary--background-color--checked": "$secondary-50",
+    "switch--root--secondary--background-color--disabled-unchecked": "$gray-50",
+    "switch--root--secondary--background-color--disabled-checked":
+      "$secondary-30",
+    "switch--thumb--secondary--background-color--normal": "$white-300",
+    "switch--thumb--secondary--background-color--hover-unchecked": "$white-200",
+    "switch--thumb--secondary--background-color--hover-checked":
+      "$secondary-200",
+    "switch--thumb--secondary--background-color--focus-unchecked": "$white-200",
+    "switch--thumb--secondary--background-color--focus-checked":
+      "$secondary-200",
+    "switch--thumb--secondary--background-color--checked": "$secondary-90",
+    "switch--thumb--secondary--background-color--disabled-checked":
+      "$secondary-50",
+    "switch--thumb--secondary--background-color--disabled-unchecked":
+      "$white-200",
+
+    "switch--accent--outline-color": "$accent-70",
+    "switch--root--accent--background-color--unchecked": "$gray-70",
+    "switch--root--accent--background-color--checked": "$accent-50",
+    "switch--root--accent--background-color--disabled-unchecked": "$gray-50",
+    "switch--root--accent--background-color--disabled-checked": "$accent-30",
+    "switch--thumb--accent--background-color--normal": "$white-300",
+    "switch--thumb--accent--background-color--hover-unchecked": "$white-200",
+    "switch--thumb--accent--background-color--hover-checked": "$accent-200",
+    "switch--thumb--accent--background-color--focus-unchecked": "$white-200",
+    "switch--thumb--accent--background-color--focus-checked": "$accent-200",
+    "switch--thumb--accent--background-color--checked": "$accent-90",
+    "switch--thumb--accent--background-color--disabled-checked": "$accent-50",
+    "switch--thumb--accent--background-color--disabled-unchecked": "$white-200",
+
+    "switch--error--outline-color": "$error-70",
+    "switch--root--error--background-color--unchecked": "$gray-70",
+    "switch--root--error--background-color--checked": "$error-50",
+    "switch--root--error--background-color--disabled-unchecked": "$gray-50",
+    "switch--root--error--background-color--disabled-checked": "$error-30",
+    "switch--thumb--error--background-color--normal": "$white-300",
+    "switch--thumb--error--background-color--hover-unchecked": "$white-200",
+    "switch--thumb--error--background-color--hover-checked": "$error-200",
+    "switch--thumb--error--background-color--focus-unchecked": "$white-200",
+    "switch--thumb--error--background-color--focus-checked": "$error-200",
+    "switch--thumb--error--background-color--checked": "$error-90",
+    "switch--thumb--error--background-color--disabled-checked": "$error-50",
+    "switch--thumb--error--background-color--disabled-unchecked": "$white-200",
+
+    "switch--unstyled--outline-color": "$gray-70",
+    "switch--root--unstyled--background-color--unchecked": "$gray-70",
+    "switch--root--unstyled--background-color--checked":
+      genericColorTokens.isDarkTheme ? "$white-50" : "$black-50",
+    "switch--root--unstyled--background-color--disabled-unchecked": "$gray-50",
+    "switch--root--unstyled--background-color--disabled-checked":
+      genericColorTokens.isDarkTheme ? "$white-30" : "$black-30",
+    "switch--thumb--unstyled--background-color--normal": "$white-300",
+    "switch--thumb--unstyled--background-color--hover-unchecked": "$white-200",
+    "switch--thumb--unstyled--background-color--hover-checked":
+      genericColorTokens.isDarkTheme ? "$white-200" : "$black-200",
+    "switch--thumb--unstyled--background-color--focus-unchecked": "$white-200",
+    "switch--thumb--unstyled--background-color--focus-checked":
+      genericColorTokens.isDarkTheme ? "$white-200" : "$black-200",
+    "switch--thumb--unstyled--background-color--checked":
+      genericColorTokens.isDarkTheme ? "$white-90" : "$black-90",
+    "switch--thumb--unstyled--background-color--disabled-checked":
+      genericColorTokens.isDarkTheme ? "$white-50" : "$black-50",
+    "switch--thumb--unstyled--background-color--disabled-unchecked":
+      "$white-200",
   };
 };
