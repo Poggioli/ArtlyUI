@@ -6,7 +6,7 @@ import {
   mauve,
   purple,
   red,
-  whiteA,
+  whiteA
 } from "@radix-ui/colors";
 import { generateGenericColors, GenericScale } from "./generate-generic-colors";
 
@@ -378,5 +378,17 @@ export const generateColorTokens = (
       genericColorTokens.isDarkTheme ? "$white-50" : "$black-50",
     "switch--thumb--unstyled--background-color--disabled-unchecked":
       "$white-200",
+
+      "badge--primary--background-color": "$primary-90",
+      "badge--secondary--background-color": "$secondary-90",
+      "badge--unstyled--background-color": "$gray-90",
+      "badge--accent--background-color": "$accent-90",
+      "badge--error--background-color": "$error-90",
+      
+      "badge--primary--text": "$white-300",
+      "badge--secondary--text": "$white-300",
+      "badge--unstyled--text": "$text-high-contrast",
+      "badge--accent--text": "$white-300",
+      "badge--error--text": "$white-300",
   };
 };
