@@ -35,7 +35,7 @@ Slider ✅
 Switch ✅
 Table
 Tabs
-Tag
+Tag ⚒️
 Text ✅
 Toast ✅
 Toggle
