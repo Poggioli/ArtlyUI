@@ -295,5 +295,19 @@ export const generateColorTokens = (
     "slider--thumb--error--background-color--hover": "$error-100",
     "slider--thumb--error--background-color--focus": "$error-200",
     "slider--thumb--error--background-color--disabled": "$gray-80",
+
+    "switch--root--primary--background-color--unchecked": "$grey-70",
+    "switch--root--primary--background-color--checked": "$primary-50",
+    "switch--root--primary--background-color--disabled-unchecked": "$grey-50",
+    "switch--root--primary--background-color--disabled-checked": "$primary-30",
+    "switch--thumb--primary--background-color--normal": "$white-300",
+    "switch--thumb--primary--background-color--hover-unchecked": "$white-200",
+    "switch--thumb--primary--background-color--hover-checked": "$primary-200",
+    "switch--thumb--primary--background-color--focus-unchecked": "$white-300", //Alterar pro hover talvez
+    "switch--thumb--primary--background-color--focus-checked": "$primary-300", //Alterar pro hover talvez
+    "switch--thumb--primary--background-color--checked": "$primary-90",
+    "switch--thumb--primary--background-color--disabled-checked": "$primary-50",
+    "switch--thumb--primary--background-color--disabled-unchecked":
+      "$white-200",
   };
 };

@@ -13,7 +13,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@radix-ui/react-switch": "^1.0.1"
+    "@radix-ui/react-switch": "^1.0.1",
+    "@artly-ui/flex": "*",
+    "@artly-ui/text": "*"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.18.6",
