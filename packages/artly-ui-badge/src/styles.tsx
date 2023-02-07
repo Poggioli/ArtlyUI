@@ -8,13 +8,15 @@ const StyledBadgeContainer: any = styled(Flex, {
 });
 
 const StyledBadge: any = styled(Flex, {
+  borderRadius: "$4",
   height: "$5",
   minWidth: "$5",
+  padding: "0 calc($2 + $1)",
   position: "absolute",
   backgroundColor: "$$backgroundColor",
 
   "&, *": {
-    textColor: "$$textColor",
+    color: "$$textColor !important",
   },
 
   variants: {
@@ -60,6 +62,7 @@ const StyledBadge: any = styled(Flex, {
       true: {
         height: "$3",
         minWidth: "initial",
+        padding: "0",
         width: "$3",
       },
     },
@@ -71,6 +74,37 @@ const StyledBadge: any = styled(Flex, {
     color: "primary",
     dot: false,
   },
+
+  compoundVariants: [
+    {
+      horizontalPosition: "right",
+      verticalPosition: "top",
+      css: {
+        transform: "translate(50%, -50%)",
+      },
+    },
+    {
+      horizontalPosition: "right",
+      verticalPosition: "bottom",
+      css: {
+        transform: "translate(50%, 50%)",
+      },
+    },
+    {
+      horizontalPosition: "left",
+      verticalPosition: "bottom",
+      css: {
+        transform: "translate(-50%, 50%)",
+      },
+    },
+    {
+      horizontalPosition: "left",
+      verticalPosition: "top",
+      css: {
+        transform: "translate(-50%, -50%)",
+      },
+    },
+  ],
 });
 
 export { StyledBadge, StyledBadgeContainer };

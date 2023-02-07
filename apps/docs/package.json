@@ -13,6 +13,7 @@
     "@artly-ui/accordion": "*",
     "@artly-ui/alert-dialog": "*",
     "@artly-ui/avatar": "*",
+    "@artly-ui/badge": "*",
     "@artly-ui/box": "*",
     "@artly-ui/button": "*",
     "@artly-ui/collapsible": "*",

@@ -19,7 +19,13 @@ const Badge = forwardRef<typeof StyledBadge, BadgeProps>(
     return (
       <StyledBadgeContainer>
         {showBadge ? (
-          <StyledBadge {...props} ref={forwardedRef} dot={dot}>
+          <StyledBadge
+            {...props}
+            ref={forwardedRef}
+            dot={dot}
+            align="center"
+            justify="center"
+          >
             {!dot ? <Text variant="auxiliary">{value}</Text> : null}
           </StyledBadge>
         ) : null}

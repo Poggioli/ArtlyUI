@@ -19,4 +19,6 @@ export const PinkAndBlueGreyTheme = {
     coloredGray: generateGenericColors(mauveDark, "colored-gray"),
     isDarkTheme: true,
   }),
+  "badge--unstyled--text": "$gray-10",
+  "badge--secondary--text": "$gray-10",
 };
