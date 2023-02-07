@@ -10,7 +10,7 @@ Accordion ✅
 Alert Dialog ✅
 Aspect Ratio (Image) ✅
 Avatar ✅
-Badge ⚒️
+Badge ✅
 Box ✅
 Button ✅
 Checkbox
