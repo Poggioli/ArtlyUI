@@ -10,6 +10,7 @@ Accordion ✅
 Alert Dialog ✅
 Aspect Ratio (Image) ✅
 Avatar ✅
+Badge ⚒️
 Box ✅
 Button ✅
 Checkbox
@@ -34,6 +35,7 @@ Slider ✅
 Switch ✅
 Table
 Tabs
+Tag
 Text ✅
 Toast ✅
 Toggle
