@@ -389,5 +389,16 @@ export const generateColorTokens = (
     "badge--unstyled--text": "$text-high-contrast",
     "badge--accent--text": "$white-300",
     "badge--error--text": "$white-300",
+
+    "tag--primary--background-color": "$primary-90",
+    "tag--secondary--background-color": "$secondary-90",
+    "tag--unstyled--background-color": "$gray-70",
+    "tag--accent--background-color": "$accent-90",
+    "tag--error--background-color": "$error-90",
+    "tag--primary--text": "$white-300",
+    "tag--secondary--text": "$white-300",
+    "tag--unstyled--text": "$text-high-contrast",
+    "tag--accent--text": "$white-300",
+    "tag--error--text": "$white-300",
   };
 };
