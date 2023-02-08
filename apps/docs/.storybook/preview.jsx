@@ -40,17 +40,19 @@ export const parameters = {
 };
 
 export const decorators = [
-  (Story) => (
-    <Flex
-      align="center"
-      justify="center"
-      css={{
-        padding: '$6',
-        height: '100vh',
-        backgroundColor: '$background-app'
-      }}
-    >
-      <Story />
-    </Flex>
-  ),
+  (Story) => {
+
+    themes.resetCssStyles()
+    
+    return (<Flex
+        align="center"
+        justify="center"
+        css={{
+          height: '100vh',
+        }}
+      >
+        <Story />
+      </Flex>
+    )
+  },
 ]
