@@ -11,4 +11,14 @@ describe("Core component / Tag", () => {
     });
     expect(tag).toBeVisible();
   });
+
+  it(`GIVEN a Tag component
+      WHEN icon props is defined
+      SHOULD render icon props`, () => {
+    const rendered = render(<Tag icon={<span>Test icon</span>}>Tag component</Tag>);
+    const icon = rendered.getByText("Test icon", {
+      selector: "span",
+    });
+    expect(icon).toBeVisible();
+  });
 });

@@ -4,9 +4,17 @@ import { StyledTag } from "./styles";
 import { TagProps } from "./types";
 
 const Tag = forwardRef<typeof StyledTag, TagProps>(
-  ({ children, ...props }, forwardedRef) => {
+  ({ children, icon, ...props }, forwardedRef) => {
     return (
-      <StyledTag {...props} ref={forwardedRef} align="center">
+      <StyledTag
+        {...props}
+        ref={forwardedRef}
+        align="center"
+        gap="$3"
+        hasIcon={!!icon}
+        wrap="nowrap"
+      >
+        {icon}
         <Text variant="auxiliary">{children}</Text>
       </StyledTag>
     );

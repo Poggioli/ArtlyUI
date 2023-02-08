@@ -1,4 +1,7 @@
+import { Flex } from "@artly-ui/flex";
+import { Heading } from "@artly-ui/heading";
 import { Tag } from "@artly-ui/tag";
+import { AccessibilityIcon } from "@radix-ui/react-icons";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 const story: ComponentMeta<typeof Tag> = {
@@ -29,9 +32,22 @@ const story: ComponentMeta<typeof Tag> = {
   },
 };
 
-const Template: ComponentStory<typeof Tag> = ({ ...args }) => (
-  <Tag {...args}>Tag Component</Tag>
-);
+const Template: ComponentStory<typeof Tag> = ({ ...args }) => {
+  return (
+    <Flex direction="column" justify="space-evenly" css={{ height: "100%" }}>
+      <Flex direction="column" gap="$5" align="center">
+        <Heading level={5}>Without icon</Heading>
+        <Tag {...args}>Tag Component</Tag>
+      </Flex>
+      <Flex direction="column" gap="$5" align="center">
+        <Heading level={5}>With icon</Heading>
+        <Tag {...args} icon={<AccessibilityIcon />}>
+          Tag Component
+        </Tag>
+      </Flex>
+    </Flex>
+  );
+};
 
 export const Default = Template.bind({});
 export default story;
