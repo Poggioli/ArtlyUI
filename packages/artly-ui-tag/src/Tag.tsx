@@ -1,21 +1,43 @@
 import { forwardRef } from "@artly-ui/core";
 import { Text } from "@artly-ui/text";
-import { StyledTag } from "./styles";
-import { TagProps } from "./types";
+import { StyledIconContainer, StyledTag } from "./styles";
+import { IconPosition, TagProps } from "./types";
+
+const SMALL_SIZE = "small";
 
 const Tag = forwardRef<typeof StyledTag, TagProps>(
-  ({ children, icon, ...props }, forwardedRef) => {
+  (
+    { children, icon, iconPosition = IconPosition.LEFT, ...props },
+    forwardedRef
+  ) => {
     return (
-      <StyledTag
-        {...props}
-        ref={forwardedRef}
-        align="center"
-        gap="$3"
-        hasIcon={!!icon}
-        wrap="nowrap"
-      >
-        {icon}
-        <Text variant="auxiliary">{children}</Text>
+      <StyledTag {...props} ref={forwardedRef}>
+        {icon && iconPosition === IconPosition.LEFT ? (
+          <StyledIconContainer
+            position={iconPosition}
+            small={props.size === SMALL_SIZE}
+          >
+            {icon}
+          </StyledIconContainer>
+        ) : null}
+        <Text
+          variant="auxiliary"
+          css={{
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          }}
+        >
+          {children}
+        </Text>
+        {icon && iconPosition === IconPosition.RIGTH ? (
+          <StyledIconContainer
+            position={iconPosition}
+            small={props.size === SMALL_SIZE}
+          >
+            {icon}
+          </StyledIconContainer>
+        ) : null}
       </StyledTag>
     );
   }

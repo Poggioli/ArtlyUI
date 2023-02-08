@@ -1,12 +1,57 @@
 import { styled } from "@artly-ui/core";
-import { Flex } from "@artly-ui/flex";
+import { StyledFlex } from "@artly-ui/flex";
 
-const StyledTag: any = styled(Flex, {
+const StyledIconContainer = styled(StyledFlex, {
+  variants: {
+    small: {
+      true: {},
+    },
+    position: {
+      left: {},
+      right: {},
+    },
+  },
+
+  defaultVariants: {
+    small: false,
+    position: "left",
+  },
+
+  compoundVariants: [
+    {
+      small: true,
+      position: "left",
+      css: {
+        marginLeft: "-$2",
+      },
+    },
+    {
+      small: true,
+      position: "right",
+      css: {
+        marginRight: "-$2",
+      },
+    },
+  ],
+});
+
+const StyledTag = styled(StyledFlex, {
+  alignItems: "center",
   borderRadius: "$4",
   cursor: "default",
+  gap: "$3",
+  wrap: "nowrap",
+  outlineColor: "transparent",
+  outlineStyle: "solid",
+  outlineWidth: "$sizes-1",
+  transition: "outline-color 300ms cubic-bezier(0.87, 0, 0.13, 1)",
 
   "&, *": {
     color: "$$textColor !important",
+  },
+
+  "&:focus": {
+    outlineColor: "$$outlinedColor",
   },
 
   variants: {
@@ -34,6 +79,8 @@ const StyledTag: any = styled(Flex, {
     },
     color: {
       primary: {
+        $$outlinedColor: "$colors-tag--primary--outlined-color",
+
         $$backgroundColorFilled:
           "$colors-tag--filled--primary--background-color",
         $$textColorFilled: "$colors-tag--filled--primary--text",
@@ -44,6 +91,8 @@ const StyledTag: any = styled(Flex, {
         $$textColorOutlined: "$colors-tag--outlined--primary--text",
       },
       unstyled: {
+        $$outlinedColor: "$colors-tag--unstyled--outlined-color",
+
         $$backgroundColorFilled:
           "$colors-tag--filled--unstyled--background-color",
         $$textColorFilled: "$colors-tag--filled--unstyled--text",
@@ -54,6 +103,8 @@ const StyledTag: any = styled(Flex, {
         $$textColorOutlined: "$colors-tag--outlined--unstyled--text",
       },
       secondary: {
+        $$outlinedColor: "$colors-tag--secondary--outlined-color",
+
         $$backgroundColorFilled:
           "$colors-tag--filled--secondary--background-color",
         $$textColorFilled: "$colors-tag--filled--secondary--text",
@@ -64,6 +115,8 @@ const StyledTag: any = styled(Flex, {
         $$textColorOutlined: "$colors-tag--outlined--secondary--text",
       },
       accent: {
+        $$outlinedColor: "$colors-tag--accent--outlined-color",
+
         $$backgroundColorFilled:
           "$colors-tag--filled--accent--background-color",
         $$textColorFilled: "$colors-tag--filled--accent--text",
@@ -74,6 +127,8 @@ const StyledTag: any = styled(Flex, {
         $$textColorOutlined: "$colors-tag--outlined--accent--text",
       },
       error: {
+        $$outlinedColor: "$colors-tag--error--outlined-color",
+
         $$backgroundColorFilled: "$colors-tag--filled--error--background-color",
         $$textColorFilled: "$colors-tag--filled--error--text",
 
@@ -83,8 +138,10 @@ const StyledTag: any = styled(Flex, {
         $$textColorOutlined: "$colors-tag--outlined--error--text",
       },
     },
-    hasIcon: {
-      true: {},
+    truncated: {
+      true: {
+        maxWidth: "100%",
+      },
     },
   },
 
@@ -92,18 +149,8 @@ const StyledTag: any = styled(Flex, {
     color: "unstyled",
     size: "standard",
     variant: "filled",
-    hasIcon: false,
+    truncated: true,
   },
-
-  compoundVariants: [
-    {
-      hasIcon: true,
-      size: "small",
-      css: {
-        paddingLeft: "$2",
-      },
-    },
-  ],
 });
 
-export { StyledTag };
+export { StyledTag, StyledIconContainer };

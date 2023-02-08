@@ -15,6 +15,13 @@ const story: ComponentMeta<typeof Tag> = {
       options: ["unstyled", "primary", "secondary", "accent", "error"],
       defaultValue: "unstyled",
     },
+    iconPosition: {
+      control: {
+        type: "radio",
+      },
+      options: ["left", "right"],
+      defaultValue: "left",
+    },
     size: {
       control: {
         type: "radio",
@@ -29,20 +36,65 @@ const story: ComponentMeta<typeof Tag> = {
       options: ["filled", "outlined"],
       defaultValue: "filled",
     },
+    truncated: {
+      control: {
+        type: "boolean",
+      },
+      defaultValue: true,
+    },
   },
 };
 
 const Template: ComponentStory<typeof Tag> = ({ ...args }) => {
   return (
-    <Flex direction="column" justify="space-evenly" css={{ height: "100%" }}>
+    <Flex
+      direction="column"
+      justify="space-evenly"
+      align="center"
+      css={{ height: "100%" }}
+    >
       <Flex direction="column" gap="$5" align="center">
-        <Heading level={5}>Without icon</Heading>
+        <Heading level={5} css={{ textAlign: "center" }}>
+          Without icon
+        </Heading>
         <Tag {...args}>Tag Component</Tag>
       </Flex>
       <Flex direction="column" gap="$5" align="center">
-        <Heading level={5}>With icon</Heading>
+        <Heading level={5} css={{ textAlign: "center" }}>
+          With icon
+        </Heading>
         <Tag {...args} icon={<AccessibilityIcon />}>
           Tag Component
+        </Tag>
+      </Flex>
+      <Flex direction="column" gap="$5" align="center">
+        <Heading level={5} css={{ textAlign: "center" }}>
+          Tag as link
+        </Heading>
+        <Tag {...args} as="a" href="https://storybook.js.org/">
+          Tag Component
+        </Tag>
+      </Flex>
+      <Flex direction="column" gap="$5" align="center">
+        <Heading level={5} css={{ textAlign: "center" }}>
+          Tag with large content inside
+        </Heading>
+        <Tag {...args}>Tag Component with large content inside</Tag>
+      </Flex>
+      <Flex direction="column" gap="$5" align="center">
+        <Heading level={5} css={{ textAlign: "center" }}>
+          Tag with large content inside and icon
+        </Heading>
+        <Tag {...args} icon={<AccessibilityIcon />}>
+          Tag Component with large content inside
+        </Tag>
+      </Flex>
+      <Flex direction="column" gap="$5" align="center">
+        <Heading level={5} css={{ textAlign: "center" }}>
+          Tag as button
+        </Heading>
+        <Tag {...args} as="button">
+          Tag Component button
         </Tag>
       </Flex>
     </Flex>
