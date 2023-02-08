@@ -101,7 +101,7 @@ const Template: ComponentStory<typeof Tag> = ({ ...args }) => {
         <Heading level={5} css={{ textAlign: "center" }}>
           Tag as button
         </Heading>
-        <Tag {...args} as="button">
+        <Tag {...args} as="button" onClick={() => alert("button")}>
           Tag Component button
         </Tag>
       </Flex>
