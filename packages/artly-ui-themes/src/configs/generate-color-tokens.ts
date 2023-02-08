@@ -6,7 +6,7 @@ import {
   mauve,
   purple,
   red,
-  whiteA
+  whiteA,
 } from "@radix-ui/colors";
 import { generateGenericColors, GenericScale } from "./generate-generic-colors";
 
@@ -389,6 +389,12 @@ export const generateColorTokens = (
     "badge--unstyled--text": "$text-high-contrast",
     "badge--accent--text": "$white-300",
     "badge--error--text": "$white-300",
+
+    "tag--primary--outlined-color": "$primary-70",
+    "tag--secondary--outlined-color": "$secondary-70",
+    "tag--unstyled--outlined-color": "$gray-70",
+    "tag--accent--outlined-color": "$accent-70",
+    "tag--error--outlined-color": "$error-70",
 
     "tag--filled--primary--background-color": "$primary-90",
     "tag--filled--secondary--background-color": "$secondary-90",

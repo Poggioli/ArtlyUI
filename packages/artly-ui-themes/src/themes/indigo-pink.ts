@@ -11,4 +11,7 @@ export const IndigoPinkTheme = {
     gray: generateGenericColors(gray, "gray"),
     coloredGray: generateGenericColors(slate, "colored-gray"),
   }),
+  "tag--filled--accent--text": "$text-high-contrast",
+  "tag--outlined--accent--text": "$text-high-contrast",
+  "tag--outlined--error--text": "$text-high-contrast",
 };
