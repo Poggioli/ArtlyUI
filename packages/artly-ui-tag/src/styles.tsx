@@ -50,7 +50,7 @@ const StyledTag = styled(StyledFlex, {
     color: "$$textColor !important",
   },
 
-  "&:focus": {
+  "&:focus, &:has(*:focus)": {
     outlineColor: "$$outlinedColor",
   },
 

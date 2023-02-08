@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "@artly-ui/flex": "*",
-    "@artly-ui/text": "*"
+    "@artly-ui/text": "*",
+    "@radix-ui/react-icons": "^1.1.1"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.18.6",

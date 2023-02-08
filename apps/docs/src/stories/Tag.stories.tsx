@@ -69,6 +69,14 @@ const Template: ComponentStory<typeof Tag> = ({ ...args }) => {
       </Flex>
       <Flex direction="column" gap="$5" align="center">
         <Heading level={5} css={{ textAlign: "center" }}>
+          Deletable tag
+        </Heading>
+        <Tag {...args} onDelete={() => alert("delete")}>
+          Deletable tag
+        </Tag>
+      </Flex>
+      <Flex direction="column" gap="$5" align="center">
+        <Heading level={5} css={{ textAlign: "center" }}>
           Tag as link
         </Heading>
         <Tag {...args} as="a" href="https://storybook.js.org/">

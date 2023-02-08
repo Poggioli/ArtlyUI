@@ -11,4 +11,5 @@ export type TagProps = HTMLArtlyProps<typeof StyledTag> &
   ArtlyVariants<typeof StyledTag> & {
     icon?: ReactNode;
     iconPosition?: "left" | "right";
+    onDelete?: () => unknown;
   };

@@ -53,4 +53,19 @@ describe("Core component / Tag", () => {
     });
     expect(icon).toBeVisible();
   });
+
+  it(`GIVEN a Tag component
+      WHEN onDelete props is defined
+      SHOULD render icon to delete`, () => {
+    const onDelete = jest.fn();
+
+    const rendered = render(
+      <Tag onDelete={onDelete} aria-label="Remove Tag component">
+        Tag component
+      </Tag>
+    );
+
+    const iconToDelete = rendered.getByLabelText("Remove Tag component");
+    expect(iconToDelete).toBeVisible();
+  });
 });
