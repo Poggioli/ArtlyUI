@@ -29,6 +29,10 @@ const Flex = forwardRef<typeof StyledFlex, FlexProps>(
       gap,
       columnGap: gapX,
       rowGap: gapY,
+      width:
+        direction === "column" || direction === "column-reverse"
+          ? "100%"
+          : css?.width,
     };
 
     return (
