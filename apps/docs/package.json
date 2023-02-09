@@ -31,6 +31,7 @@
     "@artly-ui/separator": "*",
     "@artly-ui/slider": "*",
     "@artly-ui/switch": "*",
+    "@artly-ui/tag": "*",
     "@artly-ui/text": "*",
     "@artly-ui/toast": "*",
     "@artly-ui/tokens": "*",

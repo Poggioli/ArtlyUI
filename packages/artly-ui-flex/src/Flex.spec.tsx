@@ -1,5 +1,5 @@
 import { ArtlyVariants } from "@artly-ui/core";
-import { RenderResult, render } from "@testing-library/react";
+import { render, RenderResult } from "@testing-library/react";
 import { Flex } from "./Flex";
 
 describe("Layout component / Flex", () => {
@@ -19,6 +19,16 @@ describe("Layout component / Flex", () => {
 
   it("Should render Flex", () => {
     mount({ wrap: "nowrap" });
+    expect(flexElement).toBeVisible();
+  });
+
+  it("Should render Flex", () => {
+    mount({ wrap: "nowrap", direction: "column" });
+    expect(flexElement).toBeVisible();
+  });
+
+  it("Should render Flex", () => {
+    mount({ wrap: "nowrap", direction: "reverse-column" });
     expect(flexElement).toBeVisible();
   });
 });

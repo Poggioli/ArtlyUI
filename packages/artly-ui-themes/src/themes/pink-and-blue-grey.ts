@@ -21,4 +21,9 @@ export const PinkAndBlueGreyTheme = {
   }),
   "badge--unstyled--text": "$gray-10",
   "badge--secondary--text": "$gray-10",
+  "tag--filled--primary--text": "$gray-10",
+  "tag--filled--secondary--text": "$gray-10",
+  "tag--filled--accent--text": "$gray-10",
+  "tag--filled--error--text": "$gray-10",
+  "tag--outlined--primary--text": "$text-high-contrast",
 };

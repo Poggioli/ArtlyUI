@@ -1,45 +1,72 @@
 # Roadmap
 
-## Components
+## Components status
 
 ✅ done
 
 ⚒️ WIP
 
-Accordion ✅
-Alert Dialog ✅
-Aspect Ratio (Image) ✅
-Avatar ✅
-Badge ✅
-Box ✅
-Button ✅
-Checkbox
-Collapsible ✅
-Context Menu
-Container ✅
-Dialog ✅
-Dropdown Menu
-Flex ✅
-Heading ✅
-Hover Card ✅
-Input
-Label ✅
-Navigation Menu
-Popover ✅
-Progress Bar ✅
-Radio Group
-Scroll Area ✅
-Select
-Separator ✅
-Slider ✅
-Switch ✅
-Table
-Tabs
-Tag
-Text ✅
-Toast ✅
-Toggle
-Toggle Group
-Toolbar
-Tooltip ✅
-Pagination
+<br>
+
+### Core components
+- Button ✅
+- Checkbox
+- Input
+- Radio Group
+- Select
+- Slider ✅
+- Switch ✅
+- Toggle
+- Toggle Group
+
+<br>
+
+### Data display components
+- Aspect Ratio (Image) ✅
+- Avatar ✅
+- Badge ✅
+- Collapsible ✅
+- Dialog ✅
+- Heading ✅
+- Hover Card ✅
+- Label ✅
+- Popover ✅
+- Separator ✅
+- Tag ✅
+- Table
+- Text ✅
+- Tooltip ✅
+
+<br>
+
+### Surface components
+- Accordion ✅
+- Card
+- Context Menu
+- Dropdown Menu
+- Toolbar
+
+<br>
+
+### Feedback components
+- Alert Dialog ✅
+- Progress Bar ✅
+- Toast ✅
+
+<br>
+
+### Layout components
+- Box ✅
+- Container ✅
+- Flex ✅
+- Scroll Area ✅
+
+<br>
+
+### Navigation components
+
+- Link
+- Navigation Menu
+- Pagination
+- Tabs
+
