@@ -260,6 +260,7 @@ const StyledSwitchLabel = styled(Label, {
   alignItems: "center",
   cursor: "default",
   display: "inline-flex",
+  flex: 1,
 });
 
 export {

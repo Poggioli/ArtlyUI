@@ -9,8 +9,9 @@
 <br>
 
 ### Core components
+
 - Button ✅
-- Checkbox
+- Checkbox ⚒️
 - Input
 - Radio Group
 - Select
@@ -22,6 +23,7 @@
 <br>
 
 ### Data display components
+
 - Aspect Ratio (Image) ✅
 - Avatar ✅
 - Badge ✅
@@ -40,6 +42,7 @@
 <br>
 
 ### Surface components
+
 - Accordion ✅
 - Card
 - Context Menu
@@ -49,6 +52,7 @@
 <br>
 
 ### Feedback components
+
 - Alert Dialog ✅
 - Progress Bar ✅
 - Toast ✅
@@ -56,6 +60,7 @@
 <br>
 
 ### Layout components
+
 - Box ✅
 - Container ✅
 - Flex ✅
@@ -69,4 +74,3 @@
 - Navigation Menu
 - Pagination
 - Tabs
-

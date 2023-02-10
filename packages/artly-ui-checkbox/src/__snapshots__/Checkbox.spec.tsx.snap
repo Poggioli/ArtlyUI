@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Core component / Switch GIVEN a Switch component
+exports[`Core component / Checkbox GIVEN a Checkbox component
       WITH disabled state
       WHEN render component
       THEN should occurs render normaly 1`] = `
@@ -10,27 +10,21 @@ exports[`Core component / Switch GIVEN a Switch component
   >
     <label
       class="artly-UI-c-chWhuJ artly-UI-c-chWhuJ-jprvTt-variant-body1 artly-UI-c-chWhuJ-cmVlgk-align-left artly-UI-c-chWhuJ-ijDMiJS-css artly-UI-c-kwAZbD"
-      for="switch-airplane"
+      for="checkbox-airplane"
     >
-      Switch Label
+      Checkbox Label
     </label>
     <button
       aria-checked="false"
-      class="artly-UI-c-ctpKDW artly-UI-c-ctpKDW-dRUqVD-color-primary"
+      class="artly-UI-c-dFFOLH artly-UI-c-dFFOLH-bmChoa-color-unstyled"
       data-disabled=""
       data-state="unchecked"
       disabled=""
-      id="switch-airplane"
-      role="switch"
+      id="checkbox-airplane"
+      role="checkbox"
       type="button"
-      value="on"
-    >
-      <span
-        class="artly-UI-c-ihrdaH artly-UI-c-ihrdaH-enlfht-color-primary"
-        data-disabled=""
-        data-state="unchecked"
-      />
-    </button>
+      value="item-1"
+    />
   </div>
 </div>
 `;

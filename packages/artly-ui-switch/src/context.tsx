@@ -1,12 +1,6 @@
 import { createContext, FC, PropsWithChildren, useState } from "react";
 import { SwitchContextType } from "./types";
-
-const DEFAULT_VALUE: SwitchContextType = {
-  state: {
-    disabled: false,
-  },
-  setState: () => {},
-};
+import { DEFAULT_VALUE } from "./value";
 
 const SwitchContext = createContext<SwitchContextType>(DEFAULT_VALUE);
 

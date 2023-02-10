@@ -1,12 +1,6 @@
 import { createContext, FC, PropsWithChildren, useState } from "react";
 import { AccordionContextType, AccordionItemContextType } from "./types";
-
-const DEFAULT_VALUE: AccordionContextType = {
-  state: {
-    disabled: false,
-  },
-  setState: () => {},
-};
+import { DEFAULT_VALUE, DEFAULT_VALUE_ITEM } from "./value";
 
 const AccordionContext = createContext<AccordionContextType>(DEFAULT_VALUE);
 
@@ -18,13 +12,6 @@ const AccordionContextProvider: FC<PropsWithChildren> = ({ children }) => {
       {children}
     </AccordionContext.Provider>
   );
-};
-
-const DEFAULT_VALUE_ITEM: AccordionItemContextType = {
-  state: {
-    disabled: false,
-  },
-  setState: () => {},
 };
 
 const AccordionItemContext =
