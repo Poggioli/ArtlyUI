@@ -7,7 +7,9 @@ import { StyledCheckboxRoot } from "./styles";
 
 export type CheckboxProps = HTMLArtlyProps<typeof StyledCheckboxRoot> &
   ArtlyVariants<typeof StyledCheckboxRoot> &
-  CheckboxPrimitives.CheckboxProps;
+  CheckboxPrimitives.CheckboxProps & {
+    value: string;
+  };
 
 export type CheckboxContainerProps = FlexProps;
 
@@ -20,4 +22,18 @@ export type CheckboxContextState = {
 export type CheckboxContextType = {
   state: CheckboxContextState;
   setState: Dispatch<SetStateAction<CheckboxContextState>>;
+};
+
+export type CheckboxGroupContextState = {
+  disabled: boolean;
+  value: string[];
+  defaultValue: string[];
+  required: boolean;
+  color: any;
+  onChangeValue: (value: string[]) => void;
+};
+
+export type CheckboxGroupContextType = {
+  state: CheckboxGroupContextState;
+  setState: Dispatch<SetStateAction<CheckboxGroupContextState>>;
 };

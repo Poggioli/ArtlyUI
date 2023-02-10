@@ -19,7 +19,7 @@ const StyledCheckboxRoot = styled(CheckboxPrimitives.Root, {
   height: "$4",
   justifyContent: "center",
   transition:
-    "background-color 200ms linear, box-shadow 300ms cubic-bezier(0.87, 0, 0.13, 1)",
+    "background-color 200ms linear, box-shadow 200ms cubic-bezier(0.87, 0, 0.13, 1)",
   width: "$4",
 
   "&:enabled": {

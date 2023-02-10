@@ -8,4 +8,5 @@ export const DeepPurpleAndAmberTheme = {
   "tag--outlined--secondary--text": "$text-high-contrast",
   "tag--outlined--accent--text": "$text-high-contrast",
   "tag--outlined--error--text": "$text-high-contrast",
+  "checkbox--secondary--indicator--color": "$text-high-contrast",
 };

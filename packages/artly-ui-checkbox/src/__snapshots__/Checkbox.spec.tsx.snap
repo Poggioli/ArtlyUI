@@ -16,14 +16,14 @@ exports[`Core component / Checkbox GIVEN a Checkbox component
     </label>
     <button
       aria-checked="false"
-      class="artly-UI-c-grcErq artly-UI-c-grcErq-bmChoa-color-unstyled"
+      class="artly-UI-c-dFFOLH artly-UI-c-dFFOLH-bmChoa-color-unstyled"
       data-disabled=""
       data-state="unchecked"
       disabled=""
       id="checkbox-airplane"
       role="checkbox"
       type="button"
-      value="on"
+      value="item-1"
     />
   </div>
 </div>

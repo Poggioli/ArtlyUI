@@ -1,17 +1,22 @@
 import { forwardRef } from "@artly-ui/core";
 import { CheckIcon } from "@radix-ui/react-icons";
-import { useContext, useEffect } from "react";
-import { CheckboxContext, CheckboxContextProvider } from "./context";
+import { useContext, useEffect, useMemo, useState } from "react";
+import {
+  CheckboxContext,
+  CheckboxContextProvider,
+  CheckboxGroupContext,
+  CheckboxGroupContextProvider
+} from "./context";
 import {
   StyledCheckboxContainer,
   StyledCheckboxIndicator,
   StyledCheckboxLabel,
-  StyledCheckboxRoot,
+  StyledCheckboxRoot
 } from "./styles";
 import {
   CheckboxContainerProps,
   CheckboxLabelProps,
-  CheckboxProps,
+  CheckboxProps
 } from "./types";
 
 // ------------------------------------------- Checkbox Container ------------------------------------------- //
@@ -59,24 +64,81 @@ const CheckboxLabel = forwardRef<
 // ------------------------------------------- Checkbox Root ------------------------------------------- //
 
 const Checkbox = forwardRef<typeof StyledCheckboxRoot, CheckboxProps>(
-  ({ ...props }, forwardedRef) => {
+  (
+    { disabled, checked, value, color, onCheckedChange, ...props },
+    forwardedRef
+  ) => {
+    const [isCheckedState, setIsCheckedState] = useState(checked);
     const { setState } = useContext(CheckboxContext);
+    const {
+      state: {
+        disabled: disabledGroup,
+        value: checkedsValue,
+        onChangeValue,
+        color: colorGroup,
+      },
+    } = useContext(CheckboxGroupContext);
+
+    const variantColor = useMemo(
+      () => color ?? colorGroup,
+      [color, colorGroup]
+    );
+
+    const isChecked = useMemo(() => {
+      return (
+        isCheckedState ||
+        checkedsValue.some((checkedValue) => checkedValue === value)
+      );
+    }, [checkedsValue, isCheckedState, value]);
+
+    const isDisabled = useMemo(
+      () => disabledGroup || !!disabled,
+      [disabledGroup, disabled]
+    );
+
+    const handleOnCheckedChange = (valueChange: boolean | "indeterminate") => {
+      if (onCheckedChange) {
+        onCheckedChange(valueChange);
+      }
+
+      setIsCheckedState(!!valueChange);
+
+      if (valueChange) {
+        onChangeValue([...checkedsValue, value]);
+      } else {
+        onChangeValue(
+          checkedsValue.filter((checkedValue) => checkedValue !== value)
+        );
+      }
+    };
 
     useEffect(() => {
       setState((previousState) => ({
         ...previousState,
-        disabled: !!props.disabled,
+        disabled: !!isDisabled,
       }));
-    }, [props.disabled, setState]);
+    }, [isDisabled, setState]);
 
     return (
-      <StyledCheckboxRoot {...props} ref={forwardedRef}>
+      <StyledCheckboxRoot
+        {...props}
+        ref={forwardedRef}
+        disabled={isDisabled}
+        checked={isChecked}
+        value={value}
+        color={variantColor}
+        onCheckedChange={handleOnCheckedChange}
+      >
         <StyledCheckboxIndicator>
-          <CheckIcon width="$4" height="$4" />
+          <CheckIcon width="16" height="16" />
         </StyledCheckboxIndicator>
       </StyledCheckboxRoot>
     );
   }
 );
 
-export { CheckboxContainer, Checkbox, CheckboxLabel };
+// ------------------------------------------- Checkbox Group Provider ------------------------------------------- //
+
+const CheckboxGroup = CheckboxGroupContextProvider;
+
+export { CheckboxContainer, Checkbox, CheckboxLabel, CheckboxGroup };
