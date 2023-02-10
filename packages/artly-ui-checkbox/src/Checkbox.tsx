@@ -5,18 +5,18 @@ import {
   CheckboxContext,
   CheckboxContextProvider,
   CheckboxGroupContext,
-  CheckboxGroupContextProvider
+  CheckboxGroupContextProvider,
 } from "./context";
 import {
   StyledCheckboxContainer,
   StyledCheckboxIndicator,
   StyledCheckboxLabel,
-  StyledCheckboxRoot
+  StyledCheckboxRoot,
 } from "./styles";
 import {
   CheckboxContainerProps,
   CheckboxLabelProps,
-  CheckboxProps
+  CheckboxProps,
 } from "./types";
 
 // ------------------------------------------- Checkbox Container ------------------------------------------- //

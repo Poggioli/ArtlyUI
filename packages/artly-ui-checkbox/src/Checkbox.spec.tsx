@@ -5,7 +5,7 @@ import {
   Checkbox,
   CheckboxContainer,
   CheckboxGroup,
-  CheckboxLabel
+  CheckboxLabel,
 } from "./Checkbox";
 
 describe("Core component / Checkbox", () => {

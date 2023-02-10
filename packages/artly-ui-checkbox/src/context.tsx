@@ -3,16 +3,14 @@ import {
   FC,
   PropsWithChildren,
   useEffect,
-  useState
+  useState,
 } from "react";
 import {
   CheckboxContextType,
   CheckboxGroupContextState,
-  CheckboxGroupContextType
+  CheckboxGroupContextType,
 } from "./types";
 import { DEFAULT_VALUE, DEFAULT_VALUE_GROUP } from "./values";
-
-
 
 const CheckboxContext = createContext<CheckboxContextType>(DEFAULT_VALUE);
 
