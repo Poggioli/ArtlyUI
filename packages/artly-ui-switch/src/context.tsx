@@ -1,6 +1,6 @@
 import { createContext, FC, PropsWithChildren, useState } from "react";
 import { SwitchContextType } from "./types";
-import { DEFAULT_VALUE } from "./value";
+import { DEFAULT_VALUE } from "./values";
 
 const SwitchContext = createContext<SwitchContextType>(DEFAULT_VALUE);
 

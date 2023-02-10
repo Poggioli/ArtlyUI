@@ -1,6 +1,6 @@
 import { createContext, FC, PropsWithChildren, useState } from "react";
 import { AccordionContextType, AccordionItemContextType } from "./types";
-import { DEFAULT_VALUE, DEFAULT_VALUE_ITEM } from "./value";
+import { DEFAULT_VALUE, DEFAULT_VALUE_ITEM } from "./values";
 
 const AccordionContext = createContext<AccordionContextType>(DEFAULT_VALUE);
 

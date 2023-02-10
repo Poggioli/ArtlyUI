@@ -28,6 +28,7 @@
     "@artly-ui/label": "*",
     "@artly-ui/progress-bar": "*",
     "@artly-ui/popover": "*",
+    "@artly-ui/radio": "*",
     "@artly-ui/scroll-area": "*",
     "@artly-ui/separator": "*",
     "@artly-ui/slider": "*",
