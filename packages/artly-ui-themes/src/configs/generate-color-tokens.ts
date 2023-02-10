@@ -566,5 +566,8 @@ export const generateColorTokens = (
     "radio--error--border-color--disabled": "$error-50",
     "radio--error--indicator--color": "$error-90",
     "radio--error--indicator--color--disabled": "$error-60",
+
+    "card--background-color": "$background-subtle",
+    "card--border-color": "$gray-50",
   };
 };

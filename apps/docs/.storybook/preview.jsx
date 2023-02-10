@@ -48,7 +48,7 @@ export const decorators = [
         align="center"
         justify="center"
         css={{
-          height: '100vh',
+          minHeight: '100vh',
         }}
       >
         <Story />

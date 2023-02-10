@@ -12,7 +12,11 @@
     "clear": "rimraf .turbo coverage node_modules dist",
     "test": "jest"
   },
-  "dependencies": { },
+  "dependencies": {
+    "@artly-ui/flex": "*",
+    "@artly-ui/heading": "*",
+    "@artly-ui/text": "*"
+  },
   "devDependencies": {
     "@babel/preset-typescript": "^7.18.6",
     "@testing-library/jest-dom": "^5.16.5",
