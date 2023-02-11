@@ -52,7 +52,7 @@ const Template: ComponentStory<typeof Accordion> = ({
   collapsible,
   ...args
 }) => (
-  <Box css={{ height: "100%" }}>
+  <Box css={{ height: "100%", width: "fit-content", margin: "0 auto" }}>
     <Accordion
       type={type}
       disabled={disabled}

@@ -6,8 +6,9 @@ import {
   AlertDialogContent,
   AlertDialogDescription,
   AlertDialogTitle,
-  AlertDialogTrigger,
+  AlertDialogTrigger
 } from "@artly-ui/alert-dialog";
+import { Box } from "@artly-ui/box";
 import { Button } from "@artly-ui/button";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
@@ -18,30 +19,32 @@ const story: ComponentMeta<typeof AlertDialog> = {
 };
 
 const Template: ComponentStory<any> = () => (
-  <AlertDialog>
-    <AlertDialogTrigger>
-      <Button color="error" shape="flat">
-        Delete account
-      </Button>
-    </AlertDialogTrigger>
-    <AlertDialogContent>
-      <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-      <AlertDialogDescription>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
-      </AlertDialogDescription>
-      <AlertDialogActionContainer>
-        <AlertDialogCancel>
-          <Button shape="flat">Cancel</Button>
-        </AlertDialogCancel>
-        <AlertDialogAction>
-          <Button color="error" shape="flat">
-            Yes, delete account
-          </Button>
-        </AlertDialogAction>
-      </AlertDialogActionContainer>
-    </AlertDialogContent>
-  </AlertDialog>
+  <Box css={{ height: "100%", width: "fit-content", margin: "0 auto" }}>
+    <AlertDialog>
+      <AlertDialogTrigger>
+        <Button color="error" shape="flat">
+          Delete account
+        </Button>
+      </AlertDialogTrigger>
+      <AlertDialogContent>
+        <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+        <AlertDialogDescription>
+          This action cannot be undone. This will permanently delete your
+          account and remove your data from our servers.
+        </AlertDialogDescription>
+        <AlertDialogActionContainer>
+          <AlertDialogCancel>
+            <Button shape="flat">Cancel</Button>
+          </AlertDialogCancel>
+          <AlertDialogAction>
+            <Button color="error" shape="flat">
+              Yes, delete account
+            </Button>
+          </AlertDialogAction>
+        </AlertDialogActionContainer>
+      </AlertDialogContent>
+    </AlertDialog>
+  </Box>
 );
 
 export const Default = Template.bind({});

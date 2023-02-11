@@ -52,18 +52,20 @@ const story: ComponentMeta<typeof Badge> = {
 };
 
 const Template: ComponentStory<typeof Badge> = ({ ...args }) => (
-  <Badge {...args}>
-    <Box
-      css={{
-        svg: {
-          fill: "$text-high-contrast",
-          color: "$text-high-contrast",
-        },
-      }}
-    >
-      <BellIcon width={24} height={24} />
-    </Box>
-  </Badge>
+  <Box css={{ height: "100%", width: "fit-content", margin: "0 auto" }}>
+    <Badge {...args}>
+      <Box
+        css={{
+          svg: {
+            fill: "$text-high-contrast",
+            color: "$text-high-contrast",
+          },
+        }}
+      >
+        <BellIcon width={24} height={24} />
+      </Box>
+    </Badge>
+  </Box>
 );
 
 export const Default = Template.bind({});

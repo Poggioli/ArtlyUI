@@ -49,17 +49,19 @@ const Template: ComponentStory<typeof Tag> = ({ ...args }) => {
   return (
     <Flex
       direction="column"
-      justify="space-evenly"
-      align="center"
-      css={{ height: "100%" }}
+      gap="$8"
+      css={{ 
+        height: "100%",
+        maxWidth: "100%"
+      }}
     >
-      <Flex direction="column" gap="$5" align="center">
+      <Flex direction="column" gap="$3" align="center">
         <Heading level={5} css={{ textAlign: "center" }}>
           Without icon
         </Heading>
         <Tag {...args}>Tag Component</Tag>
       </Flex>
-      <Flex direction="column" gap="$5" align="center">
+      <Flex direction="column" gap="$3" align="center">
         <Heading level={5} css={{ textAlign: "center" }}>
           With icon
         </Heading>
@@ -67,7 +69,7 @@ const Template: ComponentStory<typeof Tag> = ({ ...args }) => {
           Tag Component
         </Tag>
       </Flex>
-      <Flex direction="column" gap="$5" align="center">
+      <Flex direction="column" gap="$3" align="center">
         <Heading level={5} css={{ textAlign: "center" }}>
           Deletable tag
         </Heading>
@@ -75,7 +77,7 @@ const Template: ComponentStory<typeof Tag> = ({ ...args }) => {
           Deletable tag
         </Tag>
       </Flex>
-      <Flex direction="column" gap="$5" align="center">
+      <Flex direction="column" gap="$3" align="center">
         <Heading level={5} css={{ textAlign: "center" }}>
           Tag as link
         </Heading>
@@ -83,13 +85,13 @@ const Template: ComponentStory<typeof Tag> = ({ ...args }) => {
           Tag Component
         </Tag>
       </Flex>
-      <Flex direction="column" gap="$5" align="center">
+      <Flex direction="column" gap="$3" align="center">
         <Heading level={5} css={{ textAlign: "center" }}>
           Tag with large content inside
         </Heading>
         <Tag {...args}>Tag Component with large content inside</Tag>
       </Flex>
-      <Flex direction="column" gap="$5" align="center">
+      <Flex direction="column" gap="$3" align="center">
         <Heading level={5} css={{ textAlign: "center" }}>
           Tag with large content inside and icon
         </Heading>
@@ -97,7 +99,7 @@ const Template: ComponentStory<typeof Tag> = ({ ...args }) => {
           Tag Component with large content inside
         </Tag>
       </Flex>
-      <Flex direction="column" gap="$5" align="center">
+      <Flex direction="column" gap="$3" align="center">
         <Heading level={5} css={{ textAlign: "center" }}>
           Tag as button
         </Heading>

@@ -1,3 +1,4 @@
+import { Flex } from "@artly-ui/flex";
 import { Slider, SliderThumb } from "@artly-ui/slider";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
@@ -39,10 +40,21 @@ const story: ComponentMeta<typeof Slider> = {
 };
 
 const Template: ComponentStory<typeof Slider> = ({ ...args }) => (
-  <Slider {...args} defaultValue={[25, 75]}>
-    <SliderThumb />
-    <SliderThumb />
-  </Slider>
+  <Flex
+    direction="column"
+    css={{
+      height: "100%",
+      minHeight: "calc($13 * 4)",
+      width: "100%",
+      minWidth: "calc($13 * 4)",
+      margin: "0 auto",
+    }}
+  >
+    <Slider {...args} defaultValue={[25, 75]}>
+      <SliderThumb />
+      <SliderThumb />
+    </Slider>
+  </Flex>
 );
 
 export const Default = Template.bind({});

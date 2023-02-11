@@ -1,3 +1,4 @@
+import { Box } from "@artly-ui/box";
 import * as themes from "@artly-ui/core";
 import { Flex } from "@artly-ui/flex";
 import React from 'react';
@@ -45,13 +46,18 @@ export const decorators = [
     themes.resetCssStyles()
     
     return (<Flex
-        align="center"
-        justify="center"
         css={{
           minHeight: '100vh',
         }}
       >
-        <Story />
+        <Box
+          css={{
+            margin: "auto",
+            width: "100%"
+          }}
+        >
+          <Story />
+        </Box>
       </Flex>
     )
   },

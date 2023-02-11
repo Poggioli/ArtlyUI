@@ -22,12 +22,12 @@ const story: ComponentMeta<typeof Switch> = {
 };
 
 const Template: ComponentStory<typeof Switch> = ({ ...args }) => (
-  <Flex direction="column" justify="space-evenly" css={{ height: "100%" }}>
-    <Flex direction="column" gap="$5" align="center">
+  <Flex direction="column" gap="$8" justify="space-evenly" css={{ height: "100%" }}>
+    <Flex direction="column" gap="$3" align="center">
       <Heading level={5}>Without label</Heading>
       <Switch {...args} />
     </Flex>
-    <Flex direction="column" gap="$5" align="center">
+    <Flex direction="column" gap="$3" align="center">
       <Heading level={5}>With label</Heading>
       <SwitchContainer>
         <SwitchLabel htmlFor="switch-airplane">

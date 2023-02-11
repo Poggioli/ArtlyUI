@@ -23,20 +23,20 @@ const story: ComponentMeta<typeof Radio> = {
 
 const Template: ComponentStory<typeof Radio> = ({ ...args }) => {
   return (
-    <Flex direction="column" justify="space-evenly" css={{ height: "100%" }}>
-      <Flex direction="column" gap="$5" align="center">
+    <Flex direction="column" gap="$8" justify="space-evenly" css={{ height: "100%" }}>
+      <Flex direction="column" gap="$3" align="center">
         <Heading level={5}>Without label</Heading>
         <Radio {...args}>
-          <Flex gap="$5" align="center">
+          <Flex gap="$7" wrap="wrap" align="center">
             <RadioItem value="radio-1" />
             <RadioItem value="radio-2" />
           </Flex>
         </Radio>
       </Flex>
-      <Flex direction="column" gap="$5" align="center">
+      <Flex direction="column" gap="$3" align="center">
         <Heading level={5}>With label</Heading>
         <Radio {...args}>
-          <Flex gap="$5" align="center">
+          <Flex gap="$7" wrap="wrap" align="center">
             <RadioContainer>
               <RadioItem id="daily" value="daily" />
               <RadioLabel htmlFor="daily">Daily</RadioLabel>

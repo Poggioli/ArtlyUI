@@ -2,7 +2,7 @@ import {
   Checkbox,
   CheckboxContainer,
   CheckboxGroup,
-  CheckboxLabel,
+  CheckboxLabel
 } from "@artly-ui/checkbox";
 import { Container } from "@artly-ui/container";
 import { Flex } from "@artly-ui/flex";
@@ -32,12 +32,12 @@ const Template: ComponentStory<typeof Checkbox> = ({ ...args }) => {
   const [valueGroup, setValueGroup] = useState<string[]>([]);
 
   return (
-    <Flex direction="column" justify="space-evenly" css={{ height: "100%" }}>
-      <Flex direction="column" gap="$5" align="center">
+    <Flex gap="$8" direction="column" justify="space-evenly" css={{ height: "100%" }}>
+      <Flex direction="column" gap="$3" align="center">
         <Heading level={5}>Without label</Heading>
         <Checkbox {...args} />
       </Flex>
-      <Flex direction="column" gap="$5" align="center">
+      <Flex direction="column" gap="$3" align="center">
         <Heading level={5}>With label</Heading>
         <CheckboxContainer>
           <Checkbox {...args} id="checkbox-1" />
@@ -47,9 +47,8 @@ const Template: ComponentStory<typeof Checkbox> = ({ ...args }) => {
         </CheckboxContainer>
       </Flex>
 
-      <Flex direction="column" gap="$5" align="center">
+      <Flex direction="column" gap="$3" align="center">
         <Heading level={5}>Checkbox Group</Heading>
-
         <Container size="medium">
           <CheckboxGroup
             disabled={args.disabled}
