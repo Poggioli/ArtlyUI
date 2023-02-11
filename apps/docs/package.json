@@ -16,6 +16,7 @@
     "@artly-ui/badge": "*",
     "@artly-ui/box": "*",
     "@artly-ui/button": "*",
+    "@artly-ui/card": "*",
     "@artly-ui/checkbox": "*",
     "@artly-ui/collapsible": "*",
     "@artly-ui/container": "*",

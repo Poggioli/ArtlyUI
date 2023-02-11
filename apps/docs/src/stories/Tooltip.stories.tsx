@@ -1,3 +1,4 @@
+import { Box } from "@artly-ui/box";
 import { Button } from "@artly-ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@artly-ui/tooltip";
 import { EnvelopeClosedIcon, InfoCircledIcon } from "@radix-ui/react-icons";
@@ -81,29 +82,31 @@ const story: ComponentMeta<typeof Tooltip> = {
 };
 
 const Template: ComponentStory<typeof Tooltip> = ({ ...args }) => (
-  <Tooltip>
-    <TooltipTrigger>
-      <Button shape="icon" aria-label="Mark as unread">
-        <EnvelopeClosedIcon />
-      </Button>
-    </TooltipTrigger>
-    <TooltipContent
-      {...args}
-      direction={args.direction}
-      align={args.align}
-      justify={args.justify}
-      wrap={args.wrap}
-      templateColumns={args.templateColumns}
-      templateRows={args.templateRows}
-      gap={args.gap}
-      gapX={args.gapX}
-      gapY={args.gapY}
-      icon={args.hasIcon ? <InfoCircledIcon /> : null}
-      css={args.css}
-    >
-      {args.text}
-    </TooltipContent>
-  </Tooltip>
+  <Box css={{ height: "100%", width: "fit-content", margin: "0 auto" }}>
+    <Tooltip>
+      <TooltipTrigger>
+        <Button shape="icon" aria-label="Mark as unread">
+          <EnvelopeClosedIcon />
+        </Button>
+      </TooltipTrigger>
+      <TooltipContent
+        {...args}
+        direction={args.direction}
+        align={args.align}
+        justify={args.justify}
+        wrap={args.wrap}
+        templateColumns={args.templateColumns}
+        templateRows={args.templateRows}
+        gap={args.gap}
+        gapX={args.gapX}
+        gapY={args.gapY}
+        icon={args.hasIcon ? <InfoCircledIcon /> : null}
+        css={args.css}
+      >
+        {args.text}
+      </TooltipContent>
+    </Tooltip>
+  </Box>
 );
 
 export const Default = Template.bind({});

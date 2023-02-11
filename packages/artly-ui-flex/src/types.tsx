@@ -12,4 +12,5 @@ export type FlexProps = HTMLArtlyProps<typeof StyledFlex> &
     gap?: CSS["gap"];
     gapX?: CSS["columnGap"];
     gapY?: CSS["rowGap"];
+    flex?: CSS["flex"];
   };

@@ -1,3 +1,4 @@
+import { Box } from "@artly-ui/box";
 import { Button } from "@artly-ui/button";
 import {
   Collapsible,
@@ -23,82 +24,91 @@ const Template: ComponentStory<typeof Collapsible> = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Collapsible
-      open={open}
-      onOpenChange={setOpen}
-      css={{
-        padding: "$4",
-        backgroundColor: "$gray-20",
-        borderRadius: "$2",
-      }}
-    >
-      <Flex gap="$5" justify="space-between" align="center">
-        <Heading level={6}>Profile informations</Heading>
-        <Tooltip>
-          <TooltipTrigger>
-            <CollapsibleTrigger>
-              <Button
-                shape="icon"
-                size="small"
-                aria-label={
-                  open
-                    ? "Hide profile informations"
-                    : "Show profile informations"
-                }
-              >
-                {open ? <EyeClosedIcon /> : <EyeOpenIcon />}
-              </Button>
-            </CollapsibleTrigger>
-          </TooltipTrigger>
-          <TooltipContent hasArrow={false}>
-            {open ? "Hide profile informations" : "Show profile informations"}
-          </TooltipContent>
-        </Tooltip>
-      </Flex>
-      <CollapsibleContent>
-        <Flex direction="column">
-          <Flex
-            direction="column"
-            gap="$1"
-            tabIndex={0}
-            aria-label="Name: Amir Baxter"
-          >
-            <Text variant="auxiliary">Name</Text>
-            <Text variant="body2">Amir Baxter</Text>
-          </Flex>
-          <Separator
-            decorative
-            css={{
-              margin: "$3 0",
-            }}
-          />
-          <Flex
-            direction="column"
-            gap="$1"
-            tabIndex={0}
-            aria-label="Age: 31 years old"
-          >
-            <Text variant="auxiliary">Age</Text>
-            <Text variant="body2">31 years</Text>
-          </Flex>
-          <Separator
-            decorative
-            css={{
-              margin: "$3 0",
-            }}
-          />
-          <Flex
-            direction="column"
-            gap="$1"
-            tabIndex={0}
-            aria-label="Occupation: Software Engineer"
-          >
-            <Text variant="auxiliary">Occupation</Text>
-            <Text variant="body2">Software Engineer</Text>
-          </Flex>
+    <Box css={{ height: "100%", width: "fit-content", margin: "0 auto" }}>
+      <Collapsible
+        open={open}
+        onOpenChange={setOpen}
+        css={{
+          padding: "$4",
+          backgroundColor: "$gray-20",
+          borderRadius: "$2",
+        }}
+      >
+        <Flex
+          gap="$5"
+          justify="space-between"
+          align="center"
+          css={{
+            width: "fit-content",
+          }}
+        >
+          <Heading level={6}>Profile informations</Heading>
+          <Tooltip>
+            <TooltipTrigger>
+              <CollapsibleTrigger>
+                <Button
+                  shape="icon"
+                  size="small"
+                  aria-label={
+                    open
+                      ? "Hide profile informations"
+                      : "Show profile informations"
+                  }
+                >
+                  {open ? <EyeClosedIcon /> : <EyeOpenIcon />}
+                </Button>
+              </CollapsibleTrigger>
+            </TooltipTrigger>
+            <TooltipContent hasArrow={false}>
+              {open ? "Hide profile informations" : "Show profile informations"}
+            </TooltipContent>
+          </Tooltip>
         </Flex>
-      </CollapsibleContent>
-    </Collapsible>
+        <CollapsibleContent>
+          <Flex direction="column">
+            <Flex
+              direction="column"
+              gap="$1"
+              tabIndex={0}
+              aria-label="Name: Amir Baxter"
+            >
+              <Text variant="auxiliary">Name</Text>
+              <Text variant="body2">Amir Baxter</Text>
+            </Flex>
+            <Separator
+              decorative
+              css={{
+                margin: "$3 0",
+              }}
+            />
+            <Flex
+              direction="column"
+              gap="$1"
+              tabIndex={0}
+              aria-label="Age: 31 years old"
+            >
+              <Text variant="auxiliary">Age</Text>
+              <Text variant="body2">31 years</Text>
+            </Flex>
+            <Separator
+              decorative
+              css={{
+                margin: "$3 0",
+              }}
+            />
+            <Flex
+              direction="column"
+              gap="$1"
+              tabIndex={0}
+              aria-label="Occupation: Software Engineer"
+            >
+              <Text variant="auxiliary">Occupation</Text>
+              <Text variant="body2">Software Engineer</Text>
+            </Flex>
+          </Flex>
+        </CollapsibleContent>
+      </Collapsible>
+    </Box>
   );
 };
 export const Default = Template.bind({});

@@ -1,4 +1,5 @@
 import { Avatar } from "@artly-ui/avatar";
+import { Box } from "@artly-ui/box";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 const story: ComponentMeta<typeof Avatar> = {
@@ -41,7 +42,9 @@ const story: ComponentMeta<typeof Avatar> = {
 };
 
 const Template: ComponentStory<typeof Avatar> = ({ ...args }) => (
-  <Avatar {...args}>DG</Avatar>
+  <Box css={{ height: "100%", width: "fit-content", margin: "0 auto" }}>
+    <Avatar {...args}>DG</Avatar>
+  </Box>
 );
 
 export const Default = Template.bind({});

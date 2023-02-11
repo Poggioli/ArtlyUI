@@ -1,3 +1,4 @@
+import { Box } from "@artly-ui/box";
 import { Button } from "@artly-ui/button";
 import { Flex } from "@artly-ui/flex";
 import {
@@ -77,41 +78,49 @@ const Template: ComponentStory<typeof Toast> = ({ ...args }) => {
   }
 
   return (
-    <ToastProvider swipeDirection="right" duration={3000}>
-      <Button
-        color="primary"
-        shape="stroked"
-        onClick={() => {
-          setOpen(false);
-          window.clearTimeout(timerRef.current);
-          timerRef.current = window.setTimeout(() => {
-            setOpen(true);
-          }, 100);
-        }}
-      >
-        Add to calendar
-      </Button>
-      <Toast {...args} open={open} onOpenChange={setOpen}>
-        <Flex gap="$4" align="center">
-          <Flex gap="$3" direction="column">
-            <ToastTitle>Scheduled: Catch up</ToastTitle>
-            <ToastDescription>
-              {(() => {
-                const today = new Date();
-                const inOneWeek = today.setDate(today.getDate() + 7);
-                return new Date(inOneWeek).toISOString();
-              })()}
-            </ToastDescription>
-          </Flex>
+    <Box css={{ height: "100%", width: "fit-content", margin: "0 auto" }}>
+      <ToastProvider swipeDirection="right" duration={3000}>
+        <Button
+          color="primary"
+          shape="stroked"
+          onClick={() => {
+            setOpen(false);
+            window.clearTimeout(timerRef.current);
+            timerRef.current = window.setTimeout(() => {
+              setOpen(true);
+            }, 100);
+          }}
+        >
+          Add to calendar
+        </Button>
+        <Toast {...args} open={open} onOpenChange={setOpen}>
+          <Flex gap="$4" align="center">
+            <Flex
+              gap="$3"
+              direction="column"
+              css={{
+                flex: 1,
+              }}
+            >
+              <ToastTitle>Scheduled: Catch up</ToastTitle>
+              <ToastDescription>
+                {(() => {
+                  const today = new Date();
+                  const inOneWeek = today.setDate(today.getDate() + 7);
+                  return new Date(inOneWeek).toISOString();
+                })()}
+              </ToastDescription>
+            </Flex>
 
-          <ToastAction altText="cancel scheduled" asChild>
-            <Button size="small" color="secondary" shape="stroked">
-              undo
-            </Button>
-          </ToastAction>
-        </Flex>
-      </Toast>
-    </ToastProvider>
+            <ToastAction altText="cancel scheduled" asChild>
+              <Button size="small" color="secondary" shape="stroked">
+                undo
+              </Button>
+            </ToastAction>
+          </Flex>
+        </Toast>
+      </ToastProvider>
+    </Box>
   );
 };
 

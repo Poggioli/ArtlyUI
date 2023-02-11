@@ -7,10 +7,12 @@ const story: ComponentMeta<typeof Box> = {
 };
 
 const Template: ComponentStory<typeof Box> = ({ ...args }) => (
-  <Box
-    {...args}
-    css={{ backgroundColor: "$primary-90", height: "$13", width: "$13" }}
-  />
+  <Box css={{ height: "100%", width: "fit-content", margin: "0 auto" }}>
+    <Box
+      {...args}
+      css={{ backgroundColor: "$primary-90", height: "$13", width: "$13" }}
+    />
+  </Box>
 );
 
 export const Default = Template.bind({});

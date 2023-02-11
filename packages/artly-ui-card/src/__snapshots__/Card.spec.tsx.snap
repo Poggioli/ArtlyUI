@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Data display component / Card GIVEN a Card component
+    WHEN render component
+    SHOULD occurs render normaly 1`] = `
+<div>
+  <div
+    class="artly-UI-c-bXbWpx artly-UI-c-bXbWpx-iXefLA-css artly-UI-c-uGsWN artly-UI-c-uGsWN-btuauh-shaded-true artly-UI-c-uGsWN-leqBWP-bordered-true"
+  >
+    <h3
+      class="artly-UI-c-emYHtM artly-UI-c-emYHtM-jpIAgQ-level-5 artly-UI-c-emYHtM-iiBiFgP-css"
+    >
+      Card Title
+    </h3>
+    <h4
+      class="artly-UI-c-chWhuJ artly-UI-c-chWhuJ-bzGfXE-variant-auxiliary artly-UI-c-chWhuJ-cmVlgk-align-left artly-UI-c-chWhuJ-ijlwcOl-css"
+    >
+      Card Subtitle
+    </h4>
+    <p
+      class="artly-UI-c-chWhuJ artly-UI-c-chWhuJ-bkzKcy-variant-body2 artly-UI-c-chWhuJ-cmVlgk-align-left artly-UI-c-chWhuJ-ijlwcOl-css"
+    >
+      Card Description
+    </p>
+    <div
+      class="artly-UI-c-bXbWpx artly-UI-c-bXbWpx-igRynaL-css"
+    >
+      <button>
+        Card Action
+      </button>
+    </div>
+  </div>
+</div>
+`;

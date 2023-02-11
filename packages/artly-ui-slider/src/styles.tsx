@@ -54,6 +54,7 @@ StyledSliderThumb.toString = () => `.${StyledSliderThumb.className}`;
 const StyledSliderRoot = styled(SliderPrimivites.Root, {
   alignItems: "center",
   display: "flex",
+  flex: 1,
   position: "relative",
   touchAction: "none",
   userSelect: "none",
