@@ -1,39 +1,43 @@
-import { forwardRef } from "@artly-ui/core";
+import { CSS, forwardRef } from "@artly-ui/core";
 import { StyledFlex } from "./styles";
 import { FlexProps } from "./types";
 
 const Flex = forwardRef<typeof StyledFlex, FlexProps>(
   (
     {
-      direction,
       align,
-      justify,
-      wrap,
-      templateColumns,
-      templateRows,
+      css,
+      direction,
+      flex,
       gap,
       gapX,
       gapY,
-      css,
+      justify,
+      templateColumns,
+      templateRows,
+      wrap,
       ...props
     },
     forwardedRef
   ) => {
-    const flexStyles = {
-      flexDirection: direction,
+    const flexStyles: CSS = {
       alignItems: align,
-      justifyContent: justify,
-      flexWrap: wrap ?? "wrap",
-      gridTemplateColumns: templateColumns,
-      gridTemplateRows: templateRows,
+      flexDirection: direction,
+      flex,
       gap,
       columnGap: gapX,
       rowGap: gapY,
-      width:
-        direction === "column" || direction === "column-reverse"
-          ? "100%"
-          : css?.width,
+      justifyContent: justify,
+      gridTemplateColumns: templateColumns,
+      gridTemplateRows: templateRows,
+      flexWrap: wrap,
     };
+
+    Object.keys(flexStyles).forEach((k) => {
+      if (flexStyles[k] === null || flexStyles[k] === undefined) {
+        delete flexStyles[k];
+      }
+    });
 
     return (
       <StyledFlex
