@@ -12,8 +12,8 @@ import {
 } from "./types";
 
 const Card = forwardRef<typeof StyledCard, CardProps>(
-  ({ ...props }, forwardedRef) => {
-    return <StyledCard {...props} ref={forwardedRef} />;
+  ({ direction = "column", ...props }, forwardedRef) => {
+    return <StyledCard {...props} ref={forwardedRef} direction={direction} />;
   }
 );
 
