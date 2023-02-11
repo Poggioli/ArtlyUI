@@ -23,7 +23,12 @@ const story: ComponentMeta<typeof Radio> = {
 
 const Template: ComponentStory<typeof Radio> = ({ ...args }) => {
   return (
-    <Flex direction="column" gap="$8" justify="space-evenly" css={{ height: "100%" }}>
+    <Flex
+      direction="column"
+      gap="$8"
+      justify="space-evenly"
+      css={{ height: "100%" }}
+    >
       <Flex direction="column" gap="$3" align="center">
         <Heading level={5}>Without label</Heading>
         <Radio {...args}>

@@ -5,14 +5,14 @@ import {
   CardContainerAction,
   CardDescription,
   CardSubtitle,
-  CardTitle
+  CardTitle,
 } from "@artly-ui/card";
 import { Flex } from "@artly-ui/flex";
 import { Image } from "@artly-ui/image";
 import {
   PlayIcon,
   TrackNextIcon,
-  TrackPreviousIcon
+  TrackPreviousIcon,
 } from "@radix-ui/react-icons";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
@@ -153,7 +153,12 @@ const Template: ComponentStory<typeof Card> = ({ ...args }) => {
         </Flex>
       </Card>
 
-      <Card {...args} css={{ maxWidth: "calc($13 * 2.5)" }} as="a" href="https://github.com/Poggioli">
+      <Card
+        {...args}
+        css={{ maxWidth: "calc($13 * 2.5)" }}
+        as="a"
+        href="https://github.com/Poggioli"
+      >
         <Image
           src="https://avatars.githubusercontent.com/u/14229296?v=4"
           alt="João Poggioli Photo"

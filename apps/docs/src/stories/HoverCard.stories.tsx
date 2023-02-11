@@ -5,7 +5,7 @@ import { Heading } from "@artly-ui/heading";
 import {
   HoverCard,
   HoverCardContent,
-  HoverCardTrigger
+  HoverCardTrigger,
 } from "@artly-ui/hover-card";
 import { Text } from "@artly-ui/text";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";

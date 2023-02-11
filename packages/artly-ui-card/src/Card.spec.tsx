@@ -4,7 +4,7 @@ import {
   CardContainerAction,
   CardDescription,
   CardSubtitle,
-  CardTitle
+  CardTitle,
 } from "./Card";
 
 describe("Data display component / Card", () => {

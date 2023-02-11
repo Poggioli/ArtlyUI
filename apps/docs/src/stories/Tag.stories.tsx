@@ -50,9 +50,9 @@ const Template: ComponentStory<typeof Tag> = ({ ...args }) => {
     <Flex
       direction="column"
       gap="$8"
-      css={{ 
+      css={{
         height: "100%",
-        maxWidth: "100%"
+        maxWidth: "100%",
       }}
     >
       <Flex direction="column" gap="$3" align="center">

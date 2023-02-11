@@ -2,7 +2,7 @@ import {
   Checkbox,
   CheckboxContainer,
   CheckboxGroup,
-  CheckboxLabel
+  CheckboxLabel,
 } from "@artly-ui/checkbox";
 import { Container } from "@artly-ui/container";
 import { Flex } from "@artly-ui/flex";
@@ -32,7 +32,12 @@ const Template: ComponentStory<typeof Checkbox> = ({ ...args }) => {
   const [valueGroup, setValueGroup] = useState<string[]>([]);
 
   return (
-    <Flex gap="$8" direction="column" justify="space-evenly" css={{ height: "100%" }}>
+    <Flex
+      gap="$8"
+      direction="column"
+      justify="space-evenly"
+      css={{ height: "100%" }}
+    >
       <Flex direction="column" gap="$3" align="center">
         <Heading level={5}>Without label</Heading>
         <Checkbox {...args} />

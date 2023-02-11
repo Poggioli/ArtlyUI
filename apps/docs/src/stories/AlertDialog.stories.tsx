@@ -6,7 +6,7 @@ import {
   AlertDialogContent,
   AlertDialogDescription,
   AlertDialogTitle,
-  AlertDialogTrigger
+  AlertDialogTrigger,
 } from "@artly-ui/alert-dialog";
 import { Box } from "@artly-ui/box";
 import { Button } from "@artly-ui/button";

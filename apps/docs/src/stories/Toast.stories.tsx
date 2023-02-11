@@ -6,7 +6,7 @@ import {
   ToastAction,
   ToastDescription,
   ToastProvider,
-  ToastTitle
+  ToastTitle,
 } from "@artly-ui/toast";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { useRef, useState } from "react";

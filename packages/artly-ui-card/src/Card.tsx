@@ -8,7 +8,7 @@ import {
   CardDescriptionProps,
   CardProps,
   CardSubtitleProps,
-  CardTitleProps
+  CardTitleProps,
 } from "./types";
 
 const Card = forwardRef<typeof StyledCard, CardProps>(

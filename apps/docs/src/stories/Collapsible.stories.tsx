@@ -3,7 +3,7 @@ import { Button } from "@artly-ui/button";
 import {
   Collapsible,
   CollapsibleContent,
-  CollapsibleTrigger
+  CollapsibleTrigger,
 } from "@artly-ui/collapsible";
 import { Flex } from "@artly-ui/flex";
 import { Heading } from "@artly-ui/heading";
