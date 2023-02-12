@@ -17,7 +17,6 @@
 - Select
 - Slider ✅
 - Switch ✅
-- Toggle
 - Toggle Group ⚒️
 
 <br>

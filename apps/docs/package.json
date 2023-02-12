@@ -38,6 +38,7 @@
     "@artly-ui/text": "*",
     "@artly-ui/toast": "*",
     "@artly-ui/tokens": "*",
+    "@artly-ui/toggle-group": "*",
     "@artly-ui/tooltip": "*",
     "@radix-ui/react-icons": "^1.1.1",
     "react": "^18.2.0",
