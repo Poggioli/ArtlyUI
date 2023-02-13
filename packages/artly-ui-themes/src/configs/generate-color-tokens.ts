@@ -569,5 +569,94 @@ export const generateColorTokens = (
 
     "card--background-color": "$background-subtle",
     "card--border-color": "$gray-50",
+
+    "toggle-group--unstyled--background-color--unchecked--normal":
+      "transparent",
+    "toggle-group--unstyled--background-color--unchecked--normal-unbordered-unshaded":
+      "$gray-10",
+    "toggle-group--unstyled--background-color--unchecked--hover": "$gray-20",
+    "toggle-group--unstyled--background-color--unchecked--focus": "$gray-30",
+    "toggle-group--unstyled--background-color--checked": "$gray-50",
+    "toggle-group--unstyled--background-color--unchecked--disabled":
+      "transparent",
+    "toggle-group--unstyled--background-color--checked--disabled": "$gray-30",
+    "toggle-group--unstyled--border-color--checked": "$gray-80",
+    "toggle-group--unstyled--border-color--normal": "$gray-80",
+    "toggle-group--unstyled--border-color--hover": "$gray-90",
+    "toggle-group--unstyled--border-color--focus": "$gray-100",
+    "toggle-group--unstyled--border-color--disabled": "$gray-50",
+    "toggle-group--unstyled--color": "$gray-200",
+    "toggle-group--unstyled--color--disabled": "$gray-60",
+
+    "toggle-group--primary--background-color--unchecked--normal": "transparent",
+    "toggle-group--primary--background-color--unchecked--normal-unbordered-unshaded":
+      "$primary-10",
+    "toggle-group--primary--background-color--unchecked--hover": "$primary-20",
+    "toggle-group--primary--background-color--unchecked--focus": "$primary-30",
+    "toggle-group--primary--background-color--checked": "$primary-50",
+    "toggle-group--primary--background-color--unchecked--disabled":
+      "transparent",
+    "toggle-group--primary--background-color--checked--disabled": "$primary-30",
+    "toggle-group--primary--border-color--checked": "$primary-80",
+    "toggle-group--primary--border-color--normal": "$primary-80",
+    "toggle-group--primary--border-color--hover": "$primary-90",
+    "toggle-group--primary--border-color--focus": "$primary-100",
+    "toggle-group--primary--border-color--disabled": "$primary-50",
+    "toggle-group--primary--color": "$primary-90",
+    "toggle-group--primary--color--disabled": "$primary-60",
+
+    "toggle-group--secondary--background-color--unchecked--normal":
+      "transparent",
+    "toggle-group--secondary--background-color--unchecked--normal-unbordered-unshaded":
+      "$secondary-10",
+    "toggle-group--secondary--background-color--unchecked--hover":
+      "$secondary-20",
+    "toggle-group--secondary--background-color--unchecked--focus":
+      "$secondary-30",
+    "toggle-group--secondary--background-color--checked": "$secondary-50",
+    "toggle-group--secondary--background-color--unchecked--disabled":
+      "transparent",
+    "toggle-group--secondary--background-color--checked--disabled":
+      "$secondary-30",
+    "toggle-group--secondary--border-color--checked": "$secondary-80",
+    "toggle-group--secondary--border-color--normal": "$secondary-80",
+    "toggle-group--secondary--border-color--hover": "$secondary-90",
+    "toggle-group--secondary--border-color--focus": "$secondary-100",
+    "toggle-group--secondary--border-color--disabled": "$secondary-50",
+    "toggle-group--secondary--color": "$secondary-90",
+    "toggle-group--secondary--color--disabled": "$secondary-60",
+
+    "toggle-group--accent--background-color--unchecked--normal": "transparent",
+    "toggle-group--accent--background-color--unchecked--normal-unbordered-unshaded":
+      "$accent-10",
+    "toggle-group--accent--background-color--unchecked--hover": "$accent-20",
+    "toggle-group--accent--background-color--unchecked--focus": "$accent-30",
+    "toggle-group--accent--background-color--checked": "$accent-50",
+    "toggle-group--accent--background-color--unchecked--disabled":
+      "transparent",
+    "toggle-group--accent--background-color--checked--disabled": "$accent-30",
+    "toggle-group--accent--border-color--checked": "$accent-80",
+    "toggle-group--accent--border-color--normal": "$accent-80",
+    "toggle-group--accent--border-color--hover": "$accent-90",
+    "toggle-group--accent--border-color--focus": "$accent-100",
+    "toggle-group--accent--border-color--disabled": "$accent-50",
+    "toggle-group--accent--color": "$accent-90",
+    "toggle-group--accent--color--disabled": "$accent-60",
+
+    "toggle-group--error--background-color--unchecked--normal": "transparent",
+    "toggle-group--error--background-color--unchecked--normal-unbordered-unshaded":
+      "$error-10",
+    "toggle-group--error--background-color--unchecked--hover": "$error-20",
+    "toggle-group--error--background-color--unchecked--focus": "$error-30",
+    "toggle-group--error--background-color--checked": "$error-50",
+    "toggle-group--error--background-color--unchecked--disabled": "transparent",
+    "toggle-group--error--background-color--checked--disabled": "$error-30",
+    "toggle-group--error--border-color--checked": "$error-80",
+    "toggle-group--error--border-color--normal": "$error-80",
+    "toggle-group--error--border-color--hover": "$error-90",
+    "toggle-group--error--border-color--focus": "$error-100",
+    "toggle-group--error--border-color--disabled": "$error-50",
+    "toggle-group--error--color": "$error-90",
+    "toggle-group--error--color--disabled": "$error-60",
   };
 };
