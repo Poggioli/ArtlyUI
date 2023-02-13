@@ -13,6 +13,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@artly-ui/text": "*",
     "@radix-ui/react-toggle-group": "^1.0.2"
   },
   "devDependencies": {

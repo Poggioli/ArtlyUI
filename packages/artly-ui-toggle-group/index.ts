@@ -1,3 +1,2 @@
-export * from './src/ToggleGroup';
-export * from './src/types';
-
+export * from "./src/ToggleGroup";
+export * from "./src/types";
