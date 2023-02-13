@@ -12,7 +12,6 @@ module.exports = {
       '!./src/**/styles.ts(x)',
       '!./src/**/*stories.tsx',
       '!./src/**/types.ts(x)',
-      '!./src/**/ArtlyProvider.ts(x)',
       '!./src/**/values.ts',
       '!./src/**/__snapshots__/**/*',
     ],

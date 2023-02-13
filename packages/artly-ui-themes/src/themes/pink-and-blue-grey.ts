@@ -26,4 +26,8 @@ export const PinkAndBlueGreyTheme = {
   "tag--filled--accent--text": "$gray-10",
   "tag--filled--error--text": "$gray-10",
   "tag--outlined--primary--text": "$text-high-contrast",
+  "toggle-group--primary--color": "$primary-300",
+  "toggle-group--secondary--color": "$secondary-300",
+  "toggle-group--accent--color": "$accent-300",
+  "toggle-group--error--color": "$error-300",
 };
