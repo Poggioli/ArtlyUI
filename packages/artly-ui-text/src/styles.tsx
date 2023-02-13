@@ -62,5 +62,6 @@ const StyledText = styled("span", {
     align: "left",
   },
 });
+StyledText.toString = () => `.${StyledText.className}`;
 
 export { StyledText };
