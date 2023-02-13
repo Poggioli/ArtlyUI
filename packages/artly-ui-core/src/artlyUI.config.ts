@@ -148,7 +148,7 @@ export const resetCssStyles = globalCss({
   },
 
   "body, html": {
-    height: "100%"
+    height: "100%",
   },
 
   [`html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
