@@ -1,8 +1,4 @@
-import {
-  createContext,
-  FC,
-  PropsWithChildren, useState
-} from "react";
+import { createContext, FC, PropsWithChildren, useState } from "react";
 import { SelectContextState, SelectContextType } from "./types";
 import { DEFAULT_VALUE } from "./values";
 

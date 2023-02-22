@@ -6,7 +6,7 @@ import {
   SelectGroupLabel,
   SelectGroupSeparator,
   SelectItem,
-  SelectTrigger
+  SelectTrigger,
 } from "@artly-ui/select";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
@@ -27,11 +27,11 @@ const story: ComponentMeta<typeof Select> = {
       },
       defaultValue: false,
     },
-    shaped: {
+    shape: {
       control: {
         type: "radio",
       },
-      options: ["standard", "outlined", "filled"],
+      options: ["standard", "outlined"],
       defaultValue: "standard",
     },
   },
@@ -45,7 +45,7 @@ const Template: ComponentStory<typeof Select> = ({ ...args }) => (
     }}
   >
     <Select {...args}>
-      <SelectTrigger placeholder="Select a fruit..." />
+      <SelectTrigger placeholder="Select a fruit" />
 
       <SelectContent>
         <SelectGroup>

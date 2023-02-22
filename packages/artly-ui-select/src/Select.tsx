@@ -23,7 +23,7 @@ import {
   StyledSelectSeparator,
   StyledSelectTrigger,
   StyledSelectValue,
-  StyledSelectViewPort
+  StyledSelectViewPort,
 } from "./styles";
 import {
   SelectContentProps,
@@ -34,7 +34,7 @@ import {
   SelectProps,
   SelectSeparatorProps,
   SelectTriggerProps,
-  SelectValueProps
+  SelectValueProps,
 } from "./types";
 
 // ------------------------------------------- Select Group Label ------------------------------------------- //

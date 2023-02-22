@@ -11,7 +11,9 @@ const StyledSelectIcon = styled(SelectPrimitives.Icon, {
 });
 StyledSelectIcon.toString = () => `.${StyledSelectIcon.className}`;
 
-const StyledSelectValue = styled(SelectPrimitives.Value, {});
+const StyledSelectValue = styled(SelectPrimitives.Value, {
+  whiteSpace: "nowrap",
+});
 StyledSelectValue.toString = () => `.${StyledSelectValue.className}`;
 
 const StyledLegendSpan = styled(StyledText, {
@@ -20,6 +22,7 @@ const StyledLegendSpan = styled(StyledText, {
   display: "inline-block",
   visibility: "visible",
   transition: "color 300ms cubic-bezier(0.87, 0, 0.13, 1)",
+  whiteSpace: "nowrap",
 });
 StyledLegendSpan.toString = () => `.${StyledLegendSpan.className}`;
 
@@ -30,7 +33,7 @@ const StyledFieldSet = styled("fieldset", {
   pointerEvents: "none",
   position: "absolute",
   transition:
-    "border-width 150ms cubic-bezier(0.87, 0, 0.13, 1), border-color 150ms cubic-bezier(0.87, 0, 0.13, 1)",
+    "border-width 200ms linear, border-color 200ms cubic-bezier(0.87, 0, 0.13, 1)",
 
   variants: {
     shape: {
@@ -39,7 +42,13 @@ const StyledFieldSet = styled("fieldset", {
         borderBottomStyle: "solid",
         borderBottomWidth: "1px",
       },
-      outlined: {},
+      outlined: {
+        borderColor: "$$borderColor",
+        borderStyle: "solid",
+        borderWidth: "1px",
+        borderRadius: "$2",
+        paddingLeft: "calc($3 + $2)",
+      },
       filled: {},
     },
   },
@@ -51,14 +60,17 @@ const StyledFieldSet = styled("fieldset", {
 StyledFieldSet.toString = () => `.${StyledFieldSet.className}`;
 
 const StyledLegend = styled("legend", {
-  display: "none",
+  display: "block",
   float: "unset",
   height: "calc($2 + $3)",
+  overflow: "hidden",
+  width: 0,
 
   variants: {
     hasValue: {
       true: {
-        display: "block",
+        width: "initial",
+        overflow: "initial",
       },
     },
   },
@@ -107,10 +119,6 @@ const StyledSelectTrigger = styled(SelectPrimitives.Trigger, {
   "&:not([data-disabled])": {
     "&:hover": {
       $$borderColor: "$$borderColorHover",
-
-      [`${StyledFieldSet.toString()}`]: {
-        borderWidth: "2px",
-      },
     },
 
     "&:focus": {
@@ -120,10 +128,6 @@ const StyledSelectTrigger = styled(SelectPrimitives.Trigger, {
         {
           color: "$$colorTextValueFocus",
         },
-
-      [`${StyledFieldSet.toString()}`]: {
-        borderWidth: "2px",
-      },
     },
   },
 
@@ -131,9 +135,16 @@ const StyledSelectTrigger = styled(SelectPrimitives.Trigger, {
     shape: {
       standard: {
         padding: "$6 $3 $3 $3",
+
+        "&:hover, &:focus": {
+          [`${StyledFieldSet.toString()}`]: {
+            borderWidth: "2px",
+          },
+        },
       },
-      outlined: {},
-      filled: {},
+      outlined: {
+        padding: "$5 $3 calc($3 + $2) $5",
+      },
     },
     color: {
       unstyled: {

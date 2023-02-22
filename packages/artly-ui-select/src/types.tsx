@@ -18,7 +18,7 @@ import {
   StyledSelectSeparator,
   StyledSelectTrigger,
   StyledSelectValue,
-  StyledSelectViewPort
+  StyledSelectViewPort,
 } from "./styles";
 
 export type SelectProps = HTMLArtlyProps<typeof StyledSelectRoot> &

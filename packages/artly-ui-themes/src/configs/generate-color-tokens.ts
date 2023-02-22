@@ -6,7 +6,7 @@ import {
   mauve,
   purple,
   red,
-  whiteA
+  whiteA,
 } from "@radix-ui/colors";
 import { generateGenericColors, GenericScale } from "./generate-generic-colors";
 
@@ -661,9 +661,9 @@ export const generateColorTokens = (
 
     "select--content--background-color": "$background-subtle",
 
-    "select--unstyled--trigger--border-color-normal": "$gray-100",
+    "select--unstyled--trigger--border-color-normal": "$gray-90",
     "select--unstyled--trigger--border-color-hover": "$gray-200",
-    "select--unstyled--trigger--border-color-focus": "$gray-90",
+    "select--unstyled--trigger--border-color-focus": "$gray-300",
     "select--unstyled--trigger--border-color-disabled": "$gray-60",
     "select--unstyled--icon--color-normal": "$gray-300",
     "select--unstyled--icon--color-disabled": "$gray-80",
