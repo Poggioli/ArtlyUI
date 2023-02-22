@@ -9,7 +9,7 @@ const StyledCard = styled(Flex, {
   variants: {
     shaded: {
       true: {
-        $$boxShadow: "$colors-black-70 0 $sizes-2 $sizes-3 0",
+        $$boxShadow: "$colors-black-30 0 $sizes-2 $sizes-3 0",
         boxShadow: "$$boxShadow",
       },
     },

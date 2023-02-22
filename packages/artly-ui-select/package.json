@@ -13,6 +13,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "@artly-ui/box": "*",
+    "@artly-ui/checkbox": "*",
+    "@artly-ui/text": "*",
+    "@artly-ui/separator": "*",
+    "@radix-ui/react-icons": "^1.1.1",
     "@radix-ui/react-select": "^1.2.0"
   },
   "devDependencies": {
