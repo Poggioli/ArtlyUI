@@ -14,7 +14,7 @@
 - Checkbox ✅
 - Input
 - Radio Group ✅
-- Select ⚒️
+- Select ✅
 - Slider ✅
 - Switch ✅
 - Toggle Group ✅

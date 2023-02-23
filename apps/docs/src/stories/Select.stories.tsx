@@ -6,7 +6,7 @@ import {
   SelectGroupLabel,
   SelectGroupSeparator,
   SelectItem,
-  SelectTrigger,
+  SelectTrigger
 } from "@artly-ui/select";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
@@ -51,8 +51,6 @@ const Template: ComponentStory<typeof Select> = ({ ...args }) => (
         <SelectGroup>
           <SelectGroupLabel>Fruits</SelectGroupLabel>
           <SelectItem value="apple">Apple</SelectItem>
-          <SelectItem value="banana">Banana</SelectItem>
-          <SelectItem value="blueberry">Blueberry</SelectItem>
           <SelectItem value="grapes">Grapes</SelectItem>
           <SelectItem value="pineapple">Pineapple</SelectItem>
         </SelectGroup>
@@ -64,16 +62,6 @@ const Template: ComponentStory<typeof Select> = ({ ...args }) => (
           <SelectItem value="carrot" disabled>
             Carrot
           </SelectItem>
-          <SelectItem value="courgette">Courgette</SelectItem>
-          <SelectItem value="leek">Leek</SelectItem>
-        </SelectGroup>
-        <SelectGroupSeparator />
-        <SelectGroup>
-          <SelectGroupLabel>Meat</SelectGroupLabel>
-          <SelectItem value="beef">Beef</SelectItem>
-          <SelectItem value="chicken">Chicken</SelectItem>
-          <SelectItem value="lamb">Lamb</SelectItem>
-          <SelectItem value="pork">Pork</SelectItem>
         </SelectGroup>
       </SelectContent>
     </Select>
