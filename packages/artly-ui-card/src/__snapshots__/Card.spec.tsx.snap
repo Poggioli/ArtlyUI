@@ -5,7 +5,7 @@ exports[`Data display component / Card GIVEN a Card component
     SHOULD occurs render normaly 1`] = `
 <div>
   <div
-    class="artly-UI-c-bXbWpx artly-UI-c-bXbWpx-iiTKOFX-css artly-UI-c-uGsWN artly-UI-c-uGsWN-btuauh-shaded-true artly-UI-c-uGsWN-leqBWP-bordered-true"
+    class="artly-UI-c-bXbWpx artly-UI-c-bXbWpx-iiTKOFX-css artly-UI-c-uGsWN artly-UI-c-uGsWN-hAdNbV-shaded-true artly-UI-c-uGsWN-leqBWP-bordered-true"
   >
     <h3
       class="artly-UI-c-emYHtM artly-UI-c-emYHtM-jpIAgQ-level-5 artly-UI-c-emYHtM-iiBiFgP-css"
