@@ -1,6 +1,6 @@
 {
   "name": "@artly-ui/core",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -10,6 +10,10 @@
     "lint": "TIMING=1 eslint \"**/*.ts*\"",
     "build": "tsup --config ./tsup.config.ts",
     "publish-package": "yarn build && changeset version && changeset publish"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
   },
   "dependencies": {
     "@artly-ui/tokens": "1.0.0",

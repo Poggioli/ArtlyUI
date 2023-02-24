@@ -20,7 +20,7 @@
     "@artly-ui/checkbox": "*",
     "@artly-ui/collapsible": "*",
     "@artly-ui/container": "*",
-    "@artly-ui/core": "*",
+    "@artly-ui/core": "1.0.0",
     "@artly-ui/dialog": "*",
     "@artly-ui/flex": "*",
     "@artly-ui/heading": "*",
