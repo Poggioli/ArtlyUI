@@ -1,22 +1,25 @@
 {
-    "name": "@artly-ui/tokens",
-    "version": "0.0.0",
-    "main": "./dist/index.js",
-    "module": "./dist/index.mjs",
-    "types": "./dist/index.d.ts",
-    "sideEffects": false,
-    "license": "MIT",
-    "scripts": {
-      "lint": "TIMING=1 eslint \"**/*.ts*\"",
-      "build": "tsup --config ./tsup.config.ts",
-      "clear": "rimraf .turbo coverage node_modules dist",
-      "publish-package": "yarn build && changeset version && changeset publish"
-    },
-    "devDependencies": {
-      "eslint": "^7.32.0",
-      "eslint-config-custom": "*",
-      "tsconfig": "*",
-      "typescript": "4.5.2"
-    }
+  "name": "@artly-ui/tokens",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "lint": "TIMING=1 eslint \"**/*.ts*\"",
+    "build": "tsup --config ./tsup.config.ts",
+    "clear": "rimraf .turbo coverage node_modules dist",
+    "publish-package": "yarn build && changeset version && changeset publish"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "tsconfig": "*",
+    "typescript": "4.5.2"
   }
-  
+}
