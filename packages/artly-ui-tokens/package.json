@@ -10,7 +10,7 @@
       "lint": "TIMING=1 eslint \"**/*.ts*\"",
       "build": "tsup --config ./tsup.config.ts",
       "clear": "rimraf .turbo coverage node_modules dist",
-      "publish-packages": "yarn build && changeset version && changeset publish"
+      "publish-package": "yarn build && changeset version && changeset publish"
     },
     "devDependencies": {
       "eslint": "^7.32.0",

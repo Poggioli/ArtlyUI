@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "TIMING=1 eslint \"**/*.ts*\"",
     "build": "tsup --config ./tsup.config.ts",
-    "publish-packages": "yarn build && changeset version && changeset publish"
+    "publish-package": "yarn build && changeset version && changeset publish"
   },
   "dependencies": {
     "@artly-ui/tokens": "*",

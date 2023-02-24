@@ -11,7 +11,7 @@
     "clear": "rimraf .turbo coverage node_modules dist",
     "build": "tsup --config ./tsup.config.ts",
     "test": "jest",
-    "publish-packages": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
+    "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
   "dependencies": { },
   "devDependencies": {
