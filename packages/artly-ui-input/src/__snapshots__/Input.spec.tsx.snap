@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Core component / Input GIVEN a Input compoenent
+      WHEN has autofocus
+      THEN should render normaly 1`] = `
+<div>
+  <div
+    class="artly-UI-c-bXbWpx artly-UI-c-hIFJPS artly-UI-c-hIFJPS-haMmXz-color-unstyled"
+    direction="column"
+  >
+    <label
+      class="artly-UI-c-chWhuJ artly-UI-c-chWhuJ-jprvTt-variant-body1 artly-UI-c-chWhuJ-cmVlgk-align-left artly-UI-c-chWhuJ-iiBiFgP-css artly-UI-c-hjMDXt artly-UI-c-hjMDXt-dikOXF-shape-standard"
+      for="12345"
+    >
+      Enter your email
+    </label>
+    <div
+      align="center"
+      class="artly-UI-c-bXbWpx artly-UI-c-bSMcqW"
+    >
+      <input
+        class="artly-UI-c-gJkmaK artly-UI-c-gJkmaK-bzjyrz-shape-standard artly-UI-c-gJkmaK-dKQVtd-color-unstyled"
+        id="12345"
+        placeholder=""
+      />
+      <fieldset
+        aria-hidden="true"
+        class="artly-UI-c-jaKNMU artly-UI-c-jaKNMU-bbgQrM-shape-standard"
+      >
+        <legend
+          class="artly-UI-c-cKPsdG"
+        >
+          <span
+            class="artly-UI-c-chWhuJ artly-UI-c-jijTon artly-UI-c-chWhuJ-bzGfXE-variant-auxiliary artly-UI-c-chWhuJ-cmVlgk-align-left"
+          >
+            Enter your email
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Core component / Input GIVEN a Input compoenent
+      WHEN has id
+      THEN should render normaly 1`] = `
+<div>
+  <div
+    class="artly-UI-c-bXbWpx artly-UI-c-hIFJPS artly-UI-c-hIFJPS-haMmXz-color-unstyled"
+    direction="column"
+  >
+    <label
+      class="artly-UI-c-chWhuJ artly-UI-c-chWhuJ-jprvTt-variant-body1 artly-UI-c-chWhuJ-cmVlgk-align-left artly-UI-c-chWhuJ-iiBiFgP-css artly-UI-c-hjMDXt artly-UI-c-hjMDXt-dikOXF-shape-standard"
+      for="12345"
+    >
+      Enter your email
+    </label>
+    <div
+      align="center"
+      class="artly-UI-c-bXbWpx artly-UI-c-bSMcqW"
+    >
+      <input
+        class="artly-UI-c-gJkmaK artly-UI-c-gJkmaK-bzjyrz-shape-standard artly-UI-c-gJkmaK-dKQVtd-color-unstyled"
+        id="12345"
+        placeholder=""
+      />
+      <fieldset
+        aria-hidden="true"
+        class="artly-UI-c-jaKNMU artly-UI-c-jaKNMU-bbgQrM-shape-standard"
+      >
+        <legend
+          class="artly-UI-c-cKPsdG"
+        >
+          <span
+            class="artly-UI-c-chWhuJ artly-UI-c-jijTon artly-UI-c-chWhuJ-bzGfXE-variant-auxiliary artly-UI-c-chWhuJ-cmVlgk-align-left"
+          >
+            Enter your email
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Core component / Input GIVEN a Input compoenent
+      WHEN has no value
+      AND has focus
+      THEN should render placeholder 1`] = `
+<div>
+  <div
+    class="artly-UI-c-bXbWpx artly-UI-c-hIFJPS artly-UI-c-hIFJPS-haMmXz-color-unstyled"
+    direction="column"
+  >
+    <label
+      class="artly-UI-c-chWhuJ artly-UI-c-chWhuJ-jprvTt-variant-body1 artly-UI-c-chWhuJ-cmVlgk-align-left artly-UI-c-chWhuJ-iiBiFgP-css artly-UI-c-hjMDXt artly-UI-c-hjMDXt-dikOXF-shape-standard"
+      for="12345"
+    >
+      Enter your email
+    </label>
+    <div
+      align="center"
+      class="artly-UI-c-bXbWpx artly-UI-c-bSMcqW"
+    >
+      <input
+        class="artly-UI-c-gJkmaK artly-UI-c-gJkmaK-bzjyrz-shape-standard artly-UI-c-gJkmaK-dKQVtd-color-unstyled"
+        id="12345"
+        placeholder=""
+      />
+      <fieldset
+        aria-hidden="true"
+        class="artly-UI-c-jaKNMU artly-UI-c-jaKNMU-bbgQrM-shape-standard"
+      >
+        <legend
+          class="artly-UI-c-cKPsdG"
+        >
+          <span
+            class="artly-UI-c-chWhuJ artly-UI-c-jijTon artly-UI-c-chWhuJ-bzGfXE-variant-auxiliary artly-UI-c-chWhuJ-cmVlgk-align-left"
+          >
+            Enter your email
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Core component / Input GIVEN a Input compoenent
+      WHEN has value
+      THEN should render normaly 1`] = `
+<div>
+  <div
+    class="artly-UI-c-bXbWpx artly-UI-c-hIFJPS artly-UI-c-hIFJPS-haMmXz-color-unstyled"
+    direction="column"
+  >
+    <label
+      class="artly-UI-c-chWhuJ artly-UI-c-chWhuJ-jprvTt-variant-body1 artly-UI-c-chWhuJ-cmVlgk-align-left artly-UI-c-chWhuJ-iiBiFgP-css artly-UI-c-hjMDXt artly-UI-c-hjMDXt-dikOXF-shape-standard artly-UI-c-hjMDXt-eqqjGp-cv"
+      for="12345"
+    >
+      Enter your email
+    </label>
+    <div
+      align="center"
+      class="artly-UI-c-bXbWpx artly-UI-c-bSMcqW"
+    >
+      <input
+        class="artly-UI-c-gJkmaK artly-UI-c-gJkmaK-bzjyrz-shape-standard artly-UI-c-gJkmaK-dKQVtd-color-unstyled"
+        id="12345"
+        placeholder=""
+        value="email@email.com"
+      />
+      <fieldset
+        aria-hidden="true"
+        class="artly-UI-c-jaKNMU artly-UI-c-jaKNMU-bbgQrM-shape-standard"
+      >
+        <legend
+          class="artly-UI-c-cKPsdG artly-UI-c-cKPsdG-boYBol-hasValue-true"
+        >
+          <span
+            class="artly-UI-c-chWhuJ artly-UI-c-jijTon artly-UI-c-chWhuJ-bzGfXE-variant-auxiliary artly-UI-c-chWhuJ-cmVlgk-align-left"
+          >
+            Enter your email
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;

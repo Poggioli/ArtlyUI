@@ -26,6 +26,7 @@
     "@artly-ui/heading": "*",
     "@artly-ui/hover-card": "*",
     "@artly-ui/image": "*",
+    "@artly-ui/input": "*",
     "@artly-ui/label": "*",
     "@artly-ui/progress-bar": "*",
     "@artly-ui/popover": "*",
