@@ -6,7 +6,7 @@ import {
   SelectGroupLabel,
   SelectGroupSeparator,
   SelectItem,
-  SelectTrigger
+  SelectTrigger,
 } from "@artly-ui/select";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 

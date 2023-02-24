@@ -12,7 +12,7 @@
 
 - Button ✅
 - Checkbox ✅
-- Input
+- Input ✅
 - Radio Group ✅
 - Select ✅
 - Slider ✅
