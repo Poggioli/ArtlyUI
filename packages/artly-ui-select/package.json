@@ -1,6 +1,6 @@
 {
   "name": "@artly-ui/select",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -18,10 +18,10 @@
     "tag": "latest"
   },
   "dependencies": {
-    "@artly-ui/box": "1.0.0",
-    "@artly-ui/checkbox": "1.0.1",
-    "@artly-ui/text": "1.0.0",
-    "@artly-ui/separator": "1.0.0",
+    "@artly-ui/box": "1.0.1",
+    "@artly-ui/checkbox": "1.0.2",
+    "@artly-ui/text": "1.0.1",
+    "@artly-ui/separator": "1.0.1",
     "@radix-ui/react-icons": "^1.1.1",
     "@radix-ui/react-select": "^1.2.0"
   },
@@ -38,6 +38,6 @@
     "typescript": "4.5.2"
   },
   "peerDependencies": {
-    "@artly-ui/core": "1.0.0"
+    "@artly-ui/core": "1.0.1"
   }
 }

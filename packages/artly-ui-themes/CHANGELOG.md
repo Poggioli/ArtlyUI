@@ -1,5 +1,11 @@
 # @artly-ui/themes
 
+## 1.0.2
+
+### Patch Changes
+
+- change normal, hover, focus and disabled colors in slider, select and input components
+
 ## 1.0.1
 
 ### Patch Changes

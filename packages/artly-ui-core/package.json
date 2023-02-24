@@ -1,6 +1,6 @@
 {
   "name": "@artly-ui/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@artly-ui/tokens": "1.0.0",
-    "@artly-ui/themes": "1.0.1",
+    "@artly-ui/themes": "1.0.2",
     "@stitches/react": "^1.2.8",
     "webfontloader": "^1.6.28"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@artly-ui/toast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -18,8 +18,8 @@
     "tag": "latest"
   },
   "dependencies": {
-    "@artly-ui/heading": "1.0.0",
-    "@artly-ui/text": "1.0.0",
+    "@artly-ui/heading": "1.0.1",
+    "@artly-ui/text": "1.0.1",
     "@radix-ui/react-toast": "^1.1.2"
   },
   "devDependencies": {
@@ -35,6 +35,6 @@
     "typescript": "4.5.2"
   },
   "peerDependencies": {
-    "@artly-ui/core": "1.0.0"
+    "@artly-ui/core": "1.0.1"
   }
 }

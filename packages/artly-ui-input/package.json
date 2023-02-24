@@ -1,6 +1,6 @@
 {
   "name": "@artly-ui/input",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -18,9 +18,9 @@
     "tag": "latest"
   },
   "dependencies": {
-    "@artly-ui/flex": "1.0.0",
-    "@artly-ui/label": "1.0.1",
-    "@artly-ui/text": "1.0.0",
+    "@artly-ui/flex": "1.0.1",
+    "@artly-ui/label": "1.0.2",
+    "@artly-ui/text": "1.0.1",
     "@artly-ui/tokens": "1.0.0"
   },
   "devDependencies": {
@@ -36,6 +36,6 @@
     "typescript": "4.5.2"
   },
   "peerDependencies": {
-    "@artly-ui/core": "1.0.0"
+    "@artly-ui/core": "1.0.1"
   }
 }

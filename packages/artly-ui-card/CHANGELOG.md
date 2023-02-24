@@ -1,5 +1,14 @@
 # @artly-ui/card
 
+## 1.0.1
+
+### Patch Changes
+
+- @artly-ui/core@1.0.1
+- @artly-ui/flex@1.0.1
+- @artly-ui/heading@1.0.1
+- @artly-ui/text@1.0.1
+
 ## 1.0.0
 
 ### Major Changes

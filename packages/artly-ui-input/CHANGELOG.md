@@ -1,5 +1,14 @@
 # @artly-ui/input
 
+## 1.0.2
+
+### Patch Changes
+
+- @artly-ui/core@1.0.1
+- @artly-ui/flex@1.0.1
+- @artly-ui/label@1.0.2
+- @artly-ui/text@1.0.1
+
 ## 1.0.1
 
 ### Patch Changes
