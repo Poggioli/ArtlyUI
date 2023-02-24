@@ -1,6 +1,6 @@
 {
   "name": "@artly-ui/select",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@artly-ui/box": "1.0.0",
-    "@artly-ui/checkbox": "1.0.0",
+    "@artly-ui/checkbox": "1.0.1",
     "@artly-ui/text": "1.0.0",
     "@artly-ui/separator": "1.0.0",
     "@radix-ui/react-icons": "^1.1.1",

@@ -1,6 +1,6 @@
 {
   "name": "@artly-ui/label",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -18,7 +18,7 @@
     "tag": "latest"
   },
   "dependencies": {
-    "@radix-ui/react-label": "^1.0.0",
+    "@radix-ui/react-label": "^2.0.0",
     "@artly-ui/tokens": "1.0.0"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@artly-ui/switch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@radix-ui/react-switch": "^1.0.1",
     "@artly-ui/flex": "1.0.0",
-    "@artly-ui/label": "1.0.0"
+    "@artly-ui/label": "1.0.1"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.18.6",
