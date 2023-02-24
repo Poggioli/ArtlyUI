@@ -17,7 +17,7 @@
     "@artly-ui/flex": "*",
     "@artly-ui/label": "*",
     "@artly-ui/text": "*",
-    "@artly-ui/tokens": "*"
+    "@artly-ui/tokens": "1.0.0"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.18.6",

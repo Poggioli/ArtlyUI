@@ -39,7 +39,7 @@
     "@artly-ui/tag": "*",
     "@artly-ui/text": "*",
     "@artly-ui/toast": "*",
-    "@artly-ui/tokens": "*",
+    "@artly-ui/tokens": "1.0.0",
     "@artly-ui/toggle-group": "*",
     "@artly-ui/tooltip": "*",
     "@radix-ui/react-icons": "^1.1.1",

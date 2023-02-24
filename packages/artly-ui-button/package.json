@@ -28,6 +28,6 @@
   },
   "peerDependencies": {
     "@artly-ui/core": "*",
-    "@artly-ui/tokens": "*"
+    "@artly-ui/tokens": "1.0.0"
   }
 }

@@ -12,7 +12,7 @@
     "publish-package": "yarn build && changeset version && changeset publish"
   },
   "dependencies": {
-    "@artly-ui/tokens": "*",
+    "@artly-ui/tokens": "1.0.0",
     "@artly-ui/themes": "*",
     "@stitches/react": "^1.2.8",
     "webfontloader": "^1.6.28"
