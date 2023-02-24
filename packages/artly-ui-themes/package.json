@@ -1,6 +1,6 @@
 {
   "name": "@artly-ui/themes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -11,6 +11,10 @@
     "build": "tsup --config ./tsup.config.ts",
     "clear": "rimraf .turbo coverage node_modules dist",
     "publish-package": "yarn build && changeset version && changeset publish"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
   },
   "dependencies": {
     "@radix-ui/colors": "^0.1.7"
