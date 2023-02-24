@@ -15,4 +15,6 @@ export const IndigoPinkTheme = {
   "tag--outlined--accent--text": "$text-high-contrast",
   "tag--outlined--error--text": "$text-high-contrast",
   "toggle-group--accent--color": "$accent-300",
+  "select--accent--text-color-focus": "$primary-300",
+  "input--accent--label--color-focus": "$gray-300",
 };

@@ -10,4 +10,7 @@ export const DeepPurpleAndAmberTheme = {
   "tag--outlined--error--text": "$text-high-contrast",
   "checkbox--secondary--indicator--color": "$text-high-contrast",
   "toggle-group--secondary--color": "$secondary-300",
+  "select--secondary--text-color-focus": "$primary-300",
+  "input--secondary--label--color-focus": "$gray-300",
+  "input--accent--label--color-focus": "$gray-300",
 };
