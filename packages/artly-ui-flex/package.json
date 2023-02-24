@@ -10,6 +10,7 @@
     "lint": "TIMING=1 eslint \"**/*.ts*\"",
     "build": "tsup --config ./tsup.config.ts",
     "test": "jest",
+    "publish-packages": "yarn build && yarn lint && yarn test && changeset version && changeset publish",
     "clear": "rimraf .turbo coverage node_modules dist"
   },
   "dependencies": { },

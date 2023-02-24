@@ -10,7 +10,8 @@
     "lint": "TIMING=1 eslint \"**/*.ts*\"",
     "build": "tsup --config ./tsup.config.ts",
     "clear": "rimraf .turbo coverage node_modules dist",
-    "test": "jest"
+    "test": "jest",
+    "publish-packages": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
   "dependencies": {
     "@artly-ui/image": "*",
