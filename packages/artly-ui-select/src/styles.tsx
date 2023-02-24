@@ -135,12 +135,6 @@ const StyledSelectTrigger = styled(SelectPrimitives.Trigger, {
     shape: {
       standard: {
         padding: "$6 $3 $3 $3",
-
-        "&:hover, &:focus": {
-          [`${StyledFieldSet.toString()}`]: {
-            borderWidth: "2px",
-          },
-        },
       },
       outlined: {
         padding: "$5 $3 calc($3 + $2) $5",
