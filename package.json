@@ -11,6 +11,7 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "test": "turbo run test",
+    "publish-package": "turbo run publish-package",
     "clear": "rimraf .turbo coverage node_modules dist",
     "bootstrap": "turbo run clear && yarn clear && yarn && turbo run build",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
