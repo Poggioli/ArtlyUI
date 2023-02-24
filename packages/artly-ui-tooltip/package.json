@@ -13,9 +13,13 @@
     "test": "jest",
     "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "dependencies": {
-    "@artly-ui/flex": "*",
-    "@artly-ui/text": "*",
+    "@artly-ui/flex": "1.0.0",
+    "@artly-ui/text": "1.0.0",
     "@radix-ui/react-tooltip": "^1.0.2"
   },
   "devDependencies": {

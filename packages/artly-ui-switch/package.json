@@ -13,10 +13,14 @@
     "test": "jest",
     "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "dependencies": {
     "@radix-ui/react-switch": "^1.0.1",
-    "@artly-ui/flex": "*",
-    "@artly-ui/label": "*"
+    "@artly-ui/flex": "1.0.0",
+    "@artly-ui/label": "1.0.0"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.18.6",

@@ -13,6 +13,10 @@
     "test": "jest",
     "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "dependencies": {},
   "devDependencies": {
     "@babel/preset-typescript": "^7.18.6",

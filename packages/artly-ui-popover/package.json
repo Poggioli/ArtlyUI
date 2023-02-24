@@ -13,8 +13,12 @@
     "test": "jest",
     "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "dependencies": {
-    "@artly-ui/button": "*",
+    "@artly-ui/button": "1.0.0",
     "@radix-ui/react-popover": "^1.0.3",
     "@radix-ui/react-icons": "^1.1.1"
   },

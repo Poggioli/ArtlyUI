@@ -13,8 +13,12 @@
     "test": "jest",
     "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "dependencies": {
-    "@radix-ui/react-label": "^2.0.0",
+    "@radix-ui/react-label": "^1.0.0",
     "@artly-ui/tokens": "1.0.0"
   },
   "devDependencies": {

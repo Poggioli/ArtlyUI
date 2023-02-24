@@ -13,9 +13,13 @@
     "test": "jest",
     "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "dependencies": {
-    "@artly-ui/heading": "*",
-    "@artly-ui/text": "*",
+    "@artly-ui/heading": "1.0.0",
+    "@artly-ui/text": "1.0.0",
     "@radix-ui/react-toast": "^1.1.2"
   },
   "devDependencies": {

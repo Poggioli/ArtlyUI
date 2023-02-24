@@ -13,8 +13,12 @@
     "test": "jest",
     "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "dependencies": {
-    "@artly-ui/text": "*",
+    "@artly-ui/text": "1.0.0",
     "@radix-ui/react-toggle-group": "^1.0.2"
   },
   "devDependencies": {

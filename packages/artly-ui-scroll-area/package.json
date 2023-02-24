@@ -13,6 +13,10 @@
     "test": "jest",
     "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "dependencies": {
     "@radix-ui/react-scroll-area": "^1.0.2"
   },

@@ -13,11 +13,15 @@
     "test": "jest",
     "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "dependencies": {
-    "@artly-ui/box": "*",
-    "@artly-ui/checkbox": "*",
-    "@artly-ui/text": "*",
-    "@artly-ui/separator": "*",
+    "@artly-ui/box": "1.0.0",
+    "@artly-ui/checkbox": "1.0.0",
+    "@artly-ui/text": "1.0.0",
+    "@artly-ui/separator": "1.0.0",
     "@radix-ui/react-icons": "^1.1.1",
     "@radix-ui/react-select": "^1.2.0"
   },

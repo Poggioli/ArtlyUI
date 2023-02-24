@@ -13,8 +13,12 @@
     "test": "jest",
     "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "dependencies": {
-    "@artly-ui/image": "*",
+    "@artly-ui/image": "1.0.0",
     "@radix-ui/react-avatar": "^1.0.1"
   },
   "devDependencies": {

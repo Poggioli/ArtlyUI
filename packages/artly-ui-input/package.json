@@ -13,10 +13,14 @@
     "test": "jest",
     "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "dependencies": {
-    "@artly-ui/flex": "*",
-    "@artly-ui/label": "*",
-    "@artly-ui/text": "*",
+    "@artly-ui/flex": "1.0.0",
+    "@artly-ui/label": "1.0.0",
+    "@artly-ui/text": "1.0.0",
     "@artly-ui/tokens": "1.0.0"
   },
   "devDependencies": {

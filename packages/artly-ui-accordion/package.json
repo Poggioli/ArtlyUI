@@ -11,13 +11,16 @@
     "build": "tsup --config ./tsup.config.ts",
     "clear": "rimraf .turbo coverage node_modules dist",
     "test": "jest",
-    "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish",
     "publish-package": "yarn build && yarn lint && yarn test && changeset version && changeset publish"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "dependencies": {
-    "@artly-ui/flex": "*",
-    "@artly-ui/button": "*",
-    "@artly-ui/heading": "*",
+    "@artly-ui/flex": "1.0.0",
+    "@artly-ui/button": "1.0.0",
+    "@artly-ui/heading": "1.0.0",
     "@radix-ui/react-accordion": "^1.1.0",
     "@radix-ui/react-icons": "^1.1.1"
   },
