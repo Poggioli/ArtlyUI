@@ -24,20 +24,13 @@ const story: ComponentMeta<typeof Input> = {
       control: {
         type: "text",
       },
-      defaultValue: "Enter your weight",
+      defaultValue: "Enter your e-mail",
     },
-    // adornments: {
-    //   control: {
-    //     type: "radio",
-    //   },
-    //   options: ["sufix", "prefix", "none"],
-    //   defaultValue: "none",
-    // },
     placeholder: {
       control: {
         type: "text",
       },
-      defaultValue: "Ex: 45Kg",
+      defaultValue: "Ex: any@email.com",
     },
     disabled: {
       control: {
